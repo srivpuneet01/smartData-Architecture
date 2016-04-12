@@ -488,3 +488,11 @@ D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\RepositoryLayer\obj\Debug\R
 D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\RepositoryLayer\obj\Debug\RepositoryLayer.pdb
 D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\RepositoryLayer\obj\Debug\RepositoryLayer.dll
 D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\RepositoryLayer\obj\Debug\RepositoryLayer.pdb
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\RepositoryLayer\bin\Debug\RepositoryLayer.dll.config
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\RepositoryLayer\bin\Debug\RepositoryLayer.dll
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\RepositoryLayer\bin\Debug\RepositoryLayer.pdb
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\RepositoryLayer\bin\Debug\AppInterfaces.dll
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\RepositoryLayer\bin\Debug\CoreEntities.dll
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\RepositoryLayer\bin\Debug\AppInterfaces.pdb
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\RepositoryLayer\bin\Debug\CoreEntities.pdb
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\RepositoryLayer\obj\Debug\RepositoryLayer.csprojResolveAssemblyReference.cache

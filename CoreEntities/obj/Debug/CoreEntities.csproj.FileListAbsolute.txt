@@ -242,3 +242,6 @@ D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\CoreEntities\obj\Debug\Core
 D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\CoreEntities\obj\Debug\CoreEntities.pdb
 D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\CoreEntities\obj\Debug\CoreEntities.dll
 D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\CoreEntities\obj\Debug\CoreEntities.pdb
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\CoreEntities\bin\Debug\CoreEntities.dll
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\CoreEntities\bin\Debug\CoreEntities.pdb
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache

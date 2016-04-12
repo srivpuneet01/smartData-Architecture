@@ -514,3 +514,19 @@ D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\ServiceLayer\obj\Debug\Serv
 D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\ServiceLayer\obj\Debug\ServiceLayer.pdb
 D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\ServiceLayer\obj\Debug\ServiceLayer.dll
 D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\ServiceLayer\obj\Debug\ServiceLayer.pdb
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\ServiceLayer\bin\Debug\ServiceLayer.dll.config
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\ServiceLayer\bin\Debug\ServiceLayer.dll
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\ServiceLayer\bin\Debug\ServiceLayer.pdb
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\ServiceLayer\bin\Debug\AppInterfaces.dll
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\ServiceLayer\bin\Debug\CoreEntities.dll
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\ServiceLayer\bin\Debug\RepositoryLayer.dll
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\ServiceLayer\bin\Debug\System.Web.WebPages.dll
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\ServiceLayer\bin\Debug\System.Web.Razor.dll
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\ServiceLayer\bin\Debug\AppInterfaces.pdb
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\ServiceLayer\bin\Debug\CoreEntities.pdb
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
