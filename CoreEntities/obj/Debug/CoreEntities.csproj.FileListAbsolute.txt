@@ -240,3 +240,5 @@ D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\CoreEntities\bin\Debug\Core
 D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\CoreEntities\bin\Debug\CoreEntities.pdb
 D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\CoreEntities\obj\Debug\CoreEntities.dll
 D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\CoreEntities\obj\Debug\CoreEntities.pdb
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\CoreEntities\obj\Debug\CoreEntities.dll
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\CoreEntities\obj\Debug\CoreEntities.pdb

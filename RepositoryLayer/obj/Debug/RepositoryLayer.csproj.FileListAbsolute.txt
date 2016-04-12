@@ -486,3 +486,5 @@ D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\RepositoryLayer\bin\Debug\C
 D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\RepositoryLayer\obj\Debug\RepositoryLayer.csprojResolveAssemblyReference.cache
 D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\RepositoryLayer\obj\Debug\RepositoryLayer.dll
 D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\RepositoryLayer\obj\Debug\RepositoryLayer.pdb
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\RepositoryLayer\obj\Debug\RepositoryLayer.dll
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\RepositoryLayer\obj\Debug\RepositoryLayer.pdb

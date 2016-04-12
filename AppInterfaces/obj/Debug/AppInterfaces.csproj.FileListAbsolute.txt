@@ -169,3 +169,5 @@ D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\AppInterfaces\bin\Debug\Cor
 D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
 D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\AppInterfaces\obj\Debug\AppInterfaces.dll
 D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\AppInterfaces\obj\Debug\AppInterfaces.pdb
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\obj\Debug\AppInterfaces.dll
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\obj\Debug\AppInterfaces.pdb

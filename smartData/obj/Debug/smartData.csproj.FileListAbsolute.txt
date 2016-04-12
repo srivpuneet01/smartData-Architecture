@@ -2906,3 +2906,5 @@ D:\Day Users\Pawan Pankaj\Official\Projects\R&D\Basic Framework\smartData\obj\De
 D:\Day Users\Pawan Pankaj\Official\Projects\R&D\Basic Framework\smartData\obj\Debug\de\smartData.resources.dll
 D:\Day Users\Pawan Pankaj\Official\Projects\R&D\Basic Framework\smartData\obj\Debug\smartData.dll
 D:\Day Users\Pawan Pankaj\Official\Projects\R&D\Basic Framework\smartData\obj\Debug\smartData.pdb
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\smartData\obj\Debug\smartData.dll
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\smartData\obj\Debug\smartData.pdb
