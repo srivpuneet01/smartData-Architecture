@@ -14,7 +14,7 @@ angular
             }
             AccountService.registeruser($scope.user.Email, $scope.user.Password)
             .then(function (data) {
-                alert("Logged in Successfully");
+                $scope.ErrorMessage = data;
             });
         }
     }]);

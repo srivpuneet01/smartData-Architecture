@@ -7,12 +7,12 @@ angular
         function makePOSTRequest(url, params) {
             var requestUrl = BASE_URL + '/' + url;
 
-            $http.post(requestUrl, JSON.stringify(params))
+          return  $http.post(requestUrl, JSON.stringify(params))
                 .then(dataResponse, dataServiceError);
 
 
         }
-        function dataResponse(response) { return response.data; }
+        function dataResponse(response) {  return response.data; }
         function dataServiceError(errorResponse) {
             //$log.error('XHR Failed for AccountService');
             if (errorResponse.status == 404) {
@@ -25,11 +25,10 @@ angular
 
         return {
             'authenticate': function (user, pwd) {
-                return makePOSTRequest('AccountAPI/Login', { UserName: user, Password: pwd })
-                .then(function (data) { return data.results });
+                return makePOSTRequest('AccountAPI/Login', { UserName: user, Password: pwd }).then(function (data) { return data });                
             },
             'registeruser': function (email, pwd) {
-                return makePOSTRequest('AccountAPI/Register', { Email: email, Password: pwd }).then(function (data) { return data.results });
+                return makePOSTRequest('AccountAPI/Register', { UserName: email, Password: pwd }).then(function (data) { return data });
 
             }
         };

@@ -103,11 +103,11 @@ namespace smartData.Controllers
 
                     _emailService.SendRegistrationEmail(model.UserName, model.UserName, model.UserName);
 
-                    return "";
+                    return CustomMessages.UserRegSuccess;
                 }
                 catch (Exception ex)
                 {
-                    // ModelState.AddModelError("", "User already exist..");
+                    return "User already exit..";
                 }
             }
             //ModelState.AddModelError("", "User already exist..");
