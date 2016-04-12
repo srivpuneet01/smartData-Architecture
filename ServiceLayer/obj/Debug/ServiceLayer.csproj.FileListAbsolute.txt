@@ -512,3 +512,21 @@ D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\ServiceLayer\bin\Debug\Repo
 D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
 D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\ServiceLayer\obj\Debug\ServiceLayer.dll
 D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\ServiceLayer\obj\Debug\ServiceLayer.pdb
+D:\PuneetS\R&D\smartData-Architecture\ServiceLayer\bin\Debug\ServiceLayer.dll.config
+D:\PuneetS\R&D\smartData-Architecture\ServiceLayer\bin\Debug\ServiceLayer.dll
+D:\PuneetS\R&D\smartData-Architecture\ServiceLayer\bin\Debug\ServiceLayer.pdb
+D:\PuneetS\R&D\smartData-Architecture\ServiceLayer\bin\Debug\AppInterfaces.dll
+D:\PuneetS\R&D\smartData-Architecture\ServiceLayer\bin\Debug\CoreEntities.dll
+D:\PuneetS\R&D\smartData-Architecture\ServiceLayer\bin\Debug\RepositoryLayer.dll
+D:\PuneetS\R&D\smartData-Architecture\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+D:\PuneetS\R&D\smartData-Architecture\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\PuneetS\R&D\smartData-Architecture\ServiceLayer\bin\Debug\System.Web.WebPages.dll
+D:\PuneetS\R&D\smartData-Architecture\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.dll
+D:\PuneetS\R&D\smartData-Architecture\ServiceLayer\bin\Debug\System.Web.Razor.dll
+D:\PuneetS\R&D\smartData-Architecture\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\PuneetS\R&D\smartData-Architecture\ServiceLayer\bin\Debug\AppInterfaces.pdb
+D:\PuneetS\R&D\smartData-Architecture\ServiceLayer\bin\Debug\CoreEntities.pdb
+D:\PuneetS\R&D\smartData-Architecture\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+D:\PuneetS\R&D\smartData-Architecture\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+D:\PuneetS\R&D\smartData-Architecture\ServiceLayer\obj\Debug\ServiceLayer.dll
+D:\PuneetS\R&D\smartData-Architecture\ServiceLayer\obj\Debug\ServiceLayer.pdb

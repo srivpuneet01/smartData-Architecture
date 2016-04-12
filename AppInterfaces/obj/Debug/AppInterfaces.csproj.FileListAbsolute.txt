@@ -169,3 +169,17 @@ D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\AppInterfaces\bin\Debug\Cor
 D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
 D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\AppInterfaces\obj\Debug\AppInterfaces.dll
 D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\AppInterfaces\obj\Debug\AppInterfaces.pdb
+D:\PuneetS\R&D\smartData-Architecture\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+D:\PuneetS\R&D\smartData-Architecture\AppInterfaces\bin\Debug\AppInterfaces.dll
+D:\PuneetS\R&D\smartData-Architecture\AppInterfaces\bin\Debug\AppInterfaces.pdb
+D:\PuneetS\R&D\smartData-Architecture\AppInterfaces\bin\Debug\CoreEntities.dll
+D:\PuneetS\R&D\smartData-Architecture\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+D:\PuneetS\R&D\smartData-Architecture\AppInterfaces\bin\Debug\System.Web.Razor.dll
+D:\PuneetS\R&D\smartData-Architecture\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+D:\PuneetS\R&D\smartData-Architecture\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+D:\PuneetS\R&D\smartData-Architecture\AppInterfaces\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\PuneetS\R&D\smartData-Architecture\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\PuneetS\R&D\smartData-Architecture\AppInterfaces\bin\Debug\CoreEntities.pdb
+D:\PuneetS\R&D\smartData-Architecture\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+D:\PuneetS\R&D\smartData-Architecture\AppInterfaces\obj\Debug\AppInterfaces.dll
+D:\PuneetS\R&D\smartData-Architecture\AppInterfaces\obj\Debug\AppInterfaces.pdb

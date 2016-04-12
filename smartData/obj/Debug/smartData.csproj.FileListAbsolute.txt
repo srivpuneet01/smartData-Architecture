@@ -2906,3 +2906,34 @@ D:\Day Users\Pawan Pankaj\Official\Projects\R&D\Basic Framework\smartData\obj\De
 D:\Day Users\Pawan Pankaj\Official\Projects\R&D\Basic Framework\smartData\obj\Debug\de\smartData.resources.dll
 D:\Day Users\Pawan Pankaj\Official\Projects\R&D\Basic Framework\smartData\obj\Debug\smartData.dll
 D:\Day Users\Pawan Pankaj\Official\Projects\R&D\Basic Framework\smartData\obj\Debug\smartData.pdb
+D:\PuneetS\R&D\smartData-Architecture\smartData\bin\smartData.dll.config
+D:\PuneetS\R&D\smartData-Architecture\smartData\bin\smartData.dll
+D:\PuneetS\R&D\smartData-Architecture\smartData\bin\smartData.pdb
+D:\PuneetS\R&D\smartData-Architecture\smartData\bin\de\smartData.resources.dll
+D:\PuneetS\R&D\smartData-Architecture\smartData\bin\AdminLte.dll
+D:\PuneetS\R&D\smartData-Architecture\smartData\bin\CoreEntities.dll
+D:\PuneetS\R&D\smartData-Architecture\smartData\bin\DTOLayer.dll
+D:\PuneetS\R&D\smartData-Architecture\smartData\bin\Microsoft.Data.Edm.dll
+D:\PuneetS\R&D\smartData-Architecture\smartData\bin\Microsoft.Data.OData.dll
+D:\PuneetS\R&D\smartData-Architecture\smartData\bin\Microsoft.Data.Services.Client.dll
+D:\PuneetS\R&D\smartData-Architecture\smartData\bin\ServiceLayer.dll
+D:\PuneetS\R&D\smartData-Architecture\smartData\bin\System.Spatial.dll
+D:\PuneetS\R&D\smartData-Architecture\smartData\bin\AppInterfaces.dll
+D:\PuneetS\R&D\smartData-Architecture\smartData\bin\RepositoryLayer.dll
+D:\PuneetS\R&D\smartData-Architecture\smartData\bin\CoreEntities.pdb
+D:\PuneetS\R&D\smartData-Architecture\smartData\bin\DTOLayer.pdb
+D:\PuneetS\R&D\smartData-Architecture\smartData\bin\ServiceLayer.pdb
+D:\PuneetS\R&D\smartData-Architecture\smartData\bin\AdminLte.pdb
+D:\PuneetS\R&D\smartData-Architecture\smartData\bin\AdminLte.xml
+D:\PuneetS\R&D\smartData-Architecture\smartData\bin\Microsoft.Data.Edm.xml
+D:\PuneetS\R&D\smartData-Architecture\smartData\bin\Microsoft.Data.OData.xml
+D:\PuneetS\R&D\smartData-Architecture\smartData\bin\Microsoft.Data.Services.Client.xml
+D:\PuneetS\R&D\smartData-Architecture\smartData\bin\System.Spatial.xml
+D:\PuneetS\R&D\smartData-Architecture\smartData\bin\AppInterfaces.pdb
+D:\PuneetS\R&D\smartData-Architecture\smartData\bin\RepositoryLayer.pdb
+D:\PuneetS\R&D\smartData-Architecture\smartData\obj\Debug\smartData.csprojResolveAssemblyReference.cache
+D:\PuneetS\R&D\smartData-Architecture\smartData\obj\Debug\smartData.App_GlobalResources.Resource.de.resources
+D:\PuneetS\R&D\smartData-Architecture\smartData\obj\Debug\smartData.csproj.GenerateResource.Cache
+D:\PuneetS\R&D\smartData-Architecture\smartData\obj\Debug\de\smartData.resources.dll
+D:\PuneetS\R&D\smartData-Architecture\smartData\obj\Debug\smartData.dll
+D:\PuneetS\R&D\smartData-Architecture\smartData\obj\Debug\smartData.pdb

@@ -240,3 +240,8 @@ D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\CoreEntities\bin\Debug\Core
 D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\CoreEntities\bin\Debug\CoreEntities.pdb
 D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\CoreEntities\obj\Debug\CoreEntities.dll
 D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\CoreEntities\obj\Debug\CoreEntities.pdb
+D:\PuneetS\R&D\smartData-Architecture\CoreEntities\bin\Debug\CoreEntities.dll
+D:\PuneetS\R&D\smartData-Architecture\CoreEntities\bin\Debug\CoreEntities.pdb
+D:\PuneetS\R&D\smartData-Architecture\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+D:\PuneetS\R&D\smartData-Architecture\CoreEntities\obj\Debug\CoreEntities.dll
+D:\PuneetS\R&D\smartData-Architecture\CoreEntities\obj\Debug\CoreEntities.pdb

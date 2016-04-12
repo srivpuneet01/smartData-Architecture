@@ -486,3 +486,13 @@ D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\RepositoryLayer\bin\Debug\C
 D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\RepositoryLayer\obj\Debug\RepositoryLayer.csprojResolveAssemblyReference.cache
 D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\RepositoryLayer\obj\Debug\RepositoryLayer.dll
 D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\RepositoryLayer\obj\Debug\RepositoryLayer.pdb
+D:\PuneetS\R&D\smartData-Architecture\RepositoryLayer\bin\Debug\RepositoryLayer.dll.config
+D:\PuneetS\R&D\smartData-Architecture\RepositoryLayer\bin\Debug\RepositoryLayer.dll
+D:\PuneetS\R&D\smartData-Architecture\RepositoryLayer\bin\Debug\RepositoryLayer.pdb
+D:\PuneetS\R&D\smartData-Architecture\RepositoryLayer\bin\Debug\AppInterfaces.dll
+D:\PuneetS\R&D\smartData-Architecture\RepositoryLayer\bin\Debug\CoreEntities.dll
+D:\PuneetS\R&D\smartData-Architecture\RepositoryLayer\bin\Debug\AppInterfaces.pdb
+D:\PuneetS\R&D\smartData-Architecture\RepositoryLayer\bin\Debug\CoreEntities.pdb
+D:\PuneetS\R&D\smartData-Architecture\RepositoryLayer\obj\Debug\RepositoryLayer.csprojResolveAssemblyReference.cache
+D:\PuneetS\R&D\smartData-Architecture\RepositoryLayer\obj\Debug\RepositoryLayer.dll
+D:\PuneetS\R&D\smartData-Architecture\RepositoryLayer\obj\Debug\RepositoryLayer.pdb
