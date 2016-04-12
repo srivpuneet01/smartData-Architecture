@@ -11,13 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryLayer", "Reposito
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLayer", "ServiceLayer\ServiceLayer.csproj", "{9635AC24-5C92-4D8E-B8BA-EC1D46C285DB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A187F63F-EFDC-4860-AC02-1F456E1AD2C4}"
-	ProjectSection(SolutionItems) = preProject
-		..\new\Basic Framework\.nuget\NuGet.Config = ..\new\Basic Framework\.nuget\NuGet.Config
-		..\new\Basic Framework\.nuget\NuGet.exe = ..\new\Basic Framework\.nuget\NuGet.exe
-		..\new\Basic Framework\.nuget\NuGet.targets = ..\new\Basic Framework\.nuget\NuGet.targets
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{27D76722-1ABA-43C0-9764-5032517A04F3}"
 	ProjectSection(SolutionItems) = preProject
 		Performance1.psess = Performance1.psess
