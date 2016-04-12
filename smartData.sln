@@ -13,10 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLayer", "ServiceLaye
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A187F63F-EFDC-4860-AC02-1F456E1AD2C4}"
 	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
-		.nuget\packages.config = .nuget\packages.config
+		..\new\Basic Framework\.nuget\NuGet.Config = ..\new\Basic Framework\.nuget\NuGet.Config
+		..\new\Basic Framework\.nuget\NuGet.exe = ..\new\Basic Framework\.nuget\NuGet.exe
+		..\new\Basic Framework\.nuget\NuGet.targets = ..\new\Basic Framework\.nuget\NuGet.targets
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{27D76722-1ABA-43C0-9764-5032517A04F3}"
