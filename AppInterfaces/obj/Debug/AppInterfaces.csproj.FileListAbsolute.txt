@@ -1,0 +1,171 @@
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\AppInterfaces.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\AppInterfaces.pdb
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\CoreEntities.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\EntityFramework.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\EntityFramework.SqlServer.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\System.Web.Razor.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\CoreEntities.pdb
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\EntityFramework.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\EntityFramework.SqlServer.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\System.Web.Mvc.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\System.Web.Razor.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\obj\Debug\AppInterfaces.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\obj\Debug\AppInterfaces.pdb
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\AppInterfaces.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\AppInterfaces.pdb
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\CoreEntities.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\EntityFramework.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\EntityFramework.SqlServer.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\System.Web.Razor.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\CoreEntities.pdb
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\EntityFramework.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\EntityFramework.SqlServer.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\System.Web.Mvc.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\System.Web.Razor.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\obj\Debug\AppInterfaces.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\obj\Debug\AppInterfaces.pdb
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\AppInterfaces.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\AppInterfaces.pdb
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\CoreEntities.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\EntityFramework.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\EntityFramework.SqlServer.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\System.Web.Razor.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\CoreEntities.pdb
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\EntityFramework.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\EntityFramework.SqlServer.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\System.Web.Mvc.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\System.Web.Razor.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\obj\Debug\AppInterfaces.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\obj\Debug\AppInterfaces.pdb
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\AppInterfaces.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\AppInterfaces.pdb
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\CoreEntities.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\EntityFramework.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\EntityFramework.SqlServer.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\System.Web.Razor.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\CoreEntities.pdb
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\EntityFramework.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\EntityFramework.SqlServer.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\System.Web.Mvc.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\System.Web.Razor.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\System.Web.WebPages.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\obj\Debug\AppInterfaces.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\obj\Debug\AppInterfaces.pdb
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\AppInterfaces.dll
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\AppInterfaces.pdb
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\CoreEntities.dll
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\EntityFramework.dll
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\EntityFramework.SqlServer.dll
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\System.Web.Razor.dll
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\CoreEntities.pdb
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\EntityFramework.xml
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\EntityFramework.SqlServer.xml
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\System.Web.Mvc.xml
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\System.Web.Razor.xml
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.xml
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\obj\Debug\AppInterfaces.dll
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\obj\Debug\AppInterfaces.pdb
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\AppInterfaces\bin\Debug\AppInterfaces.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\AppInterfaces\bin\Debug\AppInterfaces.pdb
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\AppInterfaces\bin\Debug\CoreEntities.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\AppInterfaces\bin\Debug\EntityFramework.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\AppInterfaces\bin\Debug\EntityFramework.SqlServer.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\AppInterfaces\bin\Debug\System.Web.Razor.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\AppInterfaces\bin\Debug\CoreEntities.pdb
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\AppInterfaces\bin\Debug\EntityFramework.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\AppInterfaces\bin\Debug\EntityFramework.SqlServer.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\AppInterfaces\bin\Debug\System.Web.Mvc.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\AppInterfaces\bin\Debug\System.Web.Razor.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\AppInterfaces\obj\Debug\AppInterfaces.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\AppInterfaces\obj\Debug\AppInterfaces.pdb
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\AppInterfaces\bin\Debug\AppInterfaces.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\AppInterfaces\bin\Debug\AppInterfaces.pdb
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\AppInterfaces\bin\Debug\CoreEntities.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\AppInterfaces\bin\Debug\EntityFramework.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\AppInterfaces\bin\Debug\EntityFramework.SqlServer.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\AppInterfaces\bin\Debug\System.Web.Razor.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\AppInterfaces\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\AppInterfaces\bin\Debug\CoreEntities.pdb
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\AppInterfaces\bin\Debug\EntityFramework.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\AppInterfaces\bin\Debug\EntityFramework.SqlServer.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\AppInterfaces\bin\Debug\System.Web.Mvc.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\AppInterfaces\bin\Debug\System.Web.Razor.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\AppInterfaces\obj\Debug\AppInterfaces.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\AppInterfaces\obj\Debug\AppInterfaces.pdb
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\AppInterfaces\bin\Debug\AppInterfaces.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\AppInterfaces\bin\Debug\AppInterfaces.pdb
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\AppInterfaces\bin\Debug\CoreEntities.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\AppInterfaces\bin\Debug\System.Web.Razor.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\AppInterfaces\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\AppInterfaces\bin\Debug\CoreEntities.pdb
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\AppInterfaces\obj\Debug\AppInterfaces.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\AppInterfaces\obj\Debug\AppInterfaces.pdb

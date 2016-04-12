@@ -1,0 +1,385 @@
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\smartData.dll.config
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\smartData.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\smartData.pdb
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Antlr3.Runtime.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\CoreEntities.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Elmah.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Elmah.Mvc.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\EntityFramework.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\EntityFramework.SqlServer.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Data.Edm.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Data.OData.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Data.Services.Client.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Owin.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.Google.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Web.Helpers.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Web.Infrastructure.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.WindowsAzure.Storage.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Newtonsoft.Json.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Ninject.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Ninject.Web.Common.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Ninject.Web.Mvc.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Owin.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\ServiceLayer.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Net.Http.Formatting.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Spatial.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.Helpers.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.Http.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.Http.WebHost.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.Mvc.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.Optimization.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.Razor.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.WebPages.Deployment.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.WebPages.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.WebPages.Razor.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\WebActivatorEx.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\WebGrease.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\WebMatrix.Data.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\WebMatrix.WebData.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\RepositoryLayer.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\MonAgentListener.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\CoreEntities.pdb
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\ServiceLayer.pdb
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Antlr3.Runtime.pdb
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\EntityFramework.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\EntityFramework.SqlServer.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Data.Edm.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Data.OData.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Data.Services.Client.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Owin.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.Google.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.WindowsAzure.Configuration.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.WindowsAzure.Storage.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Newtonsoft.Json.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Ninject.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Ninject.Web.Common.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Ninject.Web.Mvc.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Net.Http.Formatting.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Spatial.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.Helpers.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.Http.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.Http.WebHost.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.Mvc.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.Optimization.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.Razor.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.WebPages.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.WebPages.Deployment.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.WebPages.Razor.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\WebMatrix.Data.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\WebMatrix.WebData.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\RepositoryLayer.pdb
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\de\Microsoft.Data.Edm.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\es\Microsoft.Data.Edm.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\it\Microsoft.Data.Edm.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\de\Microsoft.Data.OData.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\es\Microsoft.Data.OData.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\fr\Microsoft.Data.OData.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\it\Microsoft.Data.OData.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\ja\Microsoft.Data.OData.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\ko\Microsoft.Data.OData.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\ru\Microsoft.Data.OData.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\de\Microsoft.Data.Services.Client.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\es\Microsoft.Data.Services.Client.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\fr\Microsoft.Data.Services.Client.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\it\Microsoft.Data.Services.Client.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\ja\Microsoft.Data.Services.Client.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\ko\Microsoft.Data.Services.Client.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\ru\Microsoft.Data.Services.Client.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\de\System.Spatial.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\es\System.Spatial.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\fr\System.Spatial.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\it\System.Spatial.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\ja\System.Spatial.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\ko\System.Spatial.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\ru\System.Spatial.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\zh-Hans\System.Spatial.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\zh-Hant\System.Spatial.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\obj\Release\smartData.csprojResolveAssemblyReference.cache
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\obj\Release\smartData.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\obj\Release\smartData.pdb
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\smartData.dll.config
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\smartData.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\smartData.pdb
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Antlr3.Runtime.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\CoreEntities.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Elmah.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Elmah.Mvc.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\EntityFramework.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\EntityFramework.SqlServer.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.AspNet.Identity.Core.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Data.Edm.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Data.OData.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Data.Services.Client.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Owin.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.Cookies.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.Facebook.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.Google.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.OAuth.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Web.Helpers.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Web.Infrastructure.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.WindowsAzure.Storage.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Newtonsoft.Json.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Ninject.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Ninject.Web.Common.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Ninject.Web.Mvc.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Owin.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\ServiceLayer.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Net.Http.Formatting.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Spatial.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.Helpers.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.Http.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.Http.WebHost.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.Mvc.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.Optimization.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.Razor.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.WebPages.Deployment.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.WebPages.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.WebPages.Razor.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\WebActivatorEx.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\WebGrease.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\WebMatrix.Data.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\WebMatrix.WebData.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\RepositoryLayer.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\MonAgentListener.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\CoreEntities.pdb
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\ServiceLayer.pdb
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Antlr3.Runtime.pdb
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\EntityFramework.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\EntityFramework.SqlServer.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.AspNet.Identity.Core.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Data.Edm.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Data.OData.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Data.Services.Client.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Owin.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.Cookies.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.Facebook.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.Google.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.OAuth.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.WindowsAzure.Configuration.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.WindowsAzure.Storage.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Newtonsoft.Json.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Ninject.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Ninject.Web.Common.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Ninject.Web.Mvc.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Net.Http.Formatting.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Spatial.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.Helpers.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.Http.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.Http.WebHost.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.Mvc.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.Optimization.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.Razor.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.WebPages.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.WebPages.Deployment.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.WebPages.Razor.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\WebMatrix.Data.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\WebMatrix.WebData.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\RepositoryLayer.pdb
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\de\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\es\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\it\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\de\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\es\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\fr\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\it\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\ja\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\ko\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\ru\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\de\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\es\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\fr\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\it\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\ja\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\ko\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\ru\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\de\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\es\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\fr\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\it\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\ja\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\ko\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\ru\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\zh-Hans\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\zh-Hant\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\obj\Release\smartData.csprojResolveAssemblyReference.cache
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\obj\Release\smartData.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\obj\Release\smartData.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\smartData.dll.config
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\smartData.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\smartData.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Antlr3.Runtime.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\CoreEntities.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Elmah.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Elmah.Mvc.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\EntityFramework.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\EntityFramework.SqlServer.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.AspNet.Identity.Core.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Data.Edm.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Data.OData.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Data.Services.Client.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Owin.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Owin.Security.Cookies.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Owin.Security.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Owin.Security.Facebook.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Owin.Security.Google.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Owin.Security.OAuth.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Web.Helpers.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Web.Infrastructure.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.WindowsAzure.Storage.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Newtonsoft.Json.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Ninject.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Ninject.Web.Common.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Ninject.Web.Mvc.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Owin.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\ServiceLayer.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Net.Http.Formatting.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Spatial.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.Helpers.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.Http.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.Http.WebHost.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.Mvc.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.Optimization.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.Razor.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.WebPages.Deployment.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.WebPages.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.WebPages.Razor.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\WebActivatorEx.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\WebGrease.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\WebMatrix.Data.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\WebMatrix.WebData.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\RepositoryLayer.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\CoreEntities.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\ServiceLayer.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Antlr3.Runtime.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\EntityFramework.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\EntityFramework.SqlServer.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.AspNet.Identity.Core.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Data.Edm.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Data.OData.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Data.Services.Client.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Owin.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Owin.Security.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Owin.Security.Cookies.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Owin.Security.Facebook.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Owin.Security.Google.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Owin.Security.OAuth.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.WindowsAzure.Configuration.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.WindowsAzure.Storage.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Newtonsoft.Json.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Ninject.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Ninject.Web.Common.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Ninject.Web.Mvc.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Net.Http.Formatting.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Spatial.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.Helpers.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.Http.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.Http.WebHost.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.Mvc.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.Optimization.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.Razor.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.WebPages.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.WebPages.Deployment.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.WebPages.Razor.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\WebMatrix.Data.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\WebMatrix.WebData.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\RepositoryLayer.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\de\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\es\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\it\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\de\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\es\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\fr\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\it\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\ja\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\ko\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\ru\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\de\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\es\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\fr\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\it\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\ja\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\ko\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\ru\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\de\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\es\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\fr\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\it\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\ja\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\ko\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\ru\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\zh-Hans\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\zh-Hant\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\obj\Release\smartData.csprojResolveAssemblyReference.cache
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\obj\Release\smartData.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\obj\Release\smartData.pdb

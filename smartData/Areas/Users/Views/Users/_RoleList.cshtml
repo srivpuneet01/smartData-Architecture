@@ -1,0 +1,242 @@
+﻿@*@model IEnumerable<Core.Domain.Roles>*@
+@model Core.Domain.UserInsert
+@*@using (Html.BeginForm("create", "users", FormMethod.Post, new { id = "FormID" }))
+    {*@
+
+
+
+
+
+<div class="col-md-6">
+
+    @{
+        ViewBag.Title = "RoleList";
+        // WebGrid grid = new WebGrid(source: (IEnumerable<Core.Domain.Roles>)ViewData["AllRole"], canPage: false);
+        WebGrid grid = new WebGrid(source: Model.RolesList, canPage: false);
+    }
+    <div class="divscroll col-md-6">
+        @grid.GetHtml(
+                    tableStyle: "gridtable",
+                    htmlAttributes: new { id = "checkableGrid" },
+                    columns: grid.Columns
+                        (
+                //Here I am going to add checkbox column
+
+                grid.Column(
+                                format: @<text> <input type="checkbox" id="@item.RoleId" value="@item.RoleId" title="RoleName" alt="RoleName" name="ids" onclick="javascript:Selectcheckbox(this);" /><label class="label1" for="@item.RoleId">@item.RoleName </label> </text>,
+                                                                                                                                                                                                                                                                                                                header: "{checkall}"
+                                                                                                                                                                                                                                                                               )
+                //grid.Column("RoleId", "Role ID"),
+                // grid.Column("RoleName", "Role Name")
+
+                                                                                                                                                                                                                                                                           )
+                                                                                                                                                                                                                                                                       )
+    </div>
+
+    @*<div>
+            <input type="submit" value="Get Selected Record" />
+        </div>*@
+
+    <input id="HiddenDeleteIds" type="hidden" />
+    <input id="HiddenUserId" type="hidden" />
+</div>
+@*<input id="RoleIDs" name="RoleIDs" type="hidden" />*@
+@*@Html.Hidden("RoleIDs")*@
+
+@*}*@
+
+<style type="text/css">
+    table.gridtable {
+        font-family: verdana,arial,sans-serif;
+        font-size: 11px;
+        color: #333333;
+        border-width: 1px;
+        border-color: #666666;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+        table.gridtable th {
+            border-width: 1px;
+            padding: 8px;
+            border-style: solid;
+            border-color: #666666;
+            background-color: #dedede;
+        }
+
+        table.gridtable td {
+            border-width: 1px;
+            padding: 8px;
+            border-style: solid;
+            border-color: #666666;
+            background-color: #ffffff;
+        }
+
+    .divscroll {
+        overflow-y: scroll;
+        height: 300px;
+        width: 50%;
+    }
+
+    .ButtonSetting {
+        padding-top: 10px;
+    }
+
+    .buttompd {
+        padding-bottom: 10px;
+    }
+
+    .label1 {
+        display: inline-block;
+        margin-bottom: 5px;
+        font-weight: normal;
+    }
+</style>
+<script>
+    var str = "";
+    $(document).ready(function () {
+
+        // 1st replace first column header text with checkbox
+        ($("#HiddenDeleteIds").val(""));
+        ($("#RoleIDs").val(""));
+        $("#HiddenUserId").val("");
+        $("#checkableGrid th").each(function () {
+            if ($.trim($(this).text().toString().toLowerCase()) === "{checkall}") {
+                $(this).text('');
+                $("<input/>", { type: "checkbox", id: "cbSelectAll", value: "" }).appendTo($(this));
+                $(this).append("<span>Roles</span>");
+            }
+        });
+
+        //$(".op #cbSelectAll").click(function () {
+        //    alert("ji");
+        //})
+
+        $(".op #cbSelectAll").on("click", function () {
+            // alert("SelectAll");
+            // debugger;
+            var ischecked = this.checked;
+            $('.op #checkableGrid').find("input:checkbox").each(function () {
+                this.checked = ischecked;
+                if (ischecked) {
+                    str = (this.value.toString());
+                    if ($(".op #RoleIDs").val() == "") {
+                        $(".op #RoleIDs").val(str + ",");
+                    }
+                    else {
+                        str = $(".op #RoleIDs").val() + str + ",";
+                        $(".op #RoleIDs").val(str);
+                    }
+                }
+                else {
+                    $(".op #RoleIDs").val("");
+                    str = (this.value.toString());
+                    if ($(".op #HiddenDeleteIds").val() == "") {
+                        $(".op #HiddenDeleteIds").val(str + ",");
+                    }
+                    else {
+                        str = $(".op #HiddenDeleteIds").val() + str + ",";
+                        $(".op #HiddenDeleteIds").val(str);
+                    }
+
+                }
+                //$("#HiddenDeleteIds").val()
+
+
+            });
+            // alert($("#HiddenRoleIDs").val());
+
+        });
+
+        //2nd click event for header checkbox for select /deselect all
+        $("#cbSelectAll").on("click", function () {
+            // alert("SelectAll");
+            debugger;
+            var ischecked = this.checked;
+            $('#checkableGrid').find("input:checkbox").each(function () {
+                this.checked = ischecked;
+                if (ischecked) {
+                    str = (this.value.toString());
+                    if ($("#RoleIDs").val() == "") {
+                        $("#RoleIDs").val(str + ",");
+                    }
+                    else {
+                        str = $("#RoleIDs").val() + str + ",";
+                        $("#RoleIDs").val(str);
+                    }
+                }
+                else {
+                    $("#RoleIDs").val("");
+                    str = (this.value.toString());
+                    if ($("#HiddenDeleteIds").val() == "") {
+                        $("#HiddenDeleteIds").val(str + ",");
+                    }
+                    else {
+                        str = $("#HiddenDeleteIds").val() + str + ",";
+                        $("#HiddenDeleteIds").val(str);
+                    }
+
+                }
+                //$("#HiddenDeleteIds").val()
+
+
+            });
+            // alert($("#HiddenRoleIDs").val());
+
+        });
+
+
+        //3rd click event for checkbox of each row
+        $("input[name='ids']").click(function () {
+
+            var totalRows = $("#checkableGrid td :checkbox").length;
+            var checked = $("#checkableGrid td :checkbox:checked").length;
+            //   alert(totalRows);
+            //  alert(checked);
+            if (checked == totalRows) {
+                $("#checkableGrid").find("input:checkbox").each(function () {
+                    this.checked = true;
+
+                });
+
+            }
+            else {
+                $("#cbSelectAll").removeAttr("checked");
+            }
+        });
+
+    });
+
+    function Selectcheckbox(Ctr) {
+
+        // alert("check");
+        if ($(Ctr).is(":checked")) {
+            //  alert("check");
+            str = (Ctr.value.toString());
+            if ($("#RoleIDs").val() == "") {
+                $("#RoleIDs").val(str + ",");
+            }
+            else {
+                str = $("#RoleIDs").val() + str + ",";
+                $("#RoleIDs").val(str);
+            }
+        }
+        else {
+            str = (Ctr.value.toString());
+            $("#RoleIDs").val($("#RoleIDs").val().replace(str + ",", ""));
+            if ($("#HiddenDeleteIds").val() == "") {
+                $("#HiddenDeleteIds").val(str + ",");
+            }
+            else {
+                str = $("#HiddenDeleteIds").val() + str + ",";
+                $("#HiddenDeleteIds").val(str);
+
+            }
+            //alert($("#HiddenDeleteIds").val());
+            //alert($("#RoleIDs").val());
+        }
+
+        //alert($("#HiddenRoleIDs").val());
+    }
+
+</script>

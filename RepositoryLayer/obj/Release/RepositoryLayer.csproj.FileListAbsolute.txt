@@ -1,0 +1,59 @@
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\bin\Release\RepositoryLayer.dll.config
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\bin\Release\RepositoryLayer.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\bin\Release\RepositoryLayer.pdb
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\bin\Release\CoreEntities.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\bin\Release\EntityFramework.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\bin\Release\EntityFramework.SqlServer.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\bin\Release\Ninject.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\bin\Release\System.Web.Mvc.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\bin\Release\CoreEntities.pdb
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\bin\Release\EntityFramework.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\bin\Release\EntityFramework.SqlServer.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\bin\Release\Ninject.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\bin\Release\System.Web.Mvc.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\obj\Release\RepositoryLayer.csprojResolveAssemblyReference.cache
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\obj\Release\RepositoryLayer.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\obj\Release\RepositoryLayer.pdb
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\bin\Release\RepositoryLayer.dll.config
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\bin\Release\RepositoryLayer.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\bin\Release\RepositoryLayer.pdb
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\bin\Release\CoreEntities.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\bin\Release\EntityFramework.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\bin\Release\EntityFramework.SqlServer.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\bin\Release\Ninject.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\bin\Release\System.Web.Mvc.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\bin\Release\CoreEntities.pdb
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\bin\Release\EntityFramework.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\bin\Release\EntityFramework.SqlServer.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\bin\Release\Ninject.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\bin\Release\System.Web.Mvc.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\obj\Release\RepositoryLayer.csprojResolveAssemblyReference.cache
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\obj\Release\RepositoryLayer.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\obj\Release\RepositoryLayer.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\RepositoryLayer.dll.config
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\RepositoryLayer.dll
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\RepositoryLayer.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\CoreEntities.dll
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\EntityFramework.dll
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\EntityFramework.SqlServer.dll
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\Ninject.dll
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\System.Web.Mvc.dll
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\CoreEntities.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\EntityFramework.xml
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\EntityFramework.SqlServer.xml
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\Ninject.xml
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\System.Web.Mvc.xml
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\obj\Release\RepositoryLayer.csprojResolveAssemblyReference.cache
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\obj\Release\RepositoryLayer.dll
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\obj\Release\RepositoryLayer.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\Microsoft.Web.Infrastructure.dll
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\System.Web.Helpers.dll
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\System.Web.Razor.dll
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\System.Web.WebPages.Deployment.dll
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\System.Web.WebPages.dll
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\System.Web.WebPages.Razor.dll
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\System.Web.Helpers.xml
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\System.Web.Razor.xml
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\System.Web.WebPages.xml
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\System.Web.WebPages.Deployment.xml
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\System.Web.WebPages.Razor.xml

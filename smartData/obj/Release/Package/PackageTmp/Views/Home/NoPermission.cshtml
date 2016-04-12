@@ -1,0 +1,46 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Scripts/BootStrapGrid/src/bootstrap-table.css" rel="stylesheet" />
+    <link href="~/Scripts/BootStrapDailog/bootstrap-dialog.min.css" rel="stylesheet" />
+
+    <script src="~/Scripts/JqGrid/jquery-1.11.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/BootStrapGrid/src/bootstrap-table.js"></script>
+    <script src="~/Scripts/BootStrapDailog/bootstrap-dialog.min.js"></script>
+    <script src="~/Scripts/BootStrapGrid/src/extensions/filter/bootstrap-table-filter.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            BootstrapDialog.show({
+                message: 'You are not authorized to view this page.',
+                buttons: [{
+                    label: 'Ok',
+                    cssClass: 'btn-primary',
+                    action: function (dialogItself) {
+                        var url = $("#RedirectTo").val();
+                        location.href = url;
+                    }
+                }]
+            });
+
+
+
+        });
+    </script>
+</head>
+<body>
+    <div>
+        @Html.Hidden("RedirectTo", Url.Action("index", "Home", new { area = "" }));
+    </div>
+</body>
+</html>

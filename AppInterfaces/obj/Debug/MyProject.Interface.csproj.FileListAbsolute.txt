@@ -1,0 +1,12 @@
+I:\Desktop\MyProject\MyProject.Interface\bin\Debug\MyProject.Interface.dll.config
+I:\Desktop\MyProject\MyProject.Interface\bin\Debug\MyProject.Interface.dll
+I:\Desktop\MyProject\MyProject.Interface\bin\Debug\MyProject.Interface.pdb
+I:\Desktop\MyProject\MyProject.Interface\bin\Debug\EntityFramework.dll
+I:\Desktop\MyProject\MyProject.Interface\bin\Debug\EntityFramework.SqlServer.dll
+I:\Desktop\MyProject\MyProject.Interface\bin\Debug\MyProject.Model.dll
+I:\Desktop\MyProject\MyProject.Interface\bin\Debug\MyProject.Model.pdb
+I:\Desktop\MyProject\MyProject.Interface\bin\Debug\EntityFramework.xml
+I:\Desktop\MyProject\MyProject.Interface\bin\Debug\EntityFramework.SqlServer.xml
+I:\Desktop\MyProject\MyProject.Interface\obj\Debug\MyProject.Interface.csprojResolveAssemblyReference.cache
+I:\Desktop\MyProject\MyProject.Interface\obj\Debug\MyProject.Interface.dll
+I:\Desktop\MyProject\MyProject.Interface\obj\Debug\MyProject.Interface.pdb

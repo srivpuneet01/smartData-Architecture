@@ -1,0 +1,48 @@
+﻿
+
+<ng-form>
+    <div class="alert alert-error alert-dismissible fade in" role="alert" ng-show="ErrorMessage">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <strong>{{ErrorMessage}}!</strong>
+    </div>    
+    <div class="form-group">
+        <div class="row">
+            <div class="col-sm-2">
+                <span class="label-dark">Email</span>
+            </div>
+            <div class="col-md-3">
+                <input ng-model="user.Email" class="form-control input-sm" />
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="row">
+            <div class="col-sm-2">
+                <span class="label-dark">Password</span>
+            </div>
+            <div class="col-md-3">
+                <input ng-model="user.Password" class="form-control input-sm" />
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="row">
+            <div class="col-sm-2">
+                <span class="label-dark">Confirm Password</span>
+            </div>
+            <div class="col-md-3">
+                <input ng-model="user.ConfirmPassword" class="form-control input-sm" />
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-default" value="Register" ng-click="RegisterUser()" />
+            <input id="btnCancel" type="button" style="margin-left:10px" value="Cancel" class="btn btn-default" />
+        </div>
+    </div>
+
+</ng-form>
+

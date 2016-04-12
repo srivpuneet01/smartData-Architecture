@@ -1,0 +1,32 @@
+﻿<#@ template language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ parameter name="HostDomain" type="System.String" #>
+<#@ parameter name="FullName" type="System.String" #>
+<#@ parameter name="Email" type="System.String" #>
+
+<html>
+<body>
+	-ms-border-radius:5px; background:#fff; padding:30px; margin:100px auto">
+    <section style="background:#fff; padding:10px 0px; border-bottom:#086ea1"><img src="<#=HostDomain #>app/img/logo.png" alt="logo" title="logo" width="200" />
+    </section>
+    <h2 style="font-size:15px; font-family:Arial, Helvetica, sans-serif !important; color:#086ea1;">
+    	Dear <#=FullName #>,
+    </h2>
+    <h1 style="font-size:16px; font-family:Arial, Helvetica, sans-serif !important; color:#086ea1;"> A very warm welcome to Smartdata.  </h1>
+    <p style="color:#3d3d3d; font-size:14px; font-family:Arial, Helvetica, sans-serif; ">Your login credentials are below, so be sure to save this e-mail somewhere safe. </p>
+    <p style="color:#3d3d3d; font-size:14px; padding:0px 0px; font-family:Arial, Helvetica, sans-serif; margin:0px;"><b style="color:#5c5c5c; font-style:italic;">UserName/Email:</b> <#=Email #></p>
+    <p style="color:#3d3d3d; font-size:14px; padding:0px 0px 10px 0; font-family:Arial, Helvetica, sans-serif;  margin:0px;"><b style="color:#5c5c5c; font-style:italic;">Password:</b> <em>Only you know that! (Hint: It’s the password you created...) </em> </p>
+<p style="color:#3d3d3d; font-size:14px; font-family:Arial, Helvetica, sans-serif; ">Forgot your password? No problem. Click <a href="<#=HostDomain #>app/index.html#/forgotpassword">here</a> to reset it.  </p>
+    <p style="color:#3d3d3d; font-size:14px; padding:10px 0px; font-family:Arial, Helvetica, sans-serif; ">Need help getting started?</p>
+<h1 style="font-size:16px; font-family:Arial, Helvetica, sans-serif !important; color:#086ea1;"> <a href="http://support.Smartdata.com/hc/en-us">Knowledge Base</a> </h1>
+<p style="color:#3d3d3d; font-size:14px; padding:10px 0px; font-family:Arial, Helvetica, sans-serif; "> Got a question? The Smartdata Knowledge Base has an answer. Our Knowledge Base is your one-stop shop for helpful articles and how-to guides, as well as technical product documentation. </p> 
+<h1 style="font-size:16px; font-family:Arial, Helvetica, sans-serif !important; color:#086ea1;"> <a href="http://support.Smartdata.com/hc/en-us">Video Tutorials</a> </h1>
+<p style="color:#3d3d3d; font-size:14px; padding:10px 0px; font-family:Arial, Helvetica, sans-serif; "> Watch our easy-to-follow video tutorials for tips on how to create and manage your Smartdata account. </p> 
+    <h3 style="color:#30aee3; font-family:Arial, Helvetica, sans-serif; font-size:15px; margin:12px 0 0 0;">Regards</h3>
+    <h2 style="color:#5c5c5c; font-size:15px; font-family:Arial, Helvetica, sans-serif !important; margin:5px 0px 20px 0;">Team Smartdata</h2>
+</section>
+</body>
+</html>

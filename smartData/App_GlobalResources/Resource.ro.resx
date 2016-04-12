@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutTitle" xml:space="preserve">
+    <value>Despre</value>
+  </data>
+  <data name="AddressCountry" xml:space="preserve">
+    <value>Țara</value>
+  </data>
+  <data name="AddressFax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="AddressFirstName" xml:space="preserve">
+    <value>Prenume</value>
+  </data>
+  <data name="AddressLastName" xml:space="preserve">
+    <value>Nume</value>
+  </data>
+  <data name="AddressPhone" xml:space="preserve">
+    <value>Telefon</value>
+  </data>
+  <data name="AddressStreet" xml:space="preserve">
+    <value>Strada</value>
+  </data>
+  <data name="AddressTown" xml:space="preserve">
+    <value>Localitatea</value>
+  </data>
+  <data name="AddressZipCode" xml:space="preserve">
+    <value>Cod poștal</value>
+  </data>
+  <data name="AuditLog" xml:space="preserve">
+    <value>Jurnal de audit</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Renunță</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Schimbaţi parola</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="HeaderPartialLogoff" xml:space="preserve">
+    <value>Ieșire</value>
+  </data>
+  <data name="HeaderPartialLogon" xml:space="preserve">
+    <value>Autentificare</value>
+  </data>
+  <data name="HeaderPartialWelcome" xml:space="preserve">
+    <value>Bun venit</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Acasă</value>
+  </data>
+  <data name="IndexTitle" xml:space="preserve">
+    <value>Bine ați venit!</value>
+  </data>
+  <data name="LogOnErrorMessage" xml:space="preserve">
+    <value>Numele de utlizator sau parola incorecta</value>
+  </data>
+  <data name="LogOnLegend" xml:space="preserve">
+    <value>Informațiile Contului</value>
+  </data>
+  <data name="LogOnLoginButton" xml:space="preserve">
+    <value>Autentificare</value>
+  </data>
+  <data name="LogOnMessage" xml:space="preserve">
+    <value>Conecta</value>
+  </data>
+  <data name="LogOnMessage2" xml:space="preserve">
+    <value>dacă nu aveți deja unul.</value>
+  </data>
+  <data name="LogOnModelPassword" xml:space="preserve">
+    <value>Parola</value>
+  </data>
+  <data name="LogOnModelUsername" xml:space="preserve">
+    <value>Nume utilizator</value>
+  </data>
+  <data name="LogOnRegisterLink" xml:space="preserve">
+    <value>creați-vă un cont</value>
+  </data>
+  <data name="LogOnTitle" xml:space="preserve">
+    <value>Autentificare</value>
+  </data>
+  <data name="LogOnValidationSummary" xml:space="preserve">
+    <value>Erori la autentificare. Corectați vă rog erorile și reâncercați!</value>
+  </data>
+  <data name="MainNavigation" xml:space="preserve">
+    <value>navigarea principală</value>
+  </data>
+  <data name="MasterScreen" xml:space="preserve">
+    <value>creați-ipală</value>
+  </data>
+  <data name="MenuAbout" xml:space="preserve">
+    <value>Despre</value>
+  </data>
+  <data name="MenuHome" xml:space="preserve">
+    <value>Acasă</value>
+  </data>
+  <data name="Module" xml:space="preserve">
+    <value>Modul</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>parolă</value>
+  </data>
+  <data name="Permission" xml:space="preserve">
+    <value>Erlaubnis</value>
+  </data>
+  <data name="RegisterBack" xml:space="preserve">
+    <value>Înapoi</value>
+  </data>
+  <data name="RegisterInvalidUsername" xml:space="preserve">
+    <value>Nume utilizator invalid! Există deja un utilizator cu acest nume!</value>
+  </data>
+  <data name="RegisterRegister" xml:space="preserve">
+    <value>Crează cont</value>
+  </data>
+  <data name="RegisterThanks" xml:space="preserve">
+    <value>Mulțumesc pentru crearea contului!</value>
+  </data>
+  <data name="RegisterTitle" xml:space="preserve">
+    <value>Creare cont</value>
+  </data>
+  <data name="RememberMe" xml:space="preserve">
+    <value>amintește-ți de mine</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>rolurile</value>
+  </data>
+  <data name="ScreenPermissions" xml:space="preserve">
+    <value>Permisiuni ecran</value>
+  </data>
+  <data name="Screens" xml:space="preserve">
+    <value>ecrane</value>
+  </data>
+  <data name="UserAndAddressComfirmEmail" xml:space="preserve">
+    <value>Comfirmă email</value>
+  </data>
+  <data name="UserAndAddressComfirmPassword" xml:space="preserve">
+    <value>Comfirmă parola</value>
+  </data>
+  <data name="UserAndAddressEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="UserAndAddressPassword" xml:space="preserve">
+    <value>Parola</value>
+  </data>
+  <data name="UserAndAddressUsername" xml:space="preserve">
+    <value>Nume utilizator</value>
+  </data>
+  <data name="UserGraph" xml:space="preserve">
+    <value>Graph</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>utilizatorii</value>
+  </data>
+  <data name="ValidationRequired" xml:space="preserve">
+    <value>Obligatoriu</value>
+  </data>
+</root>

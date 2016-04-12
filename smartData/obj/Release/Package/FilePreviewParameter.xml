@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="HealthCare_Framework" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\DayUsers\\lalitka\\Official\\HealthFramework\\smartData\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\DayUsers\\lalitka\\Official\\HealthFramework\\smartData\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="Add write permission to App_Data Folder" description="Add write permission to App_Data folder" value="HealthCare_Framework/App_Data" tags="Hidden">
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\DayUsers\\lalitka\\Official\\HealthFramework\\smartData\\obj\\Release\\Package\\PackageTmp\\App_Data$" />
+  </parameter>
+  <parameter name="AzureDBContext-Web.config Connection String" description="" value="Data Source=Development;Initial Catalog=MSFramework;Integrated Security=False;User ID=Framework;Password=Framework" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\DayUsers\\lalitka\\Official\\HealthFramework\\smartData\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AzureDBContext']/@connectionString" />
+  </parameter>
+  <parameter name="smartData.Models.ApplicationDbContext-Web.config Connection String" description="" value="Data Source=108.168.203.227,7007;Initial Catalog=MSFramework;Persist Security Info=True;User ID=Framework;Password=Framework" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\DayUsers\\lalitka\\Official\\HealthFramework\\smartData\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='smartData.Models.ApplicationDbContext']/@connectionString" />
+  </parameter>
+  <parameter name="smartData.Models.smartDataContext-Web.config Connection String" description="" value="Data Source=Development;Initial Catalog=MSFramework;Integrated Security=False;User ID=Framework;Password=Framework" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\DayUsers\\lalitka\\Official\\HealthFramework\\smartData\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='smartData.Models.smartDataContext']/@connectionString" />
+  </parameter>
+</parameters>

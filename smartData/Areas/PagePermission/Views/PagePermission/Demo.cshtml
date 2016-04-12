@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Demo";
+}
+
+@section CSSLinks
+{
+    @System.Web.Optimization.Styles.Render("~/Content/common")
+}
+
+@section JSRefernces
+{
+    @System.Web.Optimization.Scripts.Render("~/bundles/bootstrapgrid")
+}
+<h2>Demo</h2>
+
+<input id="ButtonAdd" type="button" class="hideButton isAllow" value="Add" />
+<input id="ButtonEdit" type="button" class="hideButton isAllow" value="Edit" />
+<input id="ButtonDelete" type="button" class="hideButton isAllow" value="Delete" />
+<input id="ButtonPrint" type="button" class="hideButton isAllow" value="Print" />
+@System.Web.Optimization.Scripts.Render("~/scripts/js/demo.js")

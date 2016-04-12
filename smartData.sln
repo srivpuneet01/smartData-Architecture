@@ -1,0 +1,96 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "smartData", "smartData\smartData.csproj", "{195319FB-7ACF-401B-A85E-0CA53EB435A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreEntities", "CoreEntities\CoreEntities.csproj", "{08BE18D0-0B1A-4606-A4A6-6F8639959F48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryLayer", "RepositoryLayer\RepositoryLayer.csproj", "{3FA0B798-55AE-469F-A8F8-B1BB262B506A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLayer", "ServiceLayer\ServiceLayer.csproj", "{9635AC24-5C92-4D8E-B8BA-EC1D46C285DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A187F63F-EFDC-4860-AC02-1F456E1AD2C4}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{27D76722-1ABA-43C0-9764-5032517A04F3}"
+	ProjectSection(SolutionItems) = preProject
+		Performance1.psess = Performance1.psess
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{BA4EDC2F-A48C-426B-8B01-01CBEFD86509}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppInterfaces", "AppInterfaces\AppInterfaces.csproj", "{B98B4615-329B-40EC-8192-B8CFCF1CBE72}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "smartDataAngular", "smartDataAngular\", "{9C7B6BC4-65DE-4EF0-AA6F-5636E216D273}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_62097"
+		Debug.AspNetCompiler.PhysicalPath = "smartDataAngular\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62097\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_62097"
+		Release.AspNetCompiler.PhysicalPath = "smartDataAngular\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62097\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "62097"
+		SlnRelativePath = "smartDataAngular\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTOLayer", "DTOLayer\DTOLayer.csproj", "{288F9B59-D2C7-4FC8-A154-9F765A967677}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{195319FB-7ACF-401B-A85E-0CA53EB435A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{195319FB-7ACF-401B-A85E-0CA53EB435A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{195319FB-7ACF-401B-A85E-0CA53EB435A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{195319FB-7ACF-401B-A85E-0CA53EB435A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08BE18D0-0B1A-4606-A4A6-6F8639959F48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08BE18D0-0B1A-4606-A4A6-6F8639959F48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08BE18D0-0B1A-4606-A4A6-6F8639959F48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08BE18D0-0B1A-4606-A4A6-6F8639959F48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FA0B798-55AE-469F-A8F8-B1BB262B506A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FA0B798-55AE-469F-A8F8-B1BB262B506A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FA0B798-55AE-469F-A8F8-B1BB262B506A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FA0B798-55AE-469F-A8F8-B1BB262B506A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9635AC24-5C92-4D8E-B8BA-EC1D46C285DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9635AC24-5C92-4D8E-B8BA-EC1D46C285DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9635AC24-5C92-4D8E-B8BA-EC1D46C285DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9635AC24-5C92-4D8E-B8BA-EC1D46C285DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA4EDC2F-A48C-426B-8B01-01CBEFD86509}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA4EDC2F-A48C-426B-8B01-01CBEFD86509}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA4EDC2F-A48C-426B-8B01-01CBEFD86509}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA4EDC2F-A48C-426B-8B01-01CBEFD86509}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B98B4615-329B-40EC-8192-B8CFCF1CBE72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B98B4615-329B-40EC-8192-B8CFCF1CBE72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B98B4615-329B-40EC-8192-B8CFCF1CBE72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B98B4615-329B-40EC-8192-B8CFCF1CBE72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C7B6BC4-65DE-4EF0-AA6F-5636E216D273}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C7B6BC4-65DE-4EF0-AA6F-5636E216D273}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C7B6BC4-65DE-4EF0-AA6F-5636E216D273}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C7B6BC4-65DE-4EF0-AA6F-5636E216D273}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{288F9B59-D2C7-4FC8-A154-9F765A967677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{288F9B59-D2C7-4FC8-A154-9F765A967677}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{288F9B59-D2C7-4FC8-A154-9F765A967677}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{288F9B59-D2C7-4FC8-A154-9F765A967677}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

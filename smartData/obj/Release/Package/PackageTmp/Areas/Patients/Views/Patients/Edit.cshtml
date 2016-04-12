@@ -1,0 +1,437 @@
+﻿@model Core.Domain.Patient
+
+@{
+    
+    Layout = null;
+}
+
+    @functions{
+        public string TokenHeaderValue()
+        {
+            string cookieToken, formToken;
+            AntiForgery.GetTokens(null, out cookieToken, out formToken);
+            return cookieToken + ":" + formToken;
+        }
+
+        public string PatientListingURL()
+        {
+            return @Url.Action("Index", "Patients");
+        }
+    }
+    <style>
+        .customDropDown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+            display: block;
+            float: left;
+            min-width: 160px;
+            padding: 5px;
+            margin: 2px 15px 0px 15px;
+            font-size: 14px;
+            list-style: none;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+            background-clip: padding-box;
+        }
+    </style>
+ @System.Web.Optimization.Styles.Render("~/Content/css")
+    @System.Web.Optimization.Scripts.Render("~/bundles/jquery")
+      @System.Web.Optimization.Scripts.Render("~/bundles/jqueryval")
+@System.Web.Optimization.Scripts.Render("~/bundles/bootstrap")
+    <div class="form-horizontal">
+        @Html.ValidationSummary()
+        @Html.HiddenFor(model=>model.PatientId)
+        <div class="row">
+           
+            <div class="col-sm-4">
+                @Html.LabelFor(model => model.Program, new { @class = "pull-left" })
+            </div>
+            <div class="col-sm-4">
+                @Html.LabelFor(model => model.ProgramStartDate, new { @class = "pull-left" })
+            </div>
+            <div class="col-sm-4">
+                @Html.LabelFor(model => model.ServiceRequested, new { @class = "pull-left" })
+            </div>
+        </div>
+        <div class="row">
+           
+            <div class="col-sm-4">
+                @Html.DropDownListFor(model => model.Program, new SelectList(Model.ProgramList, "Value", "Text"), "Select Program", new { @class = "col-sm-11 customDropDown" })
+            </div>
+            <div class="col-sm-4">
+                @Html.TextBoxFor(model => model.ProgramStartDate, new { @class = "form-control", @id = "dp1", @placeholder = "Program Start Date", @Value = Model.ProgramStartDate== null ? " " : Model.ProgramStartDate.Value.ToString("MM/dd/yyyy") })
+            </div>
+            <div class="col-sm-4">
+                @Html.DropDownListFor(model => model.ServiceRequested, Model.ServiceRequestList, "Select Service Request", new { @class = "col-sm-11 customDropDown" })
+            </div>
+        </div>
+        <div class="row">
+           
+            <div class="col-sm-4">
+                @Html.ValidationMessageFor(model => model.Program)
+            </div>
+            <div class="col-sm-4">
+                @Html.ValidationMessageFor(model => model.ProgramStartDate)
+            </div>
+            <div class="col-sm-4">
+                @Html.ValidationMessageFor(model => model.ServiceRequested)
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col-sm-4">
+                @Html.LabelFor(model => model.FirstName, new { @class = "pull-left" })
+            </div>
+            <div class="col-sm-4">
+                @Html.LabelFor(model => model.MiddleName, new { @class = "pull-left" })
+            </div>
+            <div class="col-sm-4">
+                @Html.LabelFor(model => model.LastName, new { @class = "pull-left" })
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col-sm-4">
+                @Html.TextBoxFor(model => model.FirstName, new { @class = "form-control", @placeholder = "First Name" })
+            </div>
+            <div class="col-sm-4">
+                @Html.TextBoxFor(model => model.MiddleName, new { @class = "form-control", @placeholder = "Middle Name" })
+            </div>
+            <div class="col-sm-4">
+                @Html.TextBoxFor(model => model.LastName, new { @class = "form-control", @placeholder = "Last Name" })
+            </div>
+        </div>
+        <div class="row">
+          
+            <div class="col-sm-4">
+                @Html.ValidationMessageFor(model => model.FirstName)
+            </div>
+            <div class="col-sm-4">
+                @Html.ValidationMessageFor(model => model.MiddleName)
+            </div>
+            <div class="col-sm-4">
+                @Html.ValidationMessageFor(model => model.LastName)
+            </div>
+        </div>
+        <div class="row">
+          
+            <div class="col-sm-4">
+                @Html.LabelFor(model => model.Gender, new { @class = "pull-left" })
+            </div>
+            <div class="col-sm-4">
+                @Html.LabelFor(model => model.DateOfBirth, new { @class = "pull-left" })
+            </div>
+            <div class="col-sm-4">
+                @Html.LabelFor(model => model.SocialSecurityNo, new { @class = "pull-left" })
+            </div>
+        </div>
+        <div class="row">
+          
+            <div class="col-sm-4">
+                @Html.DropDownListFor(model => model.Gender, Model.GenderList, "Select Gender", new { @class = "col-sm-11 customDropDown" })
+            </div>
+            <div class="col-sm-4">
+                @Html.TextBoxFor(model => model.DateOfBirth, new { @class = "form-control", @id = "dp2", @placeholder = "Date Of Birth" })
+            </div>
+            <div class="col-sm-4">
+                @Html.TextBoxFor(model => model.SocialSecurityNo, new { @class = "form-control", @placeholder = "Social Security No." })
+            </div>
+        </div>
+        <div class="row">
+           
+            <div class="col-sm-4">
+                @Html.ValidationMessageFor(model => model.Gender)
+            </div>
+            <div class="col-sm-4">
+                @Html.ValidationMessageFor(model => model.DateOfBirth)
+            </div>
+            <div class="col-sm-4">
+                @Html.ValidationMessageFor(model => model.SocialSecurityNo)
+            </div>
+        </div>
+        <div class="row">
+           
+            <div class="col-sm-4">
+                @Html.LabelFor(model => model.FundSource, new { @class = "pull-left" })
+            </div>
+            <div class="col-sm-4">
+                @Html.LabelFor(model => model.Weight, new { @class = "pull-left" })
+            </div>
+            <div class="col-sm-4">
+                @Html.LabelFor(model => model.Height, new { @class = "pull-left" })
+            </div>
+        </div>
+        <div class="row">
+          
+            <div class="col-sm-4">
+                @Html.DropDownListFor(model => model.FundSource, Model.InsuranceList, "Select Fund Source", new { @class = "col-sm-11 customDropDown" })
+            </div>
+            <div class="col-sm-4">
+                @Html.TextBoxFor(model => model.Weight, new { @class = "form-control", @placeholder = "Weight" })
+            </div>
+            <div class="col-sm-4">
+                @Html.TextBoxFor(model => model.Height, new { @class = "form-control", @placeholder = "Height" })
+            </div>
+        </div>
+        <div class="row">
+           
+            <div class="col-sm-4">
+                @Html.ValidationMessageFor(model => model.FundSource)
+            </div>
+            <div class="col-sm-4">
+                @Html.ValidationMessageFor(model => model.Weight)
+            </div>
+            <div class="col-sm-4">
+                @Html.ValidationMessageFor(model => model.Height)
+            </div>
+        </div>
+        <div class="row">
+          
+            <div class="col-sm-4">
+                @Html.LabelFor(model => model.FundSourcePolicy, new { @class = "pull-left" })
+            </div>
+            <div class="col-sm-4">
+                @Html.LabelFor(model => model.Race, new { @class = "pull-left" })
+            </div>
+            <div class="col-sm-4">
+
+            </div>
+        </div>
+        <div class="row">
+          
+            <div class="col-sm-4">
+                @Html.TextBoxFor(model => model.FundSourcePolicy, new { @class = "form-control", @placeholder = "Fund Source Policy" })
+            </div>
+            <div class="col-sm-4">
+                @Html.DropDownListFor(model => model.Race, Model.RaceList, "Select Race", new { @class = "col-sm-11 customDropDown" })
+            </div>
+            <div class="col-sm-4">
+
+            </div>
+        </div>
+        <div class="row">
+          
+            <div class="col-sm-4">
+                @Html.ValidationMessageFor(model => model.FundSourcePolicy)
+            </div>
+            <div class="col-sm-4">
+                @Html.ValidationMessageFor(model => model.Race)
+            </div>
+            <div class="col-sm-4">
+
+            </div>
+        </div>
+        <div class="row">
+           
+            <div class="col-sm-8">
+                @Html.LabelFor(model => model.HomeAddress, new { @class = "pull-left" })
+            </div>
+            <div class="col-sm-4">
+                @Html.LabelFor(model => model.Phone, new { @class = "pull-left" })
+            </div>
+        </div>
+        <div class="row">
+           
+            <div class="col-sm-8">
+                @Html.TextBoxFor(model => model.HomeAddress, new { @class = "form-control", @placeholder = "Home Address" })
+            </div>
+            <div class="col-sm-4">
+                @Html.TextBoxFor(model => model.Phone, new { @class = "form-control", @placeholder = "Phone No." })
+            </div>
+        </div>
+        <div class="row">
+           
+            <div class="col-sm-8">
+                @Html.ValidationMessageFor(model => model.HomeAddress)
+            </div>
+            <div class="col-sm-4">
+                @Html.ValidationMessageFor(model => model.Phone)
+            </div>
+
+        </div>
+        <div class="row">
+           
+            <div class="col-sm-4">
+                @Html.LabelFor(model => model.City, new { @class = "pull-left" })
+            </div>
+            <div class="col-sm-4">
+                @Html.LabelFor(model => model.State, new { @class = "pull-left" })
+            </div>
+            <div class="col-sm-4">
+                @Html.LabelFor(model => model.ZipCode, new { @class = "pull-left" })
+            </div>
+        </div>
+        <div class="row">
+           
+            <div class="col-sm-4">
+                @Html.TextBoxFor(model => model.City, new { @class = "form-control", @placeholder = "City" })
+            </div>
+            <div class="col-sm-4">
+                @Html.TextBoxFor(model => model.State, new { @class = "form-control", @placeholder = "State" })
+            </div>
+            <div class="col-sm-4">
+                @Html.TextBoxFor(model => model.ZipCode, new { @class = "form-control", @placeholder = "Zip Code" })
+            </div>
+        </div>
+        <div class="row">
+          
+            <div class="col-sm-4">
+                @Html.ValidationMessageFor(model => model.City)
+            </div>
+            <div class="col-sm-4">
+                @Html.ValidationMessageFor(model => model.State)
+            </div>
+            <div class="col-sm-4">
+                @Html.ValidationMessageFor(model => model.ZipCode)
+            </div>
+        </div>
+        <div class="row">
+         
+            <div class="col-sm-4">
+                @Html.LabelFor(model => model.ReferralSource, new { @class = "pull-left" })
+            </div>
+            <div class="col-sm-4">
+                @Html.LabelFor(model => model.ReasonForReferral, new { @class = "pull-left" })
+            </div>
+            <div class="col-sm-4">
+                @Html.LabelFor(model => model.DateOfReferral, new { @class = "pull-left" })
+            </div>
+        </div>
+        <div class="row">
+           
+            <div class="col-sm-4">
+                @Html.DropDownListFor(model => model.ReferralSource, new SelectList(Model.ReferralSourceList, "Value", "Text"), "Select Referral Source", new { @class = "col-sm-11 customDropDown" })
+            </div>
+            <div class="col-sm-4">
+                @Html.TextBoxFor(model => model.ReasonForReferral, new { @class = "form-control", @placeholder = "Reason For Referral" })
+            </div>
+            <div class="col-sm-4">
+                @Html.TextBoxFor(model => model.DateOfReferral, new
+           {
+               @class = "form-control",
+               @id = "dp3",
+               @placeholder = "Date Of Referral",
+               @Value=Model.DateOfReferral==null?"":Model.DateOfReferral.Value.ToString("MM-dd-yyyy")
+           })
+            </div>
+        </div>
+        <div class="row">
+          
+            <div class="col-sm-4">
+                @Html.ValidationMessageFor(model => model.ReferralSource)
+            </div>
+            <div class="col-sm-4">
+                @Html.ValidationMessageFor(model => model.ReasonForReferral)
+            </div>
+            <div class="col-sm-4">
+                @Html.ValidationMessageFor(model => model.DateOfReferral)
+            </div>
+        </div>
+        <div class="row">
+          
+            <div class="col-sm-4">
+                @Html.LabelFor(model => model.Siblings, new { @class = "pull-left" })
+            </div>
+            <div class="col-sm-4">
+                @Html.LabelFor(model => model.PreferredLanguage, new { @class = "pull-left" })
+            </div>
+            <div class="col-sm-4">
+                @Html.LabelFor(model => model.Ethnicity, new { @class = "pull-left" })
+            </div>
+        </div>
+        <div class="row">
+           
+            <div class="col-sm-4">
+                @Html.TextBoxFor(model => model.Siblings, new { @class = "form-control", @placeholder = "Siblings" })
+            </div>
+            <div class="col-sm-4">
+                @Html.DropDownListFor(model => model.PreferredLanguage, Model.PreferredLanguageList, "Select Preferred Language", new { @class = "col-sm-11 customDropDown" })
+            </div>
+            <div class="col-sm-4">
+                @Html.DropDownListFor(model => model.Ethnicity, Model.EthnicityList, "Select Ethnicity", new { @class = "col-sm-11 customDropDown" })
+            </div>
+        </div>
+        <div class="row">
+           
+            <div class="col-sm-4">
+                @Html.ValidationMessageFor(model => model.Siblings)
+            </div>
+            <div class="col-sm-4">
+                @Html.ValidationMessageFor(model => model.PreferredLanguage)
+            </div>
+            <div class="col-sm-4">
+                @Html.ValidationMessageFor(model => model.Ethnicity)
+            </div>
+        </div>
+        <div class="row">
+          
+            <div class="col-sm-8">
+                @Html.LabelFor(model => model.FullName, new { @class = "pull-left" })
+            </div>
+            <div class="col-sm-4">
+                @Html.LabelFor(model => model.EmergencyPhone, new { @class = "pull-left" })
+            </div>
+        </div>
+        <div class="row">
+           
+            <div class="col-sm-8">
+                @Html.TextBoxFor(model => model.FullName, new { @class = "form-control", @placeholder = "Full Name" })
+            </div>
+            <div class="col-sm-4">
+                @Html.TextBoxFor(model => model.EmergencyPhone, new { @class = "form-control", @placeholder = "Emergency Phone No." })
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col-sm-8">
+                @Html.ValidationMessageFor(model => model.FullName)
+            </div>
+            <div class="col-sm-4">
+                @Html.ValidationMessageFor(model => model.EmergencyPhone)
+            </div>
+        @Html.TextBoxFor(model => model.ModifiedBy, new { @Value = ViewBag.logUser, @class = "Hideview" })
+            @*<input id="ModifiedBy" type="text" name="ModifiedBy" value="@ViewBag.logUser" style="display:none;" />@class = "Hideview" *@  
+        </div>
+    </div>
+    
+     <script>
+
+        $(document).ready(function () {
+            $('#dp1').datepicker({
+                format: 'mm-dd-yyyy',
+                 "setDate": new Date(),
+                   "autoclose": true
+            });
+            $('#dp2').datepicker({
+                format: 'mm-dd-yyyy',
+                 "setDate": new Date(),
+        "autoclose": true
+            });
+            $('#dp3').datepicker({
+                format: 'mm-dd-yyyy',
+                "setDate": new Date(),
+                "autoclose": true
+            });
+        });
+    </script>
+<style>
+    .Hideview
+    {
+        display:none;
+    }
+</style>
+
+
+
+
+
+
+
+
+

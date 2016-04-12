@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Areas/Scan/Scripts/jquery-1.8.2.min.js"></script>
+
+   <script>
+       // Focus first element
+       $.fn.focus_first = function () {
+           var elem = $('input:visible', this).get(0);
+           var select = $('select:visible', this).get(0);
+           if (select && elem) {
+               if (select.offsetTop < elem.offsetTop) {
+                   elem = select;
+               }
+           }
+           var textarea = $('textarea:visible', this).get(0);
+           if (textarea && elem) {
+               if (textarea.offsetTop < elem.offsetTop) {
+                   elem = textarea;
+               }
+           }
+
+           if (elem) {
+               elem.focus();
+           }
+           return this;
+       }
+       $(window).load(function () {
+         //  alert("hi");
+         //  $('form').focus_first();
+       });
+   </script>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <th>
+                    <input id="Text1" type="text" autofocus />
+                    ScreenName
+                </th>
+                <th>
+                    Add
+                </th>
+                <th>
+                    Edit
+                </th>
+                <th>
+                    Delete
+                </th>
+                <th>
+                    View
+                </th>
+                <th>
+                    Custom1
+                </th>
+                <th>
+                    Custom2
+                </th>
+                <th>
+                    Custom3
+                </th>
+                <th>
+                    Custom4
+                </th>
+                <th>
+                    Custom5
+                </th>
+                <th>
+                    Actions
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Abc
+                </td>
+                <td>
+                    <input id="CheckboxAdd" type="checkbox" />
+
+                </td>
+                <td>
+                    <input id="CheckboxEdit" type="checkbox" />
+                </td>
+                <td>
+                    <input id="CheckboxDelete" type="checkbox" />
+                </td>
+                <td>
+                    <input id="CheckboxView" type="checkbox" />
+                </td>
+                <td>
+                    <input id="CheckboxCustom1" type="checkbox" />
+                </td>
+                <td>
+                    <input id="CheckboxCustom2" type="checkbox" />
+                </td>
+                <td>
+                    <input id="CheckboxCustom3" type="checkbox" />
+                </td>
+                <td>
+                    <input id="CheckboxCustom4" type="checkbox" />
+                </td>
+                <td>
+                    <input id="CheckboxCustom5" type="checkbox" />
+                </td>
+                <td>
+                    <input id="ButtonAdd" type="button" value="Add" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    xyz
+                </td>
+                <td>
+                    <input id="CheckboxAdd" type="checkbox" />
+
+                </td>
+                <td>
+                    <input id="CheckboxEdit" type="checkbox" />
+                </td>
+                <td>
+                    <input id="CheckboxDelete" type="checkbox" />
+                </td>
+                <td>
+                    <input id="CheckboxView" type="checkbox" />
+                </td>
+                <td>
+                    <input id="CheckboxCustom1" type="checkbox" />
+                </td>
+                <td>
+                    <input id="CheckboxCustom2" type="checkbox" />
+                </td>
+                <td>
+                    <input id="CheckboxCustom3" type="checkbox" />
+                </td>
+                <td>
+                    <input id="CheckboxCustom4" type="checkbox" />
+                </td>
+                <td>
+                    <input id="CheckboxCustom5" type="checkbox" />
+                </td>
+                <td>
+                    <input id="ButtonAdd" type="button" value="Add" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    test
+                </td>
+                <td>
+                    <input id="CheckboxAdd" type="checkbox" />
+
+                </td>
+                <td>
+                    <input id="CheckboxEdit" type="checkbox" />
+                </td>
+                <td>
+                    <input id="CheckboxDelete" type="checkbox" />
+                </td>
+                <td>
+                    <input id="CheckboxView" type="checkbox" />
+                </td>
+                <td>
+                    <input id="CheckboxCustom1" type="checkbox" />
+                </td>
+                <td>
+                    <input id="CheckboxCustom2" type="checkbox" />
+                </td>
+                <td>
+                    <input id="CheckboxCustom3" type="checkbox" />
+                </td>
+                <td>
+                    <input id="CheckboxCustom4" type="checkbox" />
+                </td>
+                <td>
+                    <input id="CheckboxCustom5" type="checkbox" />
+                </td>
+                <td>
+                    <input id="ButtonAdd" type="button" value="Add" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Demo
+                </td>
+                <td>
+                    <input id="CheckboxAdd" type="checkbox" />
+
+                </td>
+                <td>
+                    <input id="CheckboxEdit" type="checkbox" />
+                </td>
+                <td>
+                    <input id="CheckboxDelete" type="checkbox" />
+                </td>
+                <td>
+                    <input id="CheckboxView" type="checkbox" />
+                </td>
+                <td>
+                    <input id="CheckboxCustom1" type="checkbox" />
+                </td>
+                <td>
+                    <input id="CheckboxCustom2" type="checkbox" />
+                </td>
+                <td>
+                    <input id="CheckboxCustom3" type="checkbox" />
+                </td>
+                <td>
+                    <input id="CheckboxCustom4" type="checkbox" />
+                </td>
+                <td>
+                    <input id="CheckboxCustom5" type="checkbox" />
+                </td>
+                <td>
+                    <input id="ButtonAdd" type="button" value="Add" />
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>

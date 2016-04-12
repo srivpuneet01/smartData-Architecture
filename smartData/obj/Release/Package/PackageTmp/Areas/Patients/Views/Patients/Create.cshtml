@@ -1,0 +1,537 @@
+﻿@model Core.Domain.Patient
+
+@using (Html.BeginForm("create", "patients", FormMethod.Post, new { id = "FormID" }))
+{
+    @Html.AntiForgeryToken()
+
+    @functions{
+        public string TokenHeaderValue()
+        {
+            string cookieToken, formToken;
+            AntiForgery.GetTokens(null, out cookieToken, out formToken);
+            return cookieToken + ":" + formToken;
+        }
+
+        public string PatientListingURL()
+        {
+            return @Url.Action("Index", "Patients");
+        }
+    }
+    <style>
+        .customDropDown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+            display: block;
+            float: left;
+            min-width: 160px;
+            padding: 5px;
+            margin: 2px 15px 0px 15px;
+            font-size: 14px;
+            list-style: none;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+            background-clip: padding-box;    
+        }
+    </style>
+    
+    <div class="form-horizontal">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <h2>Patient Registration</h2>
+            </div>
+            <div style="padding-top:15px;" class="col-sm-3 ">
+                <input type="button" value="Cancel" class="btn btn-success pull-right" />
+             <input type="submit" style="margin-right:10px;" value="Create" class="btn btn-success pull-right" />
+              
+            </div>
+        </div>
+       
+        <hr />
+     
+        @Html.ValidationSummary()
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-3">
+                @Html.LabelFor(model => model.Program, new {@class="control-label"})
+            </div>
+            <div class="col-sm-3">
+                @Html.LabelFor(model => model.ProgramStartDate, new { @class = "control-label" })
+            </div>
+            <div class="col-sm-3">
+                @Html.LabelFor(model => model.ServiceRequested, new { @class = "control-label" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-3">
+                @Html.DropDownListFor(model => model.Program,  new SelectList( Model.ProgramList,"Value","Text"), "Select Program", new { @class = "col-sm-11 customDropDown" })
+            </div>
+            <div class="col-sm-3">    
+                    @Html.TextBoxFor(model => model.ProgramStartDate, new { @class = "form-control",@id="dp1", @placeholder = "Program Start Date" })
+                </div>
+            <div class="col-sm-3">
+                @Html.DropDownListFor(model => model.ServiceRequested, Model.ServiceRequestList, "Select Service Request", new { @class = "col-sm-11 customDropDown" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-3">
+                @Html.ValidationMessageFor(model=>model.Program)
+            </div>
+            <div class="col-sm-3">
+                @Html.ValidationMessageFor(model => model.ProgramStartDate)
+            </div>
+            <div class="col-sm-3">
+                @Html.ValidationMessageFor(model => model.ServiceRequested)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-3">
+                @Html.LabelFor(model => model.FirstName, new { @class = "control-label" })
+            </div>
+            <div class="col-sm-3">
+                @Html.LabelFor(model => model.MiddleName, new { @class = "control-label" })
+            </div>
+            <div class="col-sm-3">
+                @Html.LabelFor(model => model.LastName, new { @class = "control-label" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-3">
+                @Html.TextBoxFor(model => model.FirstName, new { @class = "form-control",@placeholder="First Name" })
+            </div>
+            <div class="col-sm-3">
+                @Html.TextBoxFor(model => model.MiddleName, new { @class = "form-control", @placeholder = "Middle Name" })
+            </div>
+            <div class="col-sm-3">
+                @Html.TextBoxFor(model => model.LastName, new { @class = "form-control", @placeholder = "Last Name" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-3">
+                @Html.ValidationMessageFor(model => model.FirstName)
+            </div>
+            <div class="col-sm-3">
+                @Html.ValidationMessageFor(model => model.MiddleName)
+            </div>
+            <div class="col-sm-3">
+                @Html.ValidationMessageFor(model => model.LastName)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-3">
+                @Html.LabelFor(model => model.Gender, new { @class = "control-label" })
+            </div>
+            <div class="col-sm-3">
+                @Html.LabelFor(model => model.DateOfBirth, new { @class = "control-label" })
+            </div>
+            <div class="col-sm-3">
+                @Html.LabelFor(model => model.SocialSecurityNo, new { @class = "control-label" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-3">
+                @Html.DropDownListFor(model => model.Gender, Model.GenderList, "Select Gender", new { @class = "col-sm-11 customDropDown" })
+            </div>
+            <div class="col-sm-3">
+                @Html.TextBoxFor(model => model.DateOfBirth, new { @class = "form-control",@id="dp2", @placeholder = "Date Of Birth" })
+            </div>
+            <div class="col-sm-3">
+                @Html.TextBoxFor(model => model.SocialSecurityNo, new { @class = "form-control", @placeholder = "Social Security No." })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-3">
+                @Html.ValidationMessageFor(model => model.Gender)
+            </div>
+            <div class="col-sm-3">
+                @Html.ValidationMessageFor(model => model.DateOfBirth)
+            </div>
+            <div class="col-sm-3">
+                @Html.ValidationMessageFor(model => model.SocialSecurityNo)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-3">
+                @Html.LabelFor(model => model.FundSource, new { @class = "control-label" })
+            </div>
+            <div class="col-sm-3">
+                @Html.LabelFor(model => model.Weight, new { @class = "control-label" })
+            </div>
+            <div class="col-sm-3">
+                @Html.LabelFor(model => model.Height, new { @class = "control-label" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-3">
+                @Html.DropDownListFor(model => model.FundSource, Model.InsuranceList, "Select Fund Source", new { @class = "col-sm-11 customDropDown" })
+            </div>
+            <div class="col-sm-3">
+                @Html.TextBoxFor(model => model.Weight, new { @class = "form-control", @placeholder = "Weight" })
+            </div>
+            <div class="col-sm-3">
+                @Html.TextBoxFor(model => model.Height, new { @class = "form-control", @placeholder = "Height" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-3">
+                @Html.ValidationMessageFor(model => model.FundSource)
+            </div>
+            <div class="col-sm-3">
+                @Html.ValidationMessageFor(model => model.Weight)
+            </div>
+            <div class="col-sm-3">
+                @Html.ValidationMessageFor(model => model.Height)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-3">
+                @Html.LabelFor(model => model.FundSourcePolicy, new { @class = "control-label" })
+            </div>
+            <div class="col-sm-3">
+                @Html.LabelFor(model => model.Race, new { @class = "has-success control-label" })
+            </div>
+            <div class="col-sm-3">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-3">
+                @Html.TextBoxFor(model => model.FundSourcePolicy, new { @class = "form-control", @placeholder = "Fund Source Policy" })
+            </div>
+            <div class="col-sm-3">
+                @Html.DropDownListFor(model => model.Race, Model.RaceList, "Select Race", new { @class = "col-sm-11 customDropDown" })
+            </div>
+            <div class="col-sm-3">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-3">
+                @Html.ValidationMessageFor(model => model.FundSourcePolicy)
+            </div>
+            <div class="col-sm-3">
+                @Html.ValidationMessageFor(model => model.Race)
+            </div>
+            <div class="col-sm-3">
+  
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-6">
+                @Html.LabelFor(model => model.HomeAddress, new { @class = "has-success control-label" })
+            </div>
+            <div class="col-sm-3">
+                @Html.LabelFor(model => model.Phone, new { @class = "has-success control-label" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-6">
+                @Html.TextBoxFor(model => model.HomeAddress, new { @class = "form-control", @placeholder = "Home Address" })
+            </div>
+            <div class="col-sm-3">
+                @Html.TextBoxFor(model => model.Phone, new { @class = "form-control", @placeholder = "Phone No." })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-6">
+                @Html.ValidationMessageFor(model => model.HomeAddress)
+            </div>
+            <div class="col-sm-3">
+                @Html.ValidationMessageFor(model => model.Phone)
+            </div>
+           
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-3">
+                @Html.LabelFor(model => model.City, new { @class = "has-success control-label" })
+            </div>
+            <div class="col-sm-3">
+                @Html.LabelFor(model => model.State, new { @class = "has-success control-label" })
+            </div>
+            <div class="col-sm-3">
+                @Html.LabelFor(model => model.ZipCode, new { @class = "has-success control-label" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-3">
+                @Html.TextBoxFor(model => model.City, new { @class = "form-control", @placeholder = "City" })
+            </div>
+            <div class="col-sm-3">
+                @Html.TextBoxFor(model => model.State, new { @class = "form-control", @placeholder = "State" })
+            </div>
+            <div class="col-sm-3">
+                @Html.TextBoxFor(model => model.ZipCode, new { @class = "form-control", @placeholder = "Zip Code" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-3">
+                @Html.ValidationMessageFor(model => model.City)
+            </div>
+            <div class="col-sm-3">
+                @Html.ValidationMessageFor(model => model.State)
+            </div>
+            <div class="col-sm-3">
+                @Html.ValidationMessageFor(model => model.ZipCode)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-3">
+                @Html.LabelFor(model => model.ReferralSource, new { @class = "has-success control-label" })
+            </div>
+            <div class="col-sm-3">
+                @Html.LabelFor(model => model.ReasonForReferral, new { @class = "has-success control-label" })
+            </div>
+            <div class="col-sm-3">
+                @Html.LabelFor(model => model.DateOfReferral, new { @class = "has-success control-label" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-3">
+                @Html.DropDownListFor(model => model.ReferralSource, new SelectList( Model.ReferralSourceList,"Value","Text"), "Select Referral Source", new { @class = "col-sm-11 customDropDown" })
+            </div>
+            <div class="col-sm-3">
+                @Html.TextBoxFor(model => model.ReasonForReferral, new { @class = "form-control", @placeholder = "Reason For Referral" })
+            </div>
+            <div class="col-sm-3">
+                @Html.TextBoxFor(model => model.DateOfReferral, new { @class = "form-control",@id="dp3", @placeholder = "Date Of Referral" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-3">
+                @Html.ValidationMessageFor(model => model.ReferralSource)
+            </div>
+            <div class="col-sm-3">
+                @Html.ValidationMessageFor(model => model.ReasonForReferral)
+            </div>
+            <div class="col-sm-3">
+                @Html.ValidationMessageFor(model => model.DateOfReferral)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-3">
+                @Html.LabelFor(model => model.Siblings, new { @class = "has-success control-label" })
+            </div>
+            <div class="col-sm-3">
+                @Html.LabelFor(model => model.PreferredLanguage, new { @class = "has-success control-label" })
+            </div>
+            <div class="col-sm-3">
+                @Html.LabelFor(model => model.Ethnicity, new { @class = "has-success control-label" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-3">
+                @Html.TextBoxFor(model => model.Siblings, new { @class = "form-control", @placeholder = "Siblings" })
+            </div>
+            <div class="col-sm-3">
+                @Html.DropDownListFor(model => model.PreferredLanguage, Model.PreferredLanguageList, "Select Preferred Language", new { @class = "col-sm-11 customDropDown" })
+            </div>
+            <div class="col-sm-3">
+                @Html.DropDownListFor(model => model.Ethnicity, Model.EthnicityList, "Select Ethnicity", new { @class = "col-sm-11 customDropDown" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-3">
+                @Html.ValidationMessageFor(model => model.Siblings)
+            </div>
+            <div class="col-sm-3">
+                @Html.ValidationMessageFor(model => model.PreferredLanguage)
+            </div>
+            <div class="col-sm-3">
+                @Html.ValidationMessageFor(model => model.Ethnicity)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-6">
+                @Html.LabelFor(model => model.FullName, new { @class = "has-success control-label" })
+            </div>
+            <div class="col-sm-3">
+                @Html.LabelFor(model => model.EmergencyPhone, new { @class = "has-success control-label" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-6">
+                    @Html.TextBoxFor(model => model.FullName, new { @class = "form-control", @placeholder = "Full Name" })    
+            </div>
+            <div class="col-sm-3">
+                @Html.TextBoxFor(model => model.EmergencyPhone, new { @class = "form-control", @placeholder = "Emergency Phone No." })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-6">
+                @Html.ValidationMessageFor(model => model.FullName)
+            </div>
+            <div class="col-sm-3">
+                @Html.ValidationMessageFor(model => model.EmergencyPhone)
+            </div>
+        </div>
+    </div>
+}
+@section CSSLinks
+{
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<link href="~/Content/datepicker.css" rel="stylesheet" />
+}
+
+@section JSRefernces
+{
+    @System.Web.Optimization.Scripts.Render("~/bundles/jqueryval")
+<script src="~/Scripts/bootstrap.js"></script>
+<script src="~/Scripts/bootstrap-datepicker.js"></script>
+    <script>
+
+        var form;
+        
+            $(document).ready(function () {
+                $('#dp1').datepicker({
+                    format: 'mm-dd-yyyy'
+                });
+                $('#dp2').datepicker({
+                    format: 'mm-dd-yyyy'
+                });
+                $('#dp3').datepicker({
+                    format: 'mm-dd-yyyy'
+                });
+                form = $('#FormID');
+
+                $("#FormID").on("submit", function (event) {
+                    mycustomsubmit(event);
+                });
+            });
+      
+        function mycustomsubmit(e) {
+            e.preventDefault();
+            if (form.valid()) {
+                $.ajax({
+                    cache: false,
+                    async: true,
+                    type: "POST",
+                    url: "@Url.Action("Create", "Patients", "Patients")",
+                    data: form.serialize(),
+                    success: function (data) {
+                        $("#spanError").html("");
+                       window.location = '@PatientListingURL()';
+                    },
+                    error: function (request, error) {
+                        if (request.statusText == "CustomMessage") {
+                            $("#spanError").html(request.responseText)
+                        }
+                    },
+                    headers: {
+                        'RequestVerificationToken': '@TokenHeaderValue()'
+                    }
+                });
+            }
+        }
+
+    </script>
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

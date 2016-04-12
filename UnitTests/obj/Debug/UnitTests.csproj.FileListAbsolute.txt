@@ -1,0 +1,549 @@
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\UnitTests.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\UnitTests.pdb
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\CoreEntities.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\ServiceLayer.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\smartData.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\System.Web.Mvc.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\Ninject.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\RepositoryLayer.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\System.Web.Http.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\EntityFramework.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\Microsoft.WindowsAzure.ServiceRuntime.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\System.Web.Optimization.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\Ninject.Web.Common.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\Owin.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\Newtonsoft.Json.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\WebActivatorEx.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\System.Web.Http.WebHost.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Security.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\System.Net.Http.Formatting.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\WebMatrix.WebData.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\Elmah.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\System.Web.WebPages.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\System.Web.Razor.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\EntityFramework.SqlServer.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\WebMatrix.Data.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\System.Web.Helpers.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\CoreEntities.pdb
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\ServiceLayer.pdb
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\smartData.pdb
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\System.Web.Mvc.xml
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\Ninject.xml
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\RepositoryLayer.pdb
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\System.Web.Http.xml
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\EntityFramework.xml
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\System.Web.Optimization.xml
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\Ninject.Web.Common.xml
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\Newtonsoft.Json.xml
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.xml
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\System.Web.Http.WebHost.xml
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Security.xml
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\System.Net.Http.Formatting.xml
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\WebMatrix.WebData.xml
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\System.Web.WebPages.xml
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\System.Web.Razor.xml
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\EntityFramework.SqlServer.xml
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\WebMatrix.Data.xml
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\System.Web.Helpers.xml
+D:\Frameworks\New folder\HealthFramework\UnitTests\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Frameworks\New folder\HealthFramework\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+D:\Frameworks\New folder\HealthFramework\UnitTests\obj\Debug\UnitTests.dll
+D:\Frameworks\New folder\HealthFramework\UnitTests\obj\Debug\UnitTests.pdb
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\UnitTests.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\UnitTests.pdb
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\CoreEntities.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\ServiceLayer.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\smartData.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\System.Web.Mvc.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\Ninject.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\RepositoryLayer.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\WebActivatorEx.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\System.Web.Optimization.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\Owin.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\System.Web.Http.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\Newtonsoft.Json.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\Microsoft.WindowsAzure.ServiceRuntime.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\EntityFramework.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\System.Web.WebPages.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\Elmah.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\Ninject.Web.Common.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Security.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\System.Net.Http.Formatting.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\WebMatrix.WebData.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\System.Web.Http.WebHost.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\System.Web.Razor.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\EntityFramework.SqlServer.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\WebMatrix.Data.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\System.Web.Helpers.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\CoreEntities.pdb
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\ServiceLayer.pdb
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\smartData.pdb
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\System.Web.Mvc.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\Ninject.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\RepositoryLayer.pdb
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\System.Web.Optimization.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\System.Web.Http.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\Newtonsoft.Json.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\EntityFramework.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\System.Web.WebPages.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\Ninject.Web.Common.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Security.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\System.Net.Http.Formatting.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\WebMatrix.WebData.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\System.Web.Http.WebHost.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\System.Web.Razor.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\EntityFramework.SqlServer.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\WebMatrix.Data.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\bin\Debug\System.Web.Helpers.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\obj\Debug\UnitTests.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\UnitTests\obj\Debug\UnitTests.pdb
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\UnitTests.dll.config
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\UnitTests.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\UnitTests.pdb
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\CoreEntities.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\ServiceLayer.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\smartData.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\System.Web.Mvc.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\Ninject.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\RepositoryLayer.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\AppInterfaces.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\Ninject.Web.Common.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\WebActivatorEx.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\System.Web.Optimization.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\Owin.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\System.Web.Http.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\Newtonsoft.Json.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\Microsoft.WindowsAzure.ServiceRuntime.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\EntityFramework.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\System.Web.WebPages.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\Elmah.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Security.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\System.Net.Http.Formatting.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\WebMatrix.WebData.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\System.Web.Http.WebHost.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\System.Web.Razor.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\EntityFramework.SqlServer.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\WebMatrix.Data.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\System.Web.Helpers.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\CoreEntities.pdb
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\ServiceLayer.pdb
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\smartData.pdb
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\System.Web.Mvc.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\Ninject.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\RepositoryLayer.pdb
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\AppInterfaces.pdb
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\Ninject.Web.Common.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\System.Web.Optimization.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\System.Web.Http.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\Newtonsoft.Json.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\EntityFramework.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\System.Web.WebPages.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Security.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\System.Net.Http.Formatting.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\WebMatrix.WebData.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\System.Web.Http.WebHost.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\System.Web.Razor.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\EntityFramework.SqlServer.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\WebMatrix.Data.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\bin\Debug\System.Web.Helpers.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\obj\Debug\UnitTests.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\UnitTests\obj\Debug\UnitTests.pdb
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\UnitTests.dll.config
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\UnitTests.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\UnitTests.pdb
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\CoreEntities.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\ServiceLayer.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\smartData.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\System.Web.Mvc.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\Ninject.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\AppInterfaces.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\Ninject.Web.Common.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\RepositoryLayer.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\WebActivatorEx.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\System.Web.Optimization.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\Owin.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\System.Web.Http.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\Newtonsoft.Json.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\Microsoft.WindowsAzure.ServiceRuntime.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\EntityFramework.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\System.Web.WebPages.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\Elmah.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Security.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\System.Net.Http.Formatting.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\WebMatrix.WebData.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\System.Web.Http.WebHost.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\System.Web.Razor.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\EntityFramework.SqlServer.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\WebMatrix.Data.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\System.Web.Helpers.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\CoreEntities.pdb
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\ServiceLayer.pdb
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\smartData.pdb
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\System.Web.Mvc.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\Ninject.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\AppInterfaces.pdb
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\Ninject.Web.Common.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\RepositoryLayer.pdb
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\System.Web.Optimization.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\System.Web.Http.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\Newtonsoft.Json.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\EntityFramework.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\System.Web.WebPages.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Security.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\System.Net.Http.Formatting.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\WebMatrix.WebData.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\System.Web.Http.WebHost.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\System.Web.Razor.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\EntityFramework.SqlServer.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\WebMatrix.Data.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\bin\Debug\System.Web.Helpers.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\obj\Debug\UnitTests.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\UnitTests\obj\Debug\UnitTests.pdb
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\UnitTests.dll.config
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\UnitTests.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\UnitTests.pdb
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\CoreEntities.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\ServiceLayer.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\smartData.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\System.Web.Mvc.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\Ninject.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\Ninject.Web.Common.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\AppInterfaces.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\RepositoryLayer.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\System.Web.Http.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\EntityFramework.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\Microsoft.WindowsAzure.ServiceRuntime.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\System.Web.Optimization.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\Owin.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\Newtonsoft.Json.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\Microsoft.Owin.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\WebActivatorEx.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\System.Web.Http.WebHost.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\Microsoft.Owin.Security.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\System.Net.Http.Formatting.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\WebMatrix.WebData.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\Elmah.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\System.Web.WebPages.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\System.Web.Razor.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\EntityFramework.SqlServer.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\WebMatrix.Data.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\System.Web.Helpers.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\CoreEntities.pdb
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\ServiceLayer.pdb
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\smartData.pdb
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\System.Web.Mvc.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\Ninject.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\Ninject.Web.Common.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\AppInterfaces.pdb
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\RepositoryLayer.pdb
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\System.Web.Http.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\EntityFramework.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\System.Web.Optimization.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\Newtonsoft.Json.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\Microsoft.Owin.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\System.Web.Http.WebHost.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\Microsoft.Owin.Security.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\System.Net.Http.Formatting.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\WebMatrix.WebData.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\System.Web.WebPages.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\System.Web.Razor.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\EntityFramework.SqlServer.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\WebMatrix.Data.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\System.Web.Helpers.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\obj\Debug\UnitTests.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\UnitTests\obj\Debug\UnitTests.pdb
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\UnitTests.dll.config
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\UnitTests.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\UnitTests.pdb
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\CoreEntities.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\ServiceLayer.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\smartData.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\System.Web.Mvc.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\Ninject.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\Ninject.Web.Common.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\AppInterfaces.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\RepositoryLayer.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\System.Web.Http.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\EntityFramework.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\Microsoft.WindowsAzure.ServiceRuntime.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\System.Web.Optimization.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\Owin.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\Newtonsoft.Json.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\Microsoft.Owin.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\WebActivatorEx.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\System.Web.Http.WebHost.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\Microsoft.Owin.Security.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\System.Net.Http.Formatting.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\WebMatrix.WebData.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\Elmah.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\System.Web.WebPages.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\System.Web.Razor.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\System.Web.WebPages.Razor.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\EntityFramework.SqlServer.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\WebMatrix.Data.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\System.Web.Helpers.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\CoreEntities.pdb
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\ServiceLayer.pdb
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\smartData.pdb
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\System.Web.Mvc.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\Ninject.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\Ninject.Web.Common.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\AppInterfaces.pdb
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\RepositoryLayer.pdb
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\System.Web.Http.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\EntityFramework.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\System.Web.Optimization.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\Newtonsoft.Json.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\Microsoft.Owin.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\System.Web.Http.WebHost.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\Microsoft.Owin.Security.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\System.Net.Http.Formatting.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\WebMatrix.WebData.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\System.Web.WebPages.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\System.Web.Razor.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\System.Web.WebPages.Razor.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\EntityFramework.SqlServer.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\WebMatrix.Data.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\System.Web.Helpers.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\bin\Debug\de\smartData.resources.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\obj\Debug\UnitTests.dll
+D:\DayUsers\ManojK\Official\Projects\Basic_Framework\BasicFramework_WithDBScript\Basic Framework\Basic Framework\UnitTests\obj\Debug\UnitTests.pdb
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\UnitTests.dll.config
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\UnitTests.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\UnitTests.pdb
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\CoreEntities.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\ServiceLayer.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\smartData.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\System.Web.Mvc.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\Ninject.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\Ninject.Web.Common.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\AppInterfaces.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\RepositoryLayer.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\System.Web.Http.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\EntityFramework.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\Microsoft.WindowsAzure.ServiceRuntime.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\System.Web.Optimization.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\Owin.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\Newtonsoft.Json.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\Microsoft.Owin.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\WebActivatorEx.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\System.Web.Http.WebHost.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\Microsoft.Owin.Security.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\System.Net.Http.Formatting.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\WebMatrix.WebData.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\Elmah.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\System.Web.WebPages.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\System.Web.Razor.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\EntityFramework.SqlServer.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\WebMatrix.Data.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\System.Web.Helpers.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\CoreEntities.pdb
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\ServiceLayer.pdb
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\smartData.pdb
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\System.Web.Mvc.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\Ninject.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\Ninject.Web.Common.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\AppInterfaces.pdb
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\RepositoryLayer.pdb
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\System.Web.Http.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\EntityFramework.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\System.Web.Optimization.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\Newtonsoft.Json.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\Microsoft.Owin.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\System.Web.Http.WebHost.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\Microsoft.Owin.Security.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\System.Net.Http.Formatting.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\WebMatrix.WebData.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\System.Web.WebPages.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\System.Web.Razor.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\EntityFramework.SqlServer.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\WebMatrix.Data.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\System.Web.Helpers.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\bin\Debug\de\smartData.resources.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\obj\Debug\UnitTests.dll
+D:\Official\Projects\New\ModifiedBasicFrameworkWithScript\Basic Framework\UnitTests\obj\Debug\UnitTests.pdb
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\UnitTests.dll.config
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\UnitTests.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\UnitTests.pdb
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\CoreEntities.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\ServiceLayer.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\smartData.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\System.Web.Mvc.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\Ninject.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\AppInterfaces.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\Ninject.Web.Common.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\RepositoryLayer.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\WebActivatorEx.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\Microsoft.Owin.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\System.Web.Optimization.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\Owin.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\System.Web.Http.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\Newtonsoft.Json.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\Microsoft.WindowsAzure.ServiceRuntime.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\EntityFramework.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\System.Web.WebPages.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\DTOLayer.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\Elmah.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\Microsoft.Owin.Security.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\System.Net.Http.Formatting.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\WebMatrix.WebData.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\System.Web.Http.WebHost.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\System.Web.Razor.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\System.Web.WebPages.Razor.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\EntityFramework.SqlServer.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\WebMatrix.Data.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\System.Web.Helpers.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\CoreEntities.pdb
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\ServiceLayer.pdb
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\smartData.pdb
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\AppInterfaces.pdb
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\RepositoryLayer.pdb
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\DTOLayer.pdb
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\EntityFramework.SqlServer.xml
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\bin\Debug\de\smartData.resources.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\obj\Debug\UnitTests.dll
+D:\PuneetS\R&D\TestApplicationMVCNew\Basic Framework\UnitTests\obj\Debug\UnitTests.pdb

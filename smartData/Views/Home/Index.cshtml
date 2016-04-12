@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+}
+@section CSSLinks
+{
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Scripts/BootStrapGrid/src/bootstrap-table.css" rel="stylesheet" />
+    <link href="~/Scripts/BootStrapDailog/bootstrap-dialog.min.css" rel="stylesheet" />
+}
+@section JSRefernces
+{
+    <script src="~/Scripts/JqGrid/jquery-1.11.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/BootStrapGrid/src/bootstrap-table.js"></script>
+    <script src="~/Scripts/BootStrapDailog/bootstrap-dialog.min.js"></script>
+    <script src="~/Scripts/BootStrapGrid/src/extensions/filter/bootstrap-table-filter.js"></script>
+<script src="~/Scripts/AdminLTE/plugins/morris/morris.min.js"></script>
+    <script src="~/Scripts/ApplicationCharts/UserCharts.js"></script>
+}
+
+
+<div>
+    @Html.Partial("~/Views/Shared/Partials/UserGraph.cshtml")
+    @Html.Partial("~/Views/Shared/Partials/UserChat.cshtml")
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#liHome').removeClass("treeview");
+        $('#liHome').addClass("treeview active");
+    });
+</script>

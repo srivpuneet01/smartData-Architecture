@@ -1,0 +1,33 @@
+html{-webkit-text-size-adjust: none; /* Prevent font scaling in landscape */}
+
+  
+@media all and (max-width: 1020px) {
+
+}
+@media all and (max-width: 850px) {
+	.container { width:auto;}
+}
+
+@media all and (max-width: 799px) {	
+}
+
+@media all and (max-width: 650px) {
+
+.container { width:auto;}
+.navbar-static-side  { margin-bottom:20px;}
+.select_lrg { width:100%;}
+.header { padding-bottom:5px;}
+.logo { width:50%; text-align:center; margin:auto}
+}
+
+@media all and (max-width: 568px) {
+
+}
+
+@media all and (max-width: 480px) {
+	.logo { width:70%;}
+
+}
+@media all and (max-width: 320px) {
+	.logo { width:100%;}
+}

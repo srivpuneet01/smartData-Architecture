@@ -1,0 +1,31 @@
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\CoreEntities\bin\Release\CoreEntities.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\CoreEntities\bin\Release\CoreEntities.pdb
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\CoreEntities\bin\Release\System.Web.Mvc.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\CoreEntities\bin\Release\System.Web.Mvc.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\CoreEntities\obj\Release\CoreEntities.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\CoreEntities\obj\Release\CoreEntities.pdb
+D:\DayUsers\lalitka\Official\MSFramework_V3\CoreEntities\bin\Release\CoreEntities.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\CoreEntities\bin\Release\CoreEntities.pdb
+D:\DayUsers\lalitka\Official\MSFramework_V3\CoreEntities\bin\Release\System.Web.Mvc.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\CoreEntities\bin\Release\System.Web.Mvc.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\CoreEntities\obj\Release\CoreEntities.csprojResolveAssemblyReference.cache
+D:\DayUsers\lalitka\Official\MSFramework_V3\CoreEntities\obj\Release\CoreEntities.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\CoreEntities\obj\Release\CoreEntities.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Release\CoreEntities.dll
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Release\CoreEntities.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Release\System.Web.Mvc.dll
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Release\System.Web.Mvc.xml
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\obj\Release\CoreEntities.csprojResolveAssemblyReference.cache
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\obj\Release\CoreEntities.dll
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\obj\Release\CoreEntities.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Release\Microsoft.Web.Infrastructure.dll
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Release\System.Web.Helpers.dll
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Release\System.Web.Razor.dll
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Release\System.Web.WebPages.Deployment.dll
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Release\System.Web.WebPages.dll
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Release\System.Web.WebPages.Razor.dll
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Release\System.Web.Helpers.xml
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Release\System.Web.Razor.xml
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Release\System.Web.WebPages.xml
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Release\System.Web.WebPages.Deployment.xml
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Release\System.Web.WebPages.Razor.xml

@@ -1,0 +1,132 @@
+﻿@model Core.Domain.Roles
+
+@*@using (Ajax.BeginForm(new AjaxOptions{HttpMethod="post",InsertionMode=InsertionMode.Replace,UpdateTargetId ="testid"}))*@
+@using (Html.BeginForm("create", "Roles", FormMethod.Post, new { id = "FormID" }))
+{
+    @Html.AntiForgeryToken()
+
+    @functions{
+        public string TokenHeaderValue()
+        {
+            string cookieToken, formToken;
+            AntiForgery.GetTokens(null, out cookieToken, out formToken);
+            return cookieToken + ":" + formToken;
+        }
+
+        public string UserListingURL()
+        {
+            return @Url.Action("Index", "Roles");
+        }
+    }
+
+
+
+    <div id="testid"></div>
+    <div class="form-horizontal">
+        <h4>Role</h4>
+        <hr />
+        @Html.ValidationSummary()
+        <span id="spanError"></span>
+        <div class="form-group">
+            @Html.LabelFor(model => model.RoleName, new { @class = "control-label col-md-2", @required = "required" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.RoleName)
+                @Html.ValidationMessageFor(model => model.RoleName)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Active, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.CheckBoxFor(model => model.Active)
+                @*@Html.ValidationMessageFor(model => model.LastName)*@
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+               @*<input type="button" value="Create" onclick="mycustomsubmit(event);" class="btn btn-default" />*@
+
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section JSRefernces
+{
+    @System.Web.Optimization.Scripts.Render("~/bundles/jqueryval")
+    <script>
+
+        var form;
+        $(document).ready(function () {
+
+            form = $('#FormID');
+
+            $("#FormID").on("submit", function (event) {
+                mycustomsubmit(event);
+            });
+        });
+
+        function mycustomsubmit(e) {
+            e.preventDefault();
+            if (form.valid()) {
+                $.ajax({
+                    cache: false,
+                    async: true,
+                    type: "POST",
+                    url: "@Url.Action("Create", "Roles", "Roles")",
+                    data: form.serialize(),
+                    success: function (data) {
+                        $("#spanError").html("");
+                        window.location = '@UserListingURL()'
+                    },
+                    error: function (request, error) {
+                        if (request.statusText == "CustomMessage") {
+                            $("#spanError").html(request.responseText)
+                        }
+                    },
+                    headers: {
+                        'RequestVerificationToken': '@TokenHeaderValue()'
+                    }
+                });
+        }
+        }
+
+        function ShowMessage(type, message) {
+            $messageData = $("<span>Information</span>");
+            BootstrapDialog.show({
+                title: $messageData,
+                type: type,
+                message: message,
+                closable: true,
+                closeByBackdrop: false,
+                closeByKeyboard: false,
+                buttons: [{
+                    label: 'Ok',
+                    action: function (dialogItself) {
+                        dialogItself.close();
+                    }
+                }]
+            });
+        }
+
+    </script>
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

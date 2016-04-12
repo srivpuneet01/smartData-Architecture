@@ -1,0 +1,67 @@
+﻿
+@{
+    Layout = "~/Areas/screens/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    @section CSSLinks
+{
+        <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+        <link href="~/Scripts/BootStrapGrid/src/bootstrap-table.css" rel="stylesheet" />
+        <link href="~/Scripts/BootStrapDailog/bootstrap-dialog.min.css" rel="stylesheet" />
+    }
+    @section JSRefernces
+{
+        <script src="~/Scripts/JqGrid/jquery-1.11.0.min.js"></script>
+        <script src="~/Scripts/bootstrap.min.js"></script>
+        <script src="~/Scripts/BootStrapGrid/src/bootstrap-table.js"></script>
+        <script src="~/Scripts/BootStrapDailog/bootstrap-dialog.min.js"></script>
+        <script src="~/Scripts/BootStrapGrid/src/extensions/filter/bootstrap-table-filter.js"></script>
+    }
+    <meta name="viewport" content="width=device-width" />
+    <title>Accessdenied</title>
+    <script src="http://cdn.kendostatic.com/2014.3.1411/js/jquery.min.js"></script>
+    <script src="http://cdn.kendostatic.com/2014.3.1411/js/kendo.all.min.js"></script>
+    <script src="http://cdn.kendostatic.com/2014.3.1411/js/kendo.timezones.min.js"></script>
+    <script src="~/Scripts/jquery.contextMenu.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //var r = confirm("Sorry!Access Denied");
+            //if (r == true) {
+            //    window.location = "/ScreenPermissions/Home";
+            //}
+            //else {
+            //    window.location = "/ScreenPermissions/Home";
+            //}
+            alert("Sorry!Access Denied");
+          //  ShowMessage(BootstrapDialog.confirm, 'Sorry!Access Denied.');
+            window.location = "/Users/Home";
+        });
+        function ShowMessage(type, message) {
+            $messageData = $("<span>Information</span>");
+            BootstrapDialog.show({
+                title: $messageData,
+                type: type,
+                message: message,
+                closable: true,
+                closeByBackdrop: false,
+                closeByKeyboard: false,
+                buttons: [{
+                    label: 'Ok',
+                    action: function (dialogItself) {
+                        dialogItself.close();
+                    }
+                }]
+            });
+        }
+    </script>
+
+    <div> 
+    </div>
+</body>
+</html>

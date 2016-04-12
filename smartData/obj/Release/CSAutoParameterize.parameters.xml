@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="AzureDBContext-Web.config Connection String" description="AzureDBContext Connection String used in web.config by the application to access the database." defaultValue="data source=Development;initial catalog=MSFramework;user id=Framework;password=Framework;Integrated Security=false" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\DayUsers\\lalitka\\Official\\HealthFramework\\smartData\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AzureDBContext']/@connectionString" />
+  </parameter>
+  <parameter name="smartData.Models.ApplicationDbContext-Web.config Connection String" description="smartData.Models.ApplicationDbContext Connection String used in web.config by the application to access the database." defaultValue="smartData.Models.ApplicationDbContext_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\DayUsers\\lalitka\\Official\\HealthFramework\\smartData\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='smartData.Models.ApplicationDbContext']/@connectionString" />
+  </parameter>
+  <parameter name="smartData.Models.smartDataContext-Web.config Connection String" description="smartData.Models.smartDataContext Connection String used in web.config by the application to access the database." defaultValue="smartData.Models.smartDataContext_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\DayUsers\\lalitka\\Official\\HealthFramework\\smartData\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='smartData.Models.smartDataContext']/@connectionString" />
+  </parameter>
+</parameters>

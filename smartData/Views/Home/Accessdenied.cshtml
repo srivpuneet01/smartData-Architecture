@@ -1,0 +1,50 @@
+﻿
+@{
+    Layout = "~/Areas/screens/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    @section CSSLinks
+{
+        @System.Web.Optimization.Styles.Render("~/bundles/bootstrapCss")
+    }
+    @section JSRefernces
+{
+        @System.Web.Optimization.Scripts.Render("~/bundles/bootstrapgrid")
+    }
+    <meta name="viewport" content="width=device-width" />
+    <title>Accessdenied</title>
+   @System.Web.Optimization.Scripts.Render("~/bundles/kendojs")
+</head>
+<body>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            alert("Sorry!Access Denied");
+            window.location = "/Users/Home";
+        });
+        function ShowMessage(type, message) {
+            $messageData = $("<span>Information</span>");
+            BootstrapDialog.show({
+                title: $messageData,
+                type: type,
+                message: message,
+                closable: true,
+                closeByBackdrop: false,
+                closeByKeyboard: false,
+                buttons: [{
+                    label: 'Ok',
+                    action: function (dialogItself) {
+                        dialogItself.close();
+                    }
+                }]
+            });
+        }
+    </script>
+
+    <div> 
+    </div>
+</body>
+</html>

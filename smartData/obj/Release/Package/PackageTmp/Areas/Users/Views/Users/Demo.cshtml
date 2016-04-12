@@ -1,0 +1,72 @@
+﻿@{
+    ViewBag.Title = "Demo";
+    Layout = "~/Areas/PagePermission/Views/Shared/Layout.cshtml";
+}
+
+<h2>Demo</h2>
+
+<input id="ButtonAdd" type="button" class="hideButton" value="Add" />
+<input id="ButtonEdit" type="button" class="hideButton" value="Edit" />
+<input id="ButtonDelete" type="button" class="hideButton" value="Delete" />
+<input id="ButtonPrint" type="button" class="hideButton" value="Print" />
+<style>
+    .hideButton {
+        display:none;
+    }
+    .showButton {
+        display:inline-block;
+    }
+</style>
+
+<script type="">
+    $(document).ready(function () {
+        
+     $.ajax({
+        type: "Get",
+        url: "/Users/Users/GetAccessPermissionList",
+        //data: '{RoleId: ' + parseInt(RoleId) + ',ModuleID: ' + parseInt(ModuleID) + ' }',
+          data: null,
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (data) {
+            if (data.length > 0) {
+                
+                $.each(data, function (i, item) {
+                    //if(item.ActionType=="1")
+                    //{
+
+                    //}
+                    if(item.ActionType=="2")
+                    {
+                        $("#ButtonAdd").addClass("showButton");
+                    }
+                    if (item.ActionType == "3") {
+                        $("#ButtonEdit").addClass("showButton");
+                    }
+                    if (item.ActionType == "4") {
+                        $("#ButtonDelete").addClass("showButton");
+                    }
+                    if (item.ActionType == "5") {
+                        if(item.ActionName=="Export")
+                        {
+                            $("#ButtonExport").addClass("showButton");
+                        }
+                        if (item.ActionName == "Print") {
+                            
+                            $("#ButtonPrint").addClass("showButton");
+                        }
+                    }
+
+                });
+            }
+            else {
+              
+            }
+        },
+        failure: function (response) {
+            alert(response.d);
+        }
+    });
+    });
+
+</script>

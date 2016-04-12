@@ -1,0 +1,387 @@
+﻿@model Core.Domain.UserInsert
+
+@*@using (Ajax.BeginForm(new AjaxOptions{HttpMethod="post",InsertionMode=InsertionMode.Replace,UpdateTargetId ="testid"}))*@
+@using (Html.BeginForm("create", "users", FormMethod.Post, new { id = "FormID" }))
+{
+    @Html.AntiForgeryToken()
+
+    @functions{
+        public string TokenHeaderValue()
+        {
+            string cookieToken, formToken;
+            AntiForgery.GetTokens(null, out cookieToken, out formToken);
+            return cookieToken + ":" + formToken;
+        }
+
+        public string UserListingURL()
+        {
+            return @Url.Action("Index", "Users");
+        }
+    }
+
+
+
+    <div id="testid"></div>
+    
+    <div class="form-horizontal">
+
+        @Html.ValidationSummary()
+        <span id="spanError"></span>
+        <div class="form-group">
+            @Html.LabelFor(model => model.FirstName, new { @class = "control-label col-md-2", @required = "required" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.FirstName)
+                @*@Html.ValidationMessageFor(model => model.FirstName)*@
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LastName, new { @class = "control-label col-md-2", @required = "required" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.LastName)
+                @*@Html.ValidationMessageFor(model => model.LastName)*@
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, new { @class = "control-label col-md-2", @required = "required" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email)
+                @*@Html.ValidationMessageFor(model => model.Email)*@
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label", @required = "required" })
+            <div class="col-md-3">
+                @Html.PasswordFor(m => m.Password)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label", @required = "required" })
+            <div class="col-md-3">
+                @Html.PasswordFor(m => m.ConfirmPassword)
+            </div>
+        </div>
+
+        <div class="form-group" id="SuperAdmin" >
+            @Html.LabelFor(m => m.IsSuperAdmin, new { @class = "col-md-2 control-label" })
+            <div class="col-md-3">
+                
+                @Html.CheckBoxFor(m =>m.IsSuperAdmin);
+            </div> 
+        </div>
+        <div class="form-group">
+
+            @Html.Label("Role", null, new { @class = "control-label col-md-2" })
+
+            <div class="col-md-10">
+
+                @{
+    ViewBag.Title = "RoleList";
+    WebGrid grid = new WebGrid(source: ViewBag.AllRoles, canPage: false);
+                }
+                <div class="divscroll">
+                    @grid.GetHtml(
+                    tableStyle: "gridtable",
+                    htmlAttributes: new { id = "checkableGrid" },
+                    columns: grid.Columns
+                        (
+        //Here I am going to add checkbox column
+                            grid.Column(
+                                format: @<text> <input type="checkbox" id="@item.RoleId" value="@item.RoleId" title="RoleName" alt="RoleName" name="ids" onclick="javascript:Selectcheckbox(this);" /><label for="@item.RoleId">@item.RoleName </label> </text>,
+                                                                    header: "{checkall}"
+                                   )
+        //grid.Column("RoleId", "Role ID"),
+        // grid.Column("RoleName", "Role Name")
+
+                               )
+                           )
+                </div>
+
+                @*<div>
+                        <input type="submit" value="Get Selected Record" />
+                    </div>*@
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group buttompd">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-2">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+        <div class="col-md-3">
+
+        </div>
+        @*<input id="RoleIDs" type="hidden" />*@
+        @*@Html.HiddenFor(m => m.RoleIDs)*@
+    </div>
+
+}
+<input id="HiddenSuperAdmin" type="hidden" value="@ViewBag.IsSuperAdmin" />
+@section JSRefernces
+{
+    @System.Web.Optimization.Scripts.Render("~/bundles/jqueryval")
+    <script>
+
+        var form;
+        $(document).ready(function () {
+
+            form = $('#FormID');
+
+            $("#FormID").on("submit", function (event) {
+                mycustomsubmit(event);
+            });
+        });
+
+        function mycustomsubmit(e) {
+            if ($("#Password").val() == "")
+            {
+                return;
+            }
+            e.preventDefault();
+            if (form.valid()) {
+                $('#loadingmessage').show();
+                $.ajax({
+                    cache: false,
+                    async: true,
+                    type: "POST",
+                    url: "@Url.Action("Create","Users","Users")",
+                    data: form.serialize(),
+                    success: function (data) {
+                        $("#spanError").html("");
+                        $("#RoleIDs").val("");
+                        $('#loadingmessage').hide();
+                        window.location = '@UserListingURL()'
+                    },
+                    error: function (request, error) {
+                        if (request.statusText == "CustomMessage") {
+                            $("#spanError").html(request.responseText)
+                        }
+                    },
+                    headers: {
+                        'RequestVerificationToken': '@TokenHeaderValue()'
+                    }
+                });
+            }
+        }
+
+    </script>
+}
+<style type="text/css">
+    table.gridtable {
+        font-family: verdana,arial,sans-serif;
+        font-size: 11px;
+        color: #333333;
+        border-width: 1px;
+        border-color: #666666;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+        table.gridtable th {
+            border-width: 1px;
+            padding: 8px;
+            border-style: solid;
+            border-color: #666666;
+            background-color: #dedede;
+        }
+
+        table.gridtable td {
+            border-width: 1px;
+            padding: 8px;
+            border-style: solid;
+            border-color: #666666;
+            background-color: #ffffff;
+        }
+
+    .divscroll {
+        overflow-y: scroll;
+        height: 200px;
+        width: 19%;
+    }
+
+    .ButtonSetting {
+        padding-top: 10px;
+    }
+
+    .buttompd {
+        padding-bottom: 10px;
+    }
+</style>
+
+<script>
+    var str = "";
+    $(document).ready(function () {
+
+        // 1st replace first column header text with checkbox   display: inline-block;
+
+        if ($("#HiddenSuperAdmin").val().toString().toLocaleLowerCase() == ("True").toLocaleLowerCase())
+        {
+            $("#SuperAdmin").css("display", "block");
+        }
+        else
+        {
+            $("#SuperAdmin").css("display", "none");
+        }
+
+        $("#checkableGrid th").each(function () {
+            if ($.trim($(this).text().toString().toLowerCase()) === "{checkall}") {
+                $(this).text('');
+                $("<input/>", { type: "checkbox", id: "cbSelectAll", value: "" }).appendTo($(this));
+                $(this).append("<span></span>");
+            }
+        });
+
+        //2nd click event for header checkbox for select /deselect all
+        $("#cbSelectAll").on("click", function () {
+            // alert("SelectAll");
+            var ischecked = this.checked;
+            $('#checkableGrid').find("input:checkbox").each(function () {
+                this.checked = ischecked;
+                if (ischecked) {
+                    str = (this.value.toString());
+                    if ($("#RoleIDs").val() == "") {
+                        $("#RoleIDs").val(str + ",");
+                    }
+                    else {
+                        str = $("#RoleIDs").val() + str + ",";
+                        $("#RoleIDs").val(str);
+                    }
+                }
+                else {
+                    $("#RoleIDs").val("");
+
+                }
+
+
+
+            });
+            // alert($("#HiddenRoleIDs").val());
+
+        });
+
+
+        //3rd click event for checkbox of each row
+        $("input[name='ids']").click(function () {
+
+            var totalRows = $("#checkableGrid td :checkbox").length;
+            var checked = $("#checkableGrid td :checkbox:checked").length;
+            //   alert(totalRows);
+            //  alert(checked);
+            if (checked == totalRows) {
+                $("#checkableGrid").find("input:checkbox").each(function () {
+                    this.checked = true;
+
+                });
+
+            }
+            else {
+                $("#cbSelectAll").removeAttr("checked");
+            }
+        });
+
+    });
+
+    function Selectcheckbox(Ctr) {
+
+
+        if ($(Ctr).is(":checked")) {
+          //  alert("check");
+            str = (Ctr.value.toString());
+            if ($("#RoleIDs").val() == "") {
+                $("#RoleIDs").val(str + ",");
+            }
+            else {
+                str = $("#RoleIDs").val() + str + ",";
+                $("#RoleIDs").val(str);
+            }
+        }
+        else
+        {
+            str = (Ctr.value.toString());
+            $("#RoleIDs").val($("#RoleIDs").val().replace(str+",",""));
+            //alert($("#RoleIDs").val());
+        }
+
+        //alert($("#HiddenRoleIDs").val());
+    }
+
+</script>
+<div id='loadingmessage' class="loader fade" style="display:none;">
+    <img src='~/Areas/ScreenPermissions/Images/loading2.gif' style="height: 150px;width: 200px;" />
+</div>
+<style>
+    .loader {
+        position: absolute;
+        top: 15%;
+        left: 35%;
+        width: 400px;
+        height: 200px;
+        padding: 30px 15px 0px;
+        border: 3px solid #ababab;
+        box-shadow: 1px 1px 10px #ababab;
+        border-radius: 20px;
+        background-color: white;
+        z-index: 1002;
+        text-align: center;
+        overflow: auto;
+    }
+
+    .fade {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: #ababab;
+        z-index: 1001;
+        -moz-opacity: 0.8;
+        opacity: .70;
+        filter: alpha(opacity=80);
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,236 @@
+﻿@model Core.Domain.Roles
+
+@*@using (Ajax.BeginForm(new AjaxOptions{HttpMethod="post",InsertionMode=InsertionMode.Replace,UpdateTargetId ="testid"}))*@
+@using (Html.BeginForm("create", "Roles", FormMethod.Post, new { id = "FormID" }))
+{
+    @Html.AntiForgeryToken()
+
+    @functions{
+        public string TokenHeaderValue()
+        {
+            string cookieToken, formToken;
+            AntiForgery.GetTokens(null, out cookieToken, out formToken);
+            return cookieToken + ":" + formToken;
+        }
+
+        public string UserListingURL()
+        {
+            return @Url.Action("Index", "Roles");
+        }
+    }
+
+    <div id="testid"></div>
+    <div class="form-horizontal">
+        <h4>Add Role</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+        <span id="spanError"></span>
+        <div class="form-group rname" id="rname">
+            @Html.Label("Role", new { @class = "control-label col-md-2", @required = "required", @autofocus = "autofocus" })
+
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.RoleName, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.RoleName)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Active, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.CheckBoxFor(model => model.Active)
+                @*@Html.ValidationMessageFor(model => model.LastName)*@
+                <input id="CreatedBy" type="text" name="CreatedBy" value="@ViewBag.logUser" style="display:none;" />
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="button" value="Create" onclick="mycustomsubmit(event);" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+@*<div >
+        @Html.ActionLink("Back to List", "Index")
+    </div>*@
+
+
+<script>
+    var form;
+    $(function () {
+        form = $('#FormID');
+
+
+        //$("input#RoleName").on({
+        //    keydown: function (e) {
+        //        if (e.which === 32)
+        //            return false;
+        //    },
+        //    change: function () {
+        //        this.value = this.value.replace(/\s/g, "");
+        //    }
+        //});
+
+    })
+    
+    function mycustomsubmit(e) {
+        $('#loadingmessage').show();
+        // if (form.valid())
+        {
+            //alert("fm1");
+            //if ($("#RoleName").val() == "") {
+            //    alert("Role Name is required.");
+            //   // $("#RoleName").focus();
+            //    return;
+            //}
+            if ($(".rname #RoleName").val().trim() == "") {
+                //  alert("hello");
+                $(".rname #RoleName").focus();
+                BootstrapDialog.alert("Please Enter Role");
+                $('#loadingmessage').hide();
+                return false;
+            }
+
+               $.ajax({
+                cache: false,
+                async: true,
+                type: "POST",
+                url: "@Url.Action("Create", "Roles", "Roles")",
+                data: form.serialize(),
+            success: function (data) {
+                if (data.ResponseStatus) {
+
+                    $("#AddModal").modal('hide');
+                    ShowMessage(BootstrapDialog.TYPE_SUCCESS, data.ResponseText);
+                    RefreshGrid();
+                    $('#loadingmessage').hide();
+                    $("#RoleName").val("");
+                    //  ShowMessage(BootstrapDialog.TYPE_SUCCESS,);
+                    
+                }
+                else {
+                    // alert(data.ResponseText);
+                    ShowMessage(BootstrapDialog.TYPE_SUCCESS, data.ResponseText);
+                    $("#AddModal #RoleName").val("");
+                    $('#loadingmessage').hide();
+                }
+                @*if (data == true) {
+                    $("#spanError").html("");
+                    window.location = '@UserListingURL()'
+                }
+            else {
+                    ShowMessage(BootstrapDialog.TYPE_DANGER, 'Error occured.');
+            }*@
+            },
+        error: function (request, error) {
+            if (request.statusText == "CustomMessage") {
+                $("#spanError").html(request.responseText)
+            }
+        },
+        headers: {
+            'RequestVerificationToken': '@TokenHeaderValue()'
+        }
+    });
+    }
+    }
+
+    function ShowMessage(type, message) {
+        $messageData = $("<span>Information</span>");
+        BootstrapDialog.show({
+            title: $messageData,
+            type: type,
+            message: message,
+            closable: true,
+            closeByBackdrop: false,
+            closeByKeyboard: false,
+            buttons: [{
+                label: 'Ok',
+                action: function (dialogItself) {
+                    dialogItself.close();
+                }
+            }]
+        });
+    }
+
+</script>
+
+@section JSRefernces
+{
+    @System.Web.Optimization.Scripts.Render("~/bundles/jqueryval")
+    <script>
+        $("input[type=text]").first().focus();
+        var form;
+        $(document).ready(function () {
+           // $("#RoleName").first().focus();
+            form = $('#FormID');
+
+            $("#FormID").on("submit", function (event) {
+                alert("fm");
+                if ($("#rname #RoleName").val() == "")
+                {
+                    alert("hello");
+                    $("#rname #RoleName").focus();
+                    return;
+                }
+                mycustomsubmit(event);
+            });
+        });
+
+        function mycustomsubmit(e) {
+            //debugger;
+
+            if (form.valid()) {
+                $.ajax({
+                    cache: false,
+                    async: true,
+                    type: "POST",
+                    url: "@Url.Action("Create", "Roles", "Roles")",
+                    data: form.serialize(),
+                    success: function (data) {
+
+                        if (data == true) {
+                            $("#spanError").html("");
+                            window.location = '@UserListingURL()'
+                        }
+                        else {
+                            ShowMessage(BootstrapDialog.TYPE_DANGER, 'Error occured.');
+                        }
+                    },
+                    error: function (request, error) {
+                        if (request.statusText == "CustomMessage") {
+                            $("#spanError").html(request.responseText)
+                        }
+                    },
+                    headers: {
+                        'RequestVerificationToken': '@TokenHeaderValue()'
+                    }
+                });
+            }
+        }
+        function ShowMessage(type, message) {
+            $messageData = $("<span>Information</span>");
+            BootstrapDialog.show({
+                title: $messageData,
+                type: type,
+                message: message,
+                closable: true,
+                closeByBackdrop: false,
+                closeByKeyboard: false,
+                buttons: [{
+                    label: 'Ok',
+                    action: function (dialogItself) {
+                      
+                        dialogItself.close();
+                       
+                       
+                    }
+                }]
+            });
+        }
+
+        
+    </script>
+}
+
+

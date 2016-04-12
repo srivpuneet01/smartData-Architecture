@@ -1,0 +1,656 @@
+﻿@section CSSLinks
+{
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Scripts/BootStrapGrid/src/bootstrap-table.css" rel="stylesheet" />
+    <link href="~/Scripts/BootStrapDailog/bootstrap-dialog.min.css" rel="stylesheet" />
+}
+@section JSRefernces
+{
+    <script src="~/Scripts/JqGrid/jquery-1.11.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/BootStrapGrid/src/bootstrap-table.js"></script>
+    <script src="~/Scripts/BootStrapDailog/bootstrap-dialog.min.js"></script>
+    <script src="~/Scripts/BootStrapGrid/src/extensions/filter/bootstrap-table-filter.js"></script>
+}
+<script>
+    var form;
+    $(document).ready(function () {
+        $("#hiddenMassUpdatecheckAll").val("");
+        $("#hiddenMassUpdatecheckAllsts").val("");
+
+        //setTimeout(function () {
+        //    //   $("#btnMassUpdate").addClass("hidden");
+        //    $("#btnMassUpdate").show();
+        //    $("#ddlactivate").show();
+        //}, 2500);
+        $("#btnAdd").click(function () {
+            //  window.location.href = "/Patients/Patients/Create";
+            //  $("hdtext").text("Add Role");
+            $("#AddModal").modal('show');
+        });
+
+        @functions{
+            public string TokenHeaderValue()
+            {
+                string cookieToken, formToken;
+                AntiForgery.GetTokens(null, out cookieToken, out formToken);
+                return cookieToken + ":" + formToken;
+            }
+         }
+        // Antiforgery Token
+        var token = '@TokenHeaderValue()';
+        var headers = {};
+        headers["RequestVerificationToken"] = token;
+
+        // Set Custom filters for searching : Model Property name and search TxtBox Id names must be same
+        var Param = {};
+        //Param.FirstName = $("#FirstName").val();
+        //Param.LastName = $("#LastName").val();
+        //Param.Email = $("#Email").val();
+        //form = $('#EditForm');
+        $("#btnFilter").click(function () {
+            var rolename = $("#dp1").val();
+            var active = $("#Active").val();
+            //  var email = $("#Email").val();
+           // alert(rolename);
+            Param.clickBtn = true;
+            form = $('#EditForm');
+            if (rolename != "") {
+                Param.RoleName = rolename;
+            }
+            else {
+                Param.RoleName = "";
+            }
+            if (Active != "") {
+                Param.Active = active;
+            }
+            else {
+                Param.Active = "";
+            }
+            // if(email!="")
+            //{
+            //    Param.Email = email;
+            //}
+            // else {
+            //     Param.Email = "";
+            // }
+            $('#grid').bootstrapTable('filterBy');
+            Param.clickBtn = false;
+        });
+        $("#EditForm").on("submit", function (event) {
+            $('#loadingmessage').show();
+            mycustomsubmit(event);
+        });
+        form = $('#EditForm');
+        function mycustomsubmit(e) {
+            e.preventDefault();
+            $.ajax({
+                cache: false,
+                async: true,
+                type: "POST",
+                url: "http://localhost:55038/api/RolesAPI/EditRole",
+                data: $('#EditForm').serialize(),//form.serialize(),
+                success: function (data) {
+
+                    RefreshGrid();
+                    ShowMessage(BootstrapDialog.TYPE_SUCCESS, 'Your Record is successfully updated.');
+                    $("#myModal").modal('hide');
+                    $('#loadingmessage').hide();
+                    //}
+                    //else {
+                    //    ShowMessage(BootstrapDialog.TYPE_DANGER, 'Error occured.');
+                    //}
+                },
+                error: function (request, error) {
+                    if (request.statusText == "CustomMessage") {
+                        $("#spanError").html(request.responseText)
+                    }
+                },
+                headers: {
+                    'RequestVerificationToken': '@TokenHeaderValue()'
+                }
+            });
+
+            @*var user = {};
+            user.UserId = $("#userId").val();
+            user.FirstName = $("#txtFirstName").val();
+            user.LastName = $("#txtLastName").val();
+            user.Email = $("#txtEmail").val();
+            $.ajax({
+                cache: false,
+                async: false,
+                type: "POST",
+                url: "http://localhost:55038/api/UsersAPI/EditUser",
+                data: { 'user': user },
+                success: function (data) {
+                    if (data == true) {
+                        RefreshGrid();
+                        ShowMessage(BootstrapDialog.TYPE_SUCCESS, 'Your Record is successfully updated.');
+                    }
+                    else {
+                        ShowMessage(BootstrapDialog.TYPE_DANGER, 'Error occured.');
+                    }
+                },
+                error: function (request, error) {
+                    if (request.statusText == "CustomMessage") {
+                        $("#spanError").html(request.responseText)
+                    }
+                },
+                headers: {
+                    'RequestVerificationToken': '@TokenHeaderValue()'
+                }
+            });*@
+        }
+
+        var reqUrl = 'http://localhost:55038/api/RolesAPI/GetUsers';
+        //alert("Call");
+        $('#grid').bootstrapTable({
+            headers: headers,
+            method: 'post',
+            url: reqUrl,
+            cache: false,
+            height: 500,
+            classes: 'table table-hover',
+            customParams: Param,
+            striped: true,
+            pageNumber: 1,
+            pagination: true,
+            pageSize: 10,
+            pageList: [5, 10, 20, 30],
+            search: false,
+            showColumns: true,
+            showRefresh: true,
+            sidePagination: 'server',
+            minimumCountColumns: 2,
+            showHeader: true,
+            showFilter: false,
+            smartDisplay: true,
+            clickToSelect: true,
+            rowStyle: rowStyle,
+            toolbar: '#custom-toolbar',
+            columns: [
+            //    {
+            //    field: 'RoleId',
+            //    title: 'Role ID',
+            //    type: 'search',
+
+            //    sortable: true
+            //},
+
+
+                  {
+                      field: '',
+                      title: '',
+                      type: 'checkbox',
+                      checkbox: true,
+                      value: '',
+                      clickToSelect: true,
+                      align: 'left',
+
+                  },
+
+
+
+
+            {
+                field: 'RoleName',
+                title: 'Role',
+                type: 'search',
+                sortable: true,
+            },
+            //{
+            //    field: 'LastName',
+            //    title: 'Last Name',
+            //    type: 'search',
+
+            //    sortable: true,
+            //}, {
+            //    field: 'Email',
+            //    title: 'Email',
+            //    type: 'search',
+
+            //    sortable: true,
+                //},
+                {
+                    field: 'ActiveDisplay',
+                    title: 'Active',
+                    //type: 'checkbox',
+                    visible: true,
+                    // checkbox: true,
+                    sortable: false,
+                    align: 'left',
+                    clickToSelect: false,
+                    disabled: true
+                },
+            {
+                field: 'operate',
+                title: 'Actions',
+
+
+                clickToSelect: false,
+                formatter: operateFormatter,
+                events: operateEvents
+            }],
+            //filters: [
+            //    {
+            //        field: 'FirstName',    // field identifier
+            //        label: 'First Name',    // filter label
+            //        type: 'search',
+            //        enabled: true   // filter type
+            //    },
+            //    {
+            //        field: 'LastName',
+            //        label: 'Last Name',
+            //        type: 'search',
+            //        enabled: true   // filter is visible by default
+            //    },
+            //    {
+            //        field: 'Email',
+            //        label: 'Email',
+            //        type: 'search',
+            //        enabled: true
+            //    },
+
+            //],
+            onSubmit: function () {
+                var data = $('#filter-bar').bootstrapTableFilter('getData');
+                console.log(data);
+
+            }
+        });
+        //$('#filter-bar').bootstrapTableFilter({
+        //    filters: [
+        //        {
+        //            field: 'FirstName',    // field identifier
+        //            label: 'First Name',    // filter label
+        //            type: 'search',
+        //            enabled: true   // filter type
+        //        },
+        //        {
+        //            field: 'LastName',
+        //            label: 'Last Name',
+        //            type: 'search',
+        //            enabled: true   // filter is visible by default
+        //        },
+        //        {
+        //            field: 'Email',
+        //            label: 'Email',
+        //            type: 'search',
+        //            enabled: true
+        //        },
+
+        //    ],
+        //    onSubmit: function () {
+        //        var data = $('#filter-bar').bootstrapTableFilter('getData');
+        //        console.log(data);
+        //    }
+        //});
+    });
+
+    // Edit and Delete Formattte links
+    function operateFormatter(value, row, index) {
+        return [
+            '<a id="edit"  class="edit ml10" href="javascript:void(0)" title="Edit">',
+                '<i class="glyphicon glyphicon-edit"></i>',
+            '</a>&nbsp;&nbsp;',
+            '<a id="delete" class="remove ml10" href="javascript:void(0)" title="Remove">',
+                '<i class="glyphicon glyphicon-remove"></i>',
+            '</a>'
+        ].join('');
+    }
+
+    // Link Events Edit and Delete
+    window.operateEvents = {
+        'click .edit': function (e, value, row, index) {
+            //ShowMessage(BootstrapDialog.TYPE_SUCCESS, 'Record deleted successfully.');
+            //alert(row.RoleId);
+
+            $("#myModal").modal('show');
+            $("#RoleId").val(row.RoleId);
+            $("#showRoleID").text(row.RoleId);
+            $("#txtRoleName").val(row.RoleName);
+
+            var prop = row.Active;
+
+            $('#Active').prop('checked', prop);
+
+        },
+
+        'click .remove': function (e, value, row, index) {
+            BootstrapDialog.show({
+                message: 'Are you sure? You want to delete this record.',
+                buttons: [{
+                    label: 'Ok',
+                    cssClass: 'btn-primary',
+                    action: function (dialogItself) {
+                        $.ajax({
+                            cache: false,
+                            async: false,
+                            type: "POST",
+                            url: "http://localhost:55038/api/RolesAPI/DeleteRole/" + row.RoleId,
+                            success: function (data) {
+                                if (data == true) {
+                                    RefreshGrid();
+                                    dialogItself.close();
+                                }
+                                else {
+                                    ShowMessage(BootstrapDialog.TYPE_DANGER, 'Error occured.');
+                                }
+                            },
+                            error: function (request, error) {
+                                if (request.statusText == "CustomMessage") {
+                                    $("#spanError").html(request.responseText)
+                                }
+                            },
+                            headers: {
+                                'RequestVerificationToken': '@TokenHeaderValue()'
+                            }
+                        });
+                    }
+                }, {
+                    label: 'Close',
+                    cssClass: 'btn-danger',
+                    action: function (dialogItself) {
+                        dialogItself.close();
+                    }
+                }]
+            });
+
+        }
+    };
+
+    function rowStyle(row, index) {
+        var classes = ['active', 'success', 'info', 'warning', 'danger'];
+
+        if (index % 2 === 0) {
+            return {
+                classes: classes[1]
+            };
+        }
+        return {};
+    }
+
+    function RefreshGrid() {
+        $('#grid').bootstrapTable('refresh', { silent: true });
+    }
+
+    //BootstrapDialog.TYPE_DEFAULT,
+    //BootstrapDialog.TYPE_INFO,
+    //BootstrapDialog.TYPE_PRIMARY,
+    //BootstrapDialog.TYPE_SUCCESS,
+    //BootstrapDialog.TYPE_WARNING,
+    //BootstrapDialog.TYPE_DANGER
+    function ShowMessage(type, message) {
+        $messageData = $("<span>Information</span>");
+        BootstrapDialog.show({
+            title: $messageData,
+            type: type,
+            message: message,
+            closable: true,
+            closeByBackdrop: false,
+            closeByKeyboard: false,
+            buttons: [{
+                label: 'Ok',
+                action: function (dialogItself) {
+                    dialogItself.close();
+                }
+            }]
+        });
+    }
+
+    function MassUpdate() {
+        CheckUncheckAll();
+    }
+    function CheckUncheckAll() {
+        $('#loadingmessage').show();
+        if ($("#hiddenMassUpdatecheckAll").val() == "")
+        {
+            return false;
+        }
+        var roleNames = $("#hiddenMassUpdatecheckAll").val();
+        var activtype = $("#ddlactivate").val();
+        // alert(roleNames);
+        // var ModuleID = $("#ModuleList :selected").val();
+        //  var str = $("#HiddenAllpermission").val();
+        //alert(str);
+        //$('#loadingmessage').show();
+        var flag = 0;
+        if (activtype == "1") {
+            flag = 2;
+        }
+        else {
+            flag = 3;
+        }
+        if ($("#hiddenMassUpdatecheckAllsts").val() != "") {
+            roleNames = "0";
+            if (activtype == "1") {
+                flag = 4;
+            }
+            else {
+                flag = 5;
+            }
+        }
+
+        $.ajax({
+            type: "POST",
+            url: "/Roles/Roles/MassUpdate",
+            data: '{roleNames: "' + roleNames + '",ModifyBy: ' + flag + '}',
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (data) {
+
+                if (activtype == "1") {
+                    ShowMessage(BootstrapDialog.TYPE_SUCCESS, 'Records have been marked activated');
+                  //  location.reload();
+                    // rebind();
+                    RefreshGrid();
+                  //  $('#loadingmessage').hide();
+                }
+                else {
+                    ShowMessage(BootstrapDialog.TYPE_SUCCESS, 'Records have been marked deactivated');
+                    //  location.reload();
+                    // rebind();
+                    RefreshGrid();
+
+                }
+
+
+                $("#hiddenMassUpdatecheckAll").val("");
+
+
+            },
+            failure: function (response) {
+                alert(response.d);
+            }
+        });
+
+    }
+
+    function CheckUncheckAllFill(src) {
+        //  alert(src);
+        if (src == "allcheck") {
+            $("#hiddenMassUpdatecheckAllsts").val("allcheck");
+        }
+        else {
+            $("#hiddenMassUpdatecheckAllsts").val("Unallcheck");
+        }
+    }
+
+
+    function checkRow(src) {
+        var str = src.RoleId.toString();
+        if ($("#hiddenMassUpdatecheckAll").val() == "") {
+            $("#hiddenMassUpdatecheckAll").val(str + ",");
+            // $("#hiddenMassUpdateUncheck").val($("#hiddenMassUpdateUncheck").val().replace(str.toString() + ",", " "));
+        }
+        else {
+            str = $("#hiddenMassUpdatecheckAll").val() + "" + str + ","
+            $("#hiddenMassUpdatecheckAll").val(str);
+            //  $("#hiddenMassUpdateUncheck").val($("#hiddenMassUpdateUncheck").val().replace(str.toString() + ",", " "));
+        }
+
+    }
+    function UncheckRow(src) {
+        var str = src.RoleId.toString();
+        if ($("#hiddenMassUpdatecheckAll").val() != "") {
+            // $("#hiddenMassUpdatecheckAll").val(str + ",");
+            $("#hiddenMassUpdateUncheck").val($("#hiddenMassUpdateUncheck").val().replace(str.toString() + ",", " "));
+        }
+    }
+
+    function AddNew() {
+        //  window.location.href = "/Patients/Patients/Create";
+        //  $("hdtext").text("Add Role");
+        //   window.location.href = "/Users/Users/Create";
+        saveid = 1;
+        $("#AddModal").modal('show');
+        $('FormID').focus_first();
+    }
+
+    function LoadSuccess()
+    {
+        $("#btnMassUpdate").show();
+        $("#ddlactivate").show();
+        $(".bootstrap-table").addClass("mrg");
+        $('#loadingmessage').hide();
+    }
+
+</script>
+
+<style>
+    .row {
+        margin-bottom: 10px;
+    }
+
+    .col-sm-4 {
+        text-align: right;
+    }
+
+    .mrg {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .modal-dialog {
+        padding-top: 5%;
+    }
+</style>
+<script>
+    // Focus first element
+    $.fn.focus_first = function () {
+        var elem = $('input:visible', this).get(0);
+        var select = $('select:visible', this).get(0);
+        if (select && elem) {
+            if (select.offsetTop < elem.offsetTop) {
+                elem = select;
+            }
+        }
+        var textarea = $('textarea:visible', this).get(0);
+        if (textarea && elem) {
+            if (textarea.offsetTop < elem.offsetTop) {
+                elem = textarea;
+            }
+        }
+
+        if (elem) {
+            elem.focus();
+        }
+        return this;
+    }
+    //$(window).load(function () {
+    //    //alert("hi");
+
+    //});
+</script>
+<div id="custom-toolbar">
+    <div class="form-inline" role="form">
+        <div class="form-group">
+            <div class="search">
+                <input class="form-control" id="RoleName" placeholder="Role Name" type="text" name="RoleName">
+            </div>
+        </div>
+
+
+
+
+        <div class="form-group">
+
+            <input class="btn btn-success" id="btnFilter" placeholder="" type="button" value="Filter" name="btnFilter">
+        </div>
+
+        <div class="form-group">
+
+
+
+            @*<input class="btn btnAdd btn-success" id="btnAdd" placeholder="" type="button" value="Add" name="btnAdd">*@
+
+
+
+        </div>
+
+
+    </div>
+</div>
+
+
+<div id='loadingmessage' class="loader1 fade1" style="display: none; z-index: 5000; height: 95%; width: 90%; margin-left: 4%; ">
+    <img src='~/Areas/ScreenPermissions/Images/loading2.gif' style="height: 50px;width: 50px;" />
+</div>
+
+<div id="filter-bar"> </div>
+<table class="table table-hover" data-toolbar="#custom-toolbar" data-show-columns="true" data-show-filter="true"
+       id="grid">
+    <thead>
+        <tr>
+            <th data-field="RoleId">Role ID</th>
+            <th data-field="RoleName">Role Name</th>
+
+        </tr>
+    </thead>
+</table>
+
+
+
+
+
+
+<input id="hiddenMassUpdatecheckAll" type="hidden" />
+<input id="hiddenMassUpdatecheckAllsts" type="hidden" />
+<style>
+    .loader1 {
+        position: absolute;
+        top: 8%;
+        left: 5%;
+        width: 400px;
+        height: 200px;
+        padding: 30px 15px 0px;
+        border: 3px solid #ababab;
+        box-shadow: 1px 1px 10px #ababab;
+        border-radius: 20px;
+        background-color: white;
+        z-index: 3002;
+        text-align: center;
+        overflow: auto;
+    }
+
+    .fade1 {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: #ababab;
+        z-index: 1001;
+        -moz-opacity: 0.8;
+        opacity: .70;
+        filter: alpha(opacity=80);
+    }
+
+    .hideRow {
+        display: none;
+    }
+
+    .modal-dialog {
+        padding-top: 5%;
+    }
+</style>

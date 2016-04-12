@@ -1,0 +1,485 @@
+﻿
+@{
+    ViewBag.Title = "ViewImagePage";
+    Layout = "~/Areas/Scan/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ViewImagePage</h2>
+@{
+    System.Web.HttpRequest request = System.Web.HttpContext.Current.Request;
+
+    String strImageName;
+    String strImageExtName;
+    String strImageID;
+    String strImageFileType;
+
+    strImageName = request["ImageName"];
+    strImageExtName = request["ImageExtName"];
+    strImageID = request["iImageIndex"];
+    strImageFileType = "1";
+
+    if (strImageExtName == "bmp")
+    {
+        strImageFileType = "0";
+    }
+    else if (strImageExtName == "jpg")
+    {
+        strImageFileType = "1";
+    }
+    else if (strImageExtName == "tif")
+    {
+        strImageFileType = "2";
+    }
+    else if (strImageExtName == "png")
+    {
+        strImageFileType = "3";
+    }
+    else if (strImageExtName == "pdf")
+    {
+        strImageFileType = "4";
+    }
+
+    string strApplicationPath = HttpContext.Current.Request.ApplicationPath;
+    if (strApplicationPath == null || strApplicationPath == "/")
+    {
+        strApplicationPath = "";
+         }
+
+    
+}
+
+<div id="container" class="body_Broad_width" style="margin:0 auto;">
+
+    <div id="headcontainer" class="body_Broad_width" style="background-color:#3a3a3a; border:0;">
+        <br />
+
+        <div class="body_Broad_width" style="background-image:url(Images/adtopbackground.gif); height:120px; ">
+
+            <div style="float:left; border:0px; padding-top:35px; width:198px; margin-left:75px;">
+                <a href="http://www.dynamsoft.com/Products/WebTWAIN_Overview.aspx">
+                    <img alt="DynamicWebTWAIN logo" border="0" src="Images/DynamicWebTWAIN_logo.gif" />
+                </a>
+            </div>
+            <div style="float:left; border:0px; padding-top:35px; width:242px; margin-left:-10px;">
+                <a><img alt="Online Demo" border="0" src="Images/Online-Demo.gif" /></a>
+            </div>
+            <div style="float:left; border:0px; padding-top:20px; padding-left:50px; width:350px;">
+                <ul>
+                    <li class="fontstyle">Supports 32-bit/64-bit TWAIN drivers (ActiveX Edition)</li>
+                    <li class="fontstyle">Supports IE (32-bit/64-bit), Firefox, Chrome, Safari,Opera...</li>
+                    <li class="fontstyle">Supports JavaScript, ASP.NET, VB.NET, ASP, PHP, JSP...</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="body_Broad_width" style="height:60px; background-image:url(Images/adtop1background.gif);">
+            <br />
+
+            <div class="menudiv" style="width:280px;">
+                <a class="menucolor" href="online_demo_scan.aspx" style="color: #FE8E14; margin-left: 35px;"><b> Demo </b></a>
+            </div>
+
+            <div class="menudiv" style="width:358px; text-align:right;">
+                <a class="menucolor" href="http://www.dynamsoft.com/Downloads/WebTWAIN_Download.aspx">Free Trial Download</a>
+            </div>
+
+            <div class="menudiv" style="width:200px; text-align:center;">
+                <a class="menucolor" href="http://www.dynamsoft.com/download/Support/DWT/DWTDemoCode.zip">Demo Code Download</a>
+            </div>
+
+            <div class="menudiv" style="width:100px; text-align:center;">
+                <a class="menucolor" href="online_demo_faq.aspx">FAQ</a>
+            </div>
+
+        </div>
+
+        <div class="body_Broad_width" style="background-image:url(Images/menu_back.gif); background-repeat:repeat; height:20px; background-color:#ffffff;">
+
+        </div>
+
+    </div>
+
+    <div id="DWTcontainer" class="body_Broad_width" style="background-color:#ffffff; height:800px; border:0;">
+
+        <div id="dwtcontrolContainer">
+            <div id="dwtcontrol">
+                <div id="maindivPlugin">
+
+                    <div style="display: none;" id="mainControlNotInstalled">
+                        <table id="maintblcontrolnotinstalled" class="divcontrol">
+                            <tr>
+                                <td style="text-align: center; vertical-align: middle;">
+                                    <a id="hrDWTEXE" runat="server"><strong>Download and install the Plug-in Here</strong></a><br />
+                                    After the installation, please restart your browser.
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div id="mainControlInstalled">
+
+                    </div>
+
+                </div>
+
+                <div id="maindivIE">
+                    <object classid="clsid:5220cb21-c88d-11cf-b347-00aa00a28331" style="display:none;">
+                        <param name="LPKPath" value="DynamicWebTWAIN/DynamicWebTwain.lpk" />
+                    </object>
+                    <div id="maindivIEx86">
+                    </div>
+                    <div id="maindivIEx64">
+                    </div>
+                </div>
+            </div>
+
+            <div id="extraInfo" style="font-size: 11px; color: #222222; font-family: verdana sans-serif; background-color:#f0f0f0; text-align:left; width:580px;"></div>
+
+            <div class="divinput" style="text-align:center; width:580px; background-color:#FFFFFF;">
+                <input id="btnFirstImage" onclick="return btnFirstImage_onclick()" type="button" value=" |< " />&nbsp;
+                <input id="btnPreImage" onclick="return btnPreImage_onclick()" type="button" value=" < " />&nbsp;&nbsp;
+                <input type="text" size="2" id="CurrentImage" readonly="readonly" />/
+                <input type="text" size="2" id="TotalImage" readonly="readonly" value="0" />&nbsp;&nbsp;
+                <input id="btnNextImage" onclick="return btnNextImage_onclick()" type="button" value=" &gt; " />&nbsp;
+                <input id="btnLastImage" onclick="return btnLastImage_onclick()" type="button" value=" &gt;| " />
+                Preview Mode
+                <select size="1" id="PreviewMode" onchange="slPreviewMode();"></select><br />
+                <input id="btnRemoveCurrentImage" onclick="return btnRemoveCurrentImage_onclick()" type="button" value="Remove Current Image" />
+                <input id="btnRemoveAllImages" onclick="return btnRemoveAllImages_onclick()" type="button" value="Remove All Images" /><br /><br />
+                <span style="font-size:larger"><a href="online_demo_list.aspx"><b>Back</b></a></span><br />
+                <div id="divMsg" style="text-align:left;">
+                    Message:<br />
+                    <div id="emessage" style="width:550px;height:50px; overflow:scroll; background-color:#ffffff; border:1px #303030; border-style:solid; text-align:left;">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="tailcontainer" class="body_Broad_width" style="background-color:#ffffff; border:0;">
+
+        <div class="body_Broad_width" style="height:4px; background-color:#303030"></div>
+        <div class="body_Broad_width" style="height:6px; background-color:#ff8e13"></div>
+
+        <div style="width:10px; height:85px;float:left; border:0px; padding:0px;">
+            <img alt="&gt;" src="Images/bottomleft.gif" />
+        </div>
+        <div class="body_Narrow_width" style="height:85px; border:0px; padding:0px; float:left; text-align:center; background-image: url(Images/bottommid.gif); background-repeat:repeat;">
+            <br />
+            <a class="fontcolor" href="http://www.dynamsoft.com/Products/WebTWAIN_Overview.aspx"
+               style="cursor:text">TWAIN SDK</a> Powered By Dynamsoft
+        </div>
+        <div style="width:10px; height:85px;float:left; border:0px; padding:0px;">
+            <img alt="&gt;" src="Images/bottomright.gif" />
+        </div>
+
+    </div>
+
+</div>
+<script type="text/javascript" language="javascript">
+    var WebTWAIN;
+    var ua;
+    var em = "";
+    var seed;
+    var objEmessage;
+    window.onload = Pageonload;
+    //====================Page Onload  Start==================//
+
+    function Pageonload() {
+        var imargin = (document.getElementById("dwtcontrolContainer").parentNode.offsetWidth - document.getElementById("dwtcontrolContainer").offsetWidth) / 2 + "px";
+        document.getElementById("dwtcontrolContainer").style.marginLeft = imargin;
+        document.getElementById("divMsg").style.display = "none";
+        var strObjectFF = "";
+        strObjectFF = " <embed style='display: inline' id='mainDynamicWebTWAINnotIE' type='Application/DynamicWebTwain-Plugin'";
+        strObjectFF += " OnMouseClick='DynamicWebTwain_OnMouseClick'";
+        strObjectFF += " OnMouseDoubleClick = 'DynamicWebTwain_OnMouseDoubleClick'";
+        strObjectFF += " OnMouseRightClick = 'DynamicWebTwain_OnMouseRightClick'";
+        strObjectFF += " OnTopImageInTheViewChanged = 'DynamicWebTwain_OnTopImageInTheViewChanged'";
+        strObjectFF += " class='divcontrol' pluginspage='DynamicWebTWAIN/DynamicWebTwain.xpi'></embed>";
+        var strObject = "";
+        strObject = "   <param name='_cx' value='3784' />";
+        strObject += "	<param name='_cy' value='4128' />";
+        strObject += "	<param name='JpgQuality' value='80' />";
+        strObject += "	<param name='Manufacturer' value='DynamSoft Corporation' />";
+        strObject += "	<param name='ProductFamily' value='Dynamic Web TWAIN' />";
+        strObject += "	<param name='ProductName' value='Dynamic Web TWAIN' />";
+        strObject += "	<param name='VersionInfo' value='Dynamic Web TWAIN 6.3.1' />";
+        strObject += "	<param name='TransferMode' value='0' />";
+        strObject += "	<param name='BorderStyle' value='0' />";
+        strObject += "	<param name='FTPUserName' value='' />";
+        strObject += "	<param name='FTPPassword' value='' />";
+        strObject += "	<param name='FTPPort' value='21' />";
+        strObject += "	<param name='HTTPUserName' value='' />";
+        strObject += "	<param name='HTTPPassword' value='' />";
+        strObject += "	<param name='HTTPPort' value='80' />";
+        strObject += "	<param name='ProxyServer' value='' />";
+        strObject += "	<param name='IfDisableSourceAfterAcquire' value='0' />";
+        strObject += "	<param name='IfShowUI' value='-1' />";
+        strObject += "	<param name='IfModalUI' value='-1' />";
+        strObject += "	<param name='IfTiffMultiPage' value='0' />";
+        strObject += "	<param name='IfThrowException' value='0' />";
+        strObject += "	<param name='MaxImagesInBuffer' value='1' />";
+        strObject += "	<param name='TIFFCompressionType' value='0' />";
+        strObject += "	<param name='IfFitWindow' value='-1' />";
+        strObject += "	<param name='IfSSL' value='0' />";
+        strObject += "	</object>";
+        if (ExplorerType() == "IE" && navigator.userAgent.indexOf("Win64") != -1 && navigator.userAgent.indexOf("x64") != -1) {
+            strObject = "<object id='mainDynamicWebTwainIE' codebase='DynamicWebTWAIN/DynamicWebTWAINx64.cab#version=6,3,1' class='divcontrol' " + "classid='clsid:FFC6F181-A5CF-4ec4-A441-093D7134FBF2' viewastext> " + strObject;
+            var objDivx64 = document.getElementById("maindivIEx64");
+            objDivx64.style.display = "inline";
+            objDivx64.innerHTML = strObject;
+            var obj = document.getElementById("maindivPlugin");
+            obj.style.display = "none";
+            WebTWAIN = document.getElementById("mainDynamicWebTwainIE");
+        }
+        else if (ExplorerType() == "IE" && (navigator.userAgent.indexOf("Win64") == -1 || navigator.userAgent.indexOf("x64") == -1)) {
+            strObject = "<object id='mainDynamicWebTwainIE' codebase='DynamicWebTWAIN/DynamicWebTWAIN.cab#version=6,3,1' class='divcontrol' " + "classid='clsid:FFC6F181-A5CF-4ec4-A441-093D7134FBF2' viewastext> " + strObject;
+            var objDivx86 = document.getElementById("maindivIEx86");
+            objDivx86.style.display = "inline";
+            objDivx86.innerHTML = strObject;
+            var obj = document.getElementById("maindivPlugin");
+            obj.style.display = "none";
+            WebTWAIN = document.getElementById("mainDynamicWebTwainIE");
+        }
+        else {
+            var objDivFF = document.getElementById("mainControlInstalled");
+            objDivFF.innerHTML = strObjectFF;
+            var obj = document.getElementById("maindivIE");
+            obj.style.display = "none";
+            var obj = document.getElementById("maindivPlugin");
+            obj.style.display = "inline";
+            WebTWAIN = document.getElementById("mainDynamicWebTWAINnotIE");
+        }
+        seed = setInterval(ControlDetect, 500);
+    }
+
+    function ExplorerType() {
+        ua = (navigator.userAgent.toLowerCase());
+        if (ua.indexOf("msie") != -1) {
+            return "IE";
+        }
+        else {
+            return "notIE";
+        }
+    }
+
+    function pause() {
+        clearInterval(seed);
+    }
+
+    function ControlDetect() {
+        if (WebTWAIN.ErrorCode == 0) {
+            pause();
+            document.getElementById("PreviewMode").options.length = 0;
+            document.getElementById("PreviewMode").options.add(new Option("1X1", 0));
+            document.getElementById("PreviewMode").options.add(new Option("2X2", 1));
+            document.getElementById("PreviewMode").options.add(new Option("3X3", 2));
+            document.getElementById("PreviewMode").options.add(new Option("4X4", 3));
+            document.getElementById("PreviewMode").options.add(new Option("5X5", 4));
+            document.getElementById("PreviewMode").selectedIndex = 0;
+
+            objEmessage = document.getElementById("emessage");
+
+            objEmessage.ondblclick = function () {
+                em = "";
+                this.innerHTML = "";
+            }
+        }
+        else {
+            if (ua.match(/chrome\/([\d.]+)/) || ua.match(/opera.([\d.]+)/) || ua.match(/version\/([\d.]+).*safari/)) {
+                document.getElementById("mainControlNotInstalled").style.display = "inline";
+                document.getElementById("mainControlInstalled").style.display = "none";
+            }
+        }
+        if (ExplorerType() == "IE") {
+            WebTWAIN.attachEvent('OnMouseClick', DynamicWebTwain_OnMouseClick);
+            WebTWAIN.attachEvent('OnMouseDoubleClick', DynamicWebTwain_OnMouseDoubleClick);
+            WebTWAIN.attachEvent('OnMouseRightClick', DynamicWebTwain_OnMouseRightClick);
+            WebTWAIN.attachEvent('OnTopImageInTheViewChanged', DynamicWebTwain_OnTopImageInTheViewChanged);
+        }
+        setTimeout(function () {
+            WebTWAIN.MaxImagesInBuffer = 4096;
+            WebTWAIN.MouseShape = true;
+            var CurrentPathName = unescape(location.pathname);	// get current PathName in plain ASCII
+            var CurrentPath = CurrentPathName.substring(0, CurrentPathName.lastIndexOf("/") + 1);
+            var strActionPage = CurrentPath + "online_demo_download.aspx"; //the ActionPage's file path
+
+            strHTTPServer = location.hostname;
+            WebTWAIN.HTTPPort = location.port==""?80:location.port;
+            var downloadsource = strActionPage + "?iImageIndex=<%=strImageID%>&ImageName=<%=strImageName%>&ImageExtName=<%=strImageExtName%>";
+            WebTWAIN.HTTPDownloadEx(strHTTPServer, downloadsource, <%=strImageFileType%>);
+            if (CheckErrorString()) {
+                UpdatePageInfo();
+            }
+        }, 500);
+    }
+    function CheckIfImagesInBuffer() {
+        if (WebTWAIN.HowManyImagesInBuffer == 0) {
+            em = em + "There is no image in buffer.<br />";
+            objEmessage.innerHTML = em;
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+    function CheckErrorString() {
+        if (WebTWAIN.ErrorCode == 0) {
+            em = em + "<b>" + WebTWAIN.ErrorString + "</b><br />";
+            objEmessage.innerHTML = em;
+            return true;
+        }
+        else {
+            document.getElementById("divMsg").style.display = "block";
+            setTimeout(function () {
+                document.getElementById("divMsg").style.display = "none";
+            }, 5000);
+            if (WebTWAIN.ErrorCode == -2003) {
+                var ErrorMessageWin = window.open("", "ErrorMessage", "height=500,width=750,top=0,left=0,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no, status=no");
+                ErrorMessageWin.document.writeln(WebTWAIN.HTTPPostResponseString);
+            }
+            em = em + "<b>" + WebTWAIN.ErrorString + "</b><br />";
+            objEmessage.innerHTML = em;
+            return false;
+        }
+    }
+    function UpdatePageInfo() {
+        document.getElementById("TotalImage").value = WebTWAIN.HowManyImagesInBuffer;
+        document.getElementById("CurrentImage").value = WebTWAIN.CurrentImageIndexInBuffer + 1;
+    }
+    //====================Preview Group Start====================//
+    function btnFirstImage_onclick() {
+        if (!CheckIfImagesInBuffer()) {
+            return;
+        }
+        WebTWAIN.CurrentImageIndexInBuffer = 0;
+        UpdatePageInfo();
+        if (CheckErrorString()) {
+            return;
+        }
+    }
+    function btnPreImage_onclick() {
+        if (!CheckIfImagesInBuffer()) {
+            return;
+        }
+        else if (WebTWAIN.CurrentImageIndexInBuffer == 0) {
+            return;
+        }
+        WebTWAIN.CurrentImageIndexInBuffer = WebTWAIN.CurrentImageIndexInBuffer - 1;
+        UpdatePageInfo();
+        if (CheckErrorString()) {
+            return;
+        }
+    }
+    function btnNextImage_onclick() {
+        if (!CheckIfImagesInBuffer()) {
+            return;
+        }
+        else if (WebTWAIN.CurrentImageIndexInBuffer == WebTWAIN.HowManyImagesInBuffer - 1) {
+            return;
+        }
+        WebTWAIN.CurrentImageIndexInBuffer = WebTWAIN.CurrentImageIndexInBuffer + 1;
+        UpdatePageInfo();
+        if (CheckErrorString()) {
+            return;
+        }
+    }
+    function btnLastImage_onclick() {
+        if (!CheckIfImagesInBuffer()) {
+            return;
+        }
+        WebTWAIN.CurrentImageIndexInBuffer = WebTWAIN.HowManyImagesInBuffer - 1;
+        UpdatePageInfo();
+        if (CheckErrorString()) {
+            return;
+        }
+    }
+    function btnRemoveCurrentImage_onclick() {
+        if (!CheckIfImagesInBuffer()) {
+            return;
+        }
+        WebTWAIN.RemoveImage(WebTWAIN.CurrentImageIndexInBuffer);
+        if (WebTWAIN.HowManyImagesInBuffer == 0) {
+            document.getElementById("TotalImage").value = WebTWAIN.HowManyImagesInBuffer;
+            document.getElementById("CurrentImage").value = "";
+            return;
+        }
+        else {
+            UpdatePageInfo();
+        }
+        if (CheckErrorString()) {
+            return;
+        }
+    }
+    function btnRemoveAllImages_onclick() {
+        if (!CheckIfImagesInBuffer()) {
+            return;
+        }
+        WebTWAIN.RemoveAllImages();
+        document.getElementById("TotalImage").value = "0";
+        document.getElementById("CurrentImage").value = "";
+        if (CheckErrorString()) {
+            return;
+        }
+    }
+    function slPreviewMode() {
+        WebTWAIN.SetViewMode(parseInt(document.getElementById("PreviewMode").selectedIndex + 1), parseInt(document.getElementById("PreviewMode").selectedIndex + 1));
+        if (CheckErrorString()) {
+            return;
+        }
+    }
+    //====================Preview Group End====================//
+    var imageindex;
+    var imageindex2;
+    function DynamicWebTwain_OnMouseClick(index) {
+        imageindex = index;
+        document.getElementById("CurrentImage").value = index + 1;
+        if (CheckErrorString()) {
+            return;
+        }
+    }
+
+    function DynamicWebTwain_OnMouseRightClick(index2) {
+        if (!CheckIfImagesInBuffer()) {
+            return;
+        }
+        var StrextraInfo;
+        StrextraInfo = "Mouse X coordinate: " + WebTWAIN.MouseX + " Mouse Y coordinate: " + WebTWAIN.MouseY;
+        document.getElementById("extraInfo").innerHTML = StrextraInfo;
+        setTimeout(function () {
+            document.getElementById("extraInfo").innerHTML = "";
+        }, 6000);
+        imageindex2 = index2;
+        if (imageindex != imageindex2) {
+            WebTWAIN.SwitchImage(imageindex, imageindex2);
+        }
+        if (CheckErrorString()) {
+            return;
+        }
+    }
+
+    function DynamicWebTwain_OnMouseDoubleClick() {
+        var StrextraInfo;
+        StrextraInfo = "Image Width: " + WebTWAIN.GetImageWidth(WebTWAIN.CurrentImageIndexInBuffer) +
+        " Image Height: " + WebTWAIN.GetImageHeight(WebTWAIN.CurrentImageIndexInBuffer) +
+        " Image Bit Depth: " + WebTWAIN.GetImageBitDepth(WebTWAIN.CurrentImageIndexInBuffer);
+        document.getElementById("extraInfo").innerHTML = StrextraInfo;
+        setTimeout(function () {
+            document.getElementById("extraInfo").innerHTML = "";
+        }, 6000);
+        if (CheckErrorString()) {
+            return;
+        }
+    }
+
+    function DynamicWebTwain_OnTopImageInTheViewChanged(index) {
+        document.getElementById("CurrentImage").value = index + 1;
+        if (CheckErrorString()) {
+            return;
+        }
+    }
+
+</script>  

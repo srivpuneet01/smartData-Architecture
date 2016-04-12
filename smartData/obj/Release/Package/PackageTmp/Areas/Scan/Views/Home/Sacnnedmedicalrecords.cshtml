@@ -1,0 +1,915 @@
+﻿@{
+    ViewBag.Title = "Sacnnedmedicalrecords";
+    Layout = "~/Areas/Scan/Views/Shared/_Layout.cshtml";
+}
+
+@*<script type="text/javascript" language="javascript" src="~/Areas/Scan/Resources/dynamsoft.webtwain.initiate.js"></script>
+    <script type="text/javascript" language="javascript" src="~/Areas/Scan/Resources/dynamsoft.webtwain.config.js"></script>
+    <script type="text/javascript" language="javascript" src="~/Areas/Scan/js/online_demo_operation.js"></script>
+    <script type="text/javascript" language="javascript" src="~/Areas/Scan/js/online_demo_initpage.js"></script>
+    <script type="text/javascript" language="javascript" src="~/Areas/Scan/js/jquery.js"></script>*@
+<script src="~/Resources/dynamsoft.webtwain.install.js"></script>
+<script src="~/Areas/Scan/Resources/dynamsoft.webtwain.initiate.js"></script>
+<script src="~/Areas/Scan/Resources/dynamsoft.webtwain.config.js"></script>
+<script src="~/Areas/Scan/js/online_demo_initpage.js"></script>
+<script src="~/Areas/Scan/js/online_demo_operation.js"></script>
+<script src="~/Areas/Scan/js/jquery.js"></script>
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<link href="~/Scripts/BootStrapGrid/src/bootstrap-table.css" rel="stylesheet" />
+<link href="~/Scripts/BootStrapDailog/bootstrap-dialog.min.css" rel="stylesheet" />
+
+
+<script src="~/Scripts/JqGrid/jquery-1.11.0.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/BootStrapGrid/src/bootstrap-table.js"></script>
+<script src="~/Scripts/BootStrapDailog/bootstrap-dialog.min.js"></script>
+<script src="~/Scripts/BootStrapGrid/src/extensions/filter/bootstrap-table-filter.js"></script>
+<script src="~/Areas/Scan/js/online_demo_operation.js"></script>
+<script src="~/Scripts/bootstrap.js"></script>
+<script src="~/Scripts/bootstrap-datepicker.js"></script>
+<script>
+    var form;
+    $(document).ready(function () {
+        //$("#EffectiveDate").keyup(function(event) {
+        //    if (event.keyCode != '13' && event.keyCode != '27' && event.keyCode != '32') {
+        //        alert('test');
+        //    }
+        //});
+
+        $( "#EffectiveDate" ).keypress(function() {
+            console.log( "Handler for .keypress() called." );
+        });
+
+        $('#EffectiveDate').datepicker({
+            format: 'mm-dd-yyyy'
+        });
+        Dynamsoft_OnReady();
+        $("#hiddenMassUpdatecheckAll").val("");
+        $("#hiddenMassUpdatecheckAllsts").val("");
+
+        //setTimeout(function () {
+        //    //   $("#btnMassUpdate").addClass("hidden");
+        //    $("#btnMassUpdate").show();
+        //    $("#ddlactivate").show();
+        //}, 2500);
+        $("#btnAdd").click(function () {
+            //  window.location.href = "/Patients/Patients/Create";
+            //  $("hdtext").text("Add Role");
+            $("#AddModal").modal('show');
+        });
+
+        @functions{
+            public string TokenHeaderValue()
+            {
+                string cookieToken, formToken;
+                AntiForgery.GetTokens(null, out cookieToken, out formToken);
+                return cookieToken + ":" + formToken;
+            }
+         }
+        // Antiforgery Token
+        var token = '@TokenHeaderValue()';
+        var headers = {};
+        headers["RequestVerificationToken"] = token;
+
+        // Set Custom filters for searching : Model Property name and search TxtBox Id names must be same
+        var Param = {};
+        //Param.FirstName = $("#FirstName").val();
+        //Param.LastName = $("#LastName").val();
+        //Param.Email = $("#Email").val();
+        //form = $('#EditForm');
+       
+        $("#btnFilter").click(function () {
+           // debugger;
+            var effectiveDate = $("#dp1").val();
+           
+            Param.clickBtn = true;
+            //form = $('#frmgrid');
+            if (effectiveDate != "" ||effectiveDate != undefined) {
+                Param.EffectiveDate = effectiveDate;
+            }
+            else {
+                Param.EffectiveDate = "01-01-0001 12:00:00 AM";
+            }
+            
+           
+            $('#grid').bootstrapTable('filterBy');
+            Param.clickBtn = false;
+        });
+        $("#EditForm").on("submit", function (event) {
+            $('#loadingmessage').show();
+            mycustomsubmit(event);
+        });
+        form = $('#EditForm');
+        function mycustomsubmit(e) {
+            e.preventDefault();
+            $.ajax({
+                cache: false,
+                async: true,
+                type: "POST",
+                url: "http://localhost:55038/api/RolesAPI/EditRole",
+                data: $('#EditForm').serialize(),//form.serialize(),
+                success: function (data) {
+
+                    RefreshGrid();
+                    ShowMessage(BootstrapDialog.TYPE_SUCCESS, 'Your Record is successfully updated.');
+                    $("#myModal").modal('hide');
+                    $('#loadingmessage').hide();
+                    //}
+                    //else {
+                    //    ShowMessage(BootstrapDialog.TYPE_DANGER, 'Error occured.');
+                    //}
+                },
+                error: function (request, error) {
+                    if (request.statusText == "CustomMessage") {
+                        $("#spanError").html(request.responseText)
+                    }
+                },
+                headers: {
+                    'RequestVerificationToken': '@TokenHeaderValue()'
+                }
+            });
+
+            @*var user = {};
+            user.UserId = $("#userId").val();
+            user.FirstName = $("#txtFirstName").val();
+            user.LastName = $("#txtLastName").val();
+            user.Email = $("#txtEmail").val();
+            $.ajax({
+                cache: false,
+                async: false,
+                type: "POST",
+                url: "http://localhost:55038/api/UsersAPI/EditUser",
+                data: { 'user': user },
+                success: function (data) {
+                    if (data == true) {
+                        RefreshGrid();
+                        ShowMessage(BootstrapDialog.TYPE_SUCCESS, 'Your Record is successfully updated.');
+                    }
+                    else {
+                        ShowMessage(BootstrapDialog.TYPE_DANGER, 'Error occured.');
+                    }
+                },
+                error: function (request, error) {
+                    if (request.statusText == "CustomMessage") {
+                        $("#spanError").html(request.responseText)
+                    }
+                },
+                headers: {
+                    'RequestVerificationToken': '@TokenHeaderValue()'
+                }
+            });*@
+        }
+
+        var reqUrl = 'http://localhost:55038/api/ScanAPI/GetScannedRecords';
+        //alert("Call");
+        $('#grid').bootstrapTable({
+            headers: headers,
+            method: 'post',
+            url: reqUrl,
+            cache: false,
+            height: 500,
+            classes: 'table table-hover',
+            customParams: Param,
+            striped: true,
+            pageNumber: 1,
+            pagination: true,
+            pageSize: 10,
+            pageList: [5, 10, 20, 30],
+            search: false,
+            showColumns: true,
+            showRefresh: true,
+            sidePagination: 'server',
+            minimumCountColumns: 2,
+            showHeader: true,
+            showFilter: false,
+            smartDisplay: true,
+            clickToSelect: true,
+            rowStyle: rowStyle,
+            toolbar: '#custom-toolbar',
+            columns: [
+                      //{
+                      //    field: 'ScannedRecordID',
+                      //    title: 'SelectAll',
+                      //    type: 'search',
+                      //    sortable: true,
+                      //    formatter: function (value, row, index) {
+                      //        //  return '<input name="elementname"  value="' + value + '"/>';
+                      //        //return '<input name="elementname"  value="'+row.id+'"/>';     here id is your field name
+                      //        //   alert(row.UserId);href="javascript:ShowEditPopup(' + row + ')"
+                      //        if (row.ScannedRecordID != "" && row.ScannedRecordID != null) {
+                      //            return '<a id="edit"  class="edit ml10" href="javascript:ShowEditPopup(' + row.ScannedRecordID + ')" title="Edit">' + row.ScannedRecordID + '</a>'
+                      //        }
+                       
+                      //    }
+                      //}
+                         {
+                             field: '',
+                             title: 'SelectAll',
+                             type: 'checkbox',
+                             checkbox: true,
+                             value: '',
+                             clickToSelect: true,
+                             align: 'left',
+                         }, 
+                      
+            {
+                field: 'EffectiveDate',
+                title: 'EffectiveDate',
+                type: 'search',
+                formatter: DateFormatter,
+                sortable: true,
+            },
+
+                {
+                    field: 'AssociateName',
+                    title: 'Associated with',
+                    //type: 'checkbox',
+                    visible: true,
+                    // checkbox: true,
+                    sortable: false,
+                    align: 'left',
+
+
+                },
+                 {
+                     field: 'countImage',
+                     title: 'No . Of Images',
+                     //type: 'checkbox',
+                     visible: true,
+                     // checkbox: true,
+                     sortable: false,
+                     align: 'left',
+
+
+                 },
+                 {
+                     field: 'ScannedBy',
+                     title: 'Scanned By',
+                     //type: 'checkbox',
+                     visible: true,
+                     // checkbox: true,
+                     sortable: false,
+                     align: 'left',
+
+
+                 },
+            {
+                field: 'operate',
+                title: 'Actions',
+
+
+                clickToSelect: false,
+                formatter: operateFormatter,
+                events: operateEvents
+            }],
+            //filters: [
+            //    {
+            //        field: 'FirstName',    // field identifier
+            //        label: 'First Name',    // filter label
+            //        type: 'search',
+            //        enabled: true   // filter type
+            //    },
+            //    {
+            //        field: 'LastName',
+            //        label: 'Last Name',
+            //        type: 'search',
+            //        enabled: true   // filter is visible by default
+            //    },
+            //    {
+            //        field: 'Email',
+            //        label: 'Email',
+            //        type: 'search',
+            //        enabled: true
+            //    },
+
+            //],
+            onSubmit: function () {
+                var data = $('#filter-bar').bootstrapTableFilter('getData');
+                console.log(data);
+
+            },
+            onLoadSuccess: function () {
+                Addtitle();
+            },
+            onPageChange: function () {
+                Addtitle();
+            }
+        });
+
+    });
+
+    function Addtitle() {
+        $('.page-next').attr('Title', 'Next');
+        $('.page-first').attr('Title', 'First');
+        $('.page-last').attr('Title', 'Last');
+        $('.page-pre').attr('Title', 'Previous');
+    }
+    function DateFormatter(value, row, index) {
+        return [
+         row.EffectiveDate = new Date(row.EffectiveDate).toLocaleDateString()
+        ].join('');
+    }
+    // Edit and Delete Formattte links
+    function operateFormatter(value, row, index) {
+        return [
+            '<a id="edit" href="javascript:void(0)"  class="edit ml10"  title="View">',
+                '<i class="glyphicon glyphicon-edit"></i>',
+            '</a>&nbsp;&nbsp;',
+            '<a id="delete" class="remove ml10" href="javascript:void(0)" title="Remove">',
+                '<i class="glyphicon glyphicon-remove"></i>',
+            '</a>'
+        ].join('');
+    }
+
+    // Link Events Edit and Delete
+    window.operateEvents = {
+        'click .edit': function (e, value, row, index) {
+          //  alert(row.ScannedRecordID);
+              window.location = "/scan/home/index?EditMode="+row.ScannedRecordID;
+          //  window.location = "/scan/home/Sacnnedmedicalrecords?EditMode="+row.ScannedRecordID;
+           // $("#HiddenEditMode").val(row.ScannedRecordID);
+           //showList(row.ScannedRecordID);
+            // setInterval(function(){ window.location = "/scan/home/index?EditMode="+row.ScannedRecordID; }, 3000);
+            // document.getElementById(addscanner).contentDocument.location.reload(true);
+
+          // $("#AddModal").modal('show');
+
+
+        },
+
+        'click .remove': function (e, value, row, index) {
+
+            BootstrapDialog.show({
+                title: 'Confirmation',
+                message: 'Are you sure You want to delete this record?.',
+                buttons: [{
+                    label: 'Yes',
+                    cssClass: 'btn-primary',
+                    action: function (dialogItself) {
+                        $('#loadingmessage').show();
+                        @*$.ajax({
+                            cache: false,
+                            async: false,
+                            type: "POST",
+                            url: "http://localhost:55038/api/ScanAPI/DeleteRecords/"+row.ScannedRecordID,
+
+                            success: function (data) {
+                                if (data == true) {
+                                    RefreshGrid();
+                                    dialogItself.close();
+                                }
+                                else {
+                                    ShowMessage(BootstrapDialog.TYPE_DANGER, 'Error occured.');
+                                }
+                            },
+                            error: function (request, error) {
+                                if (request.statusText == "CustomMessage") {
+                                    $("#spanError").html(request.responseText)
+                                }
+                            },
+                            headers: {
+                                'RequestVerificationToken': '@TokenHeaderValue()'
+                            }
+                        });*@
+                        $.ajax({
+                            type: "POST",
+                            url: "/Scan/Home/DeleteRecords",
+                            data: '{ScannedRecordID: "' + row.ScannedRecordID + '" }',
+                            contentType: "application/json; charset=utf-8",
+                            dataType: "json",
+                            success: function (data) {
+                                RefreshGrid();
+                                $('#loadingmessage').hide();
+                               // $("#txtActionName").val("");
+                            //    //   $("#ActionType").val(0);
+                              //  $(".CreateSAction").css("display", "inline-block");
+                              //  $(".EditSAction").css("display", "none");
+                              //  BindGrid($("#FK_screenId").val());
+                               dialogItself.close();
+                                 ShowMessage(BootstrapDialog.TYPE_SUCCESS, 'Your Record is successfully deleted.');
+                                 $("#myModal").modal('hide');
+                                //}
+                                //else {
+                                //    ShowMessage(BootstrapDialog.TYPE_DANGER, 'Error occured.');
+                                //}
+                            },
+                            failure: function (response) {
+                                alert(response.d);
+                            }
+                        });
+                    }
+                }, {
+                    label: 'No',
+                    cssClass: 'btn-danger',
+                    action: function (dialogItself) {
+                        dialogItself.close();
+                    }
+                }]
+            });
+
+        }
+    };
+
+    function rowStyle(row, index) {
+        var classes = ['active', 'success', 'info', 'warning', 'danger'];
+
+        if (index % 2 === 0) {
+            return {
+                classes: classes[1]
+            };
+        }
+        return {};
+    }
+
+    function RefreshGrid() {
+        $('#grid').bootstrapTable('refresh', { silent: true });
+    }
+
+    //BootstrapDialog.TYPE_DEFAULT,
+    //BootstrapDialog.TYPE_INFO,
+    //BootstrapDialog.TYPE_PRIMARY,
+    //BootstrapDialog.TYPE_SUCCESS,
+    //BootstrapDialog.TYPE_WARNING,
+    //BootstrapDialog.TYPE_DANGER
+    function ShowMessage(type, message) {
+        $messageData = $("<span>Information</span>");
+        BootstrapDialog.show({
+            title: $messageData,
+            type: type,
+            message: message,
+            closable: true,
+            closeByBackdrop: false,
+            closeByKeyboard: false,
+            buttons: [{
+                label: 'Ok',
+                action: function (dialogItself) {
+                    dialogItself.close();
+                }
+            }]
+        });
+    }
+
+    
+
+    function AddNew() {
+    
+        // $("#AddModal").modal('show');
+        window.location = "/scan/home/index";
+      
+    }
+    //Mass Delete
+    function MassUpdate() {
+        CheckUncheckAll();
+    }
+    function CheckUncheckAll() {
+
+        if ($("#hiddenMassUpdatecheckAllsts").val() == "" && $("#hiddenMassUpdatecheckAll").val() == "") {
+            BootstrapDialog.alert("Please select scanned record");
+            return false;
+        }
+        
+        var roleNames = $("#hiddenMassUpdatecheckAll").val();
+        var unCheckIds = '';
+        if ($("#hiddenMassUpdatecheckAllsts").val() == "allcheck" && $("#hiddenMassUpdatecheckAll").val() == "0" && $("#hiddenMassUpdatecheckAll").val() != "") {
+            unCheckIds = $("#hiddenMassUncheckIds").val();
+        } else { unCheckIds = '0';}
+
+        var activtype = $("#ddlactivate").val();
+        //   alert(roleNames);
+        // var ModuleID = $("#ModuleList :selected").val();
+        //  var str = $("#HiddenAllpermission").val();
+        //alert(str);
+        //$('#loadingmessage').show();
+        var flag = 0;
+        var msg = '';
+        if (activtype == "1") {
+            flag = 2;
+            msg = 'Are you sure you want to activate these records?';
+        }
+        else if (activtype == "2") {
+            flag = 7;
+            msg = 'Are you sure you want to delete these records?';
+        }
+        else {
+            flag = 3;
+            msg = 'Are you sure you want to deactivarte these records?';
+        }
+            
+        if ($("#hiddenMassUpdatecheckAllsts").val() == "allcheck") {
+            roleNames = "0";
+            if (unCheckIds == "0" || unCheckIds == "") {
+                if (activtype == "1") { flag = 4; msg = 'Are you sure you want to activate these records?'; }
+                else if (activtype == "2") { flag = 6; msg = 'Are you sure you want to delete these records?'; }
+                else { flag = 5; msg = 'Are you sure you want to deactivarte these records?'; }
+            }
+        }
+       // alert(roleNames);
+      //  alert(unCheckIds);
+        BootstrapDialog.show({
+            title: 'Confirmation',
+            message: msg,
+            buttons: [{
+                label: 'Yes',
+                cssClass: 'btn-primary',
+                action: function (dialogItself) {
+                    $('#loadingmessage').show();
+                    $.ajax({
+                        type: "POST",
+                        url: "/Scan/Home/MassDeleteScannedRecord",
+                        data: '{ScannedRecordIDs: "' + roleNames + '",unScannedRecordIDs:"' + unCheckIds + '",active: ' + flag + '}',
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        success: function (data) {
+
+                            if (activtype == "1") {
+                                ShowMessage(BootstrapDialog.TYPE_SUCCESS, 'Records have been marked activated');
+                                RefreshGrid();
+                            }
+                            else if (activtype == "2") {
+                                ShowMessage(BootstrapDialog.TYPE_SUCCESS, 'Records have been deleted successfully.');
+                                RefreshGrid();
+                            }
+                            else {
+                                ShowMessage(BootstrapDialog.TYPE_SUCCESS, 'Records have been marked deactivated');
+                                //   location.reload();
+                                RefreshGrid();
+                            }
+                            $("#hiddenMassUpdatecheckAllsts").val("");
+                            $("#hiddenMassUpdatecheckAll").val("");
+                            $("#hiddenMassUncheckIds").val("");
+                            window.location.href = "";
+                        },
+                        failure: function (response) {
+                            alert(response.d);
+                        }
+                    });
+                    dialogItself.close();
+                }
+            }, {
+                label: 'No',
+                cssClass: 'btn-danger',
+                action: function (dialogItself) {
+                    dialogItself.close();
+                }
+            }]
+        });
+
+
+
+
+            
+
+    }
+
+    function CheckUncheckAllFill(src) {
+        // alert(src);
+        if (src == "allcheck") {
+            $("#hiddenMassUpdatecheckAllsts").val("allcheck");
+            $("#hiddenMassUpdatecheckAll").val("0");
+        }
+        else {
+            $("#hiddenMassUpdatecheckAllsts").val("");
+            $("#hiddenMassUpdatecheckAll").val("");
+        }
+    }
+
+
+    function checkRow(src) {
+            
+        var str = src.ScannedRecordID.toString();
+        if ($("#hiddenMassUncheckIds").val() != "") { $("#hiddenMassUncheckIds").val($("#hiddenMassUncheckIds").val().replace(str.toString() + ",", " ")); }
+
+        if ($("#hiddenMassUpdatecheckAll").val() == "") {
+            $("#hiddenMassUpdatecheckAll").val(str + ",");
+            // $("#hiddenMassUpdateUncheck").val($("#hiddenMassUpdateUncheck").val().replace(str.toString() + ",", " "));
+        }
+        else {
+            str = $("#hiddenMassUpdatecheckAll").val() + "" + str + ","
+            $("#hiddenMassUpdatecheckAll").val(str);
+            //  $("#hiddenMassUpdateUncheck").val($("#hiddenMassUpdateUncheck").val().replace(str.toString() + ",", " "));
+        }
+
+    }
+    function UncheckRow(src) {
+           
+        var str = src.ScannedRecordID.toString();
+
+        if ($("#hiddenMassUncheckIds").val() == "") {$("#hiddenMassUncheckIds").val(str + ",");}
+        else {
+            str = $("#hiddenMassUncheckIds").val() + "" + str + ","
+            $("#hiddenMassUncheckIds").val(str);
+        }
+
+        if ($("#hiddenMassUpdatecheckAll").val() != "") {
+            // $("#hiddenMassUpdatecheckAll").val(str + ",");
+            $("#hiddenMassUpdatecheckAll").val($("#hiddenMassUpdatecheckAll").val().replace(str.toString() + ",", " "));
+        }
+    }
+    function LoadSuccess()
+    {
+        $("#btnMassUpdate").show();
+        $("#ddlactivate").show();
+        
+      
+        $("#ddlactivate option:nth-child(1)").remove();
+        //$("#ddlactivate option:nth-child(0)").remove();
+        $("#ddlactivate option[value='0']").remove();
+    
+        $(".bootstrap-table").addClass("mrg");
+        $('#loadingmessage').hide();
+    }
+
+
+    //List View
+    function  showList(ScannedRecordID)
+    {
+       // alert(ScannedRecordID);
+      //  $('#ActionGrid').html("");
+        $.ajax({
+        type: "POST",
+        url: "/Scan/Home/ScannedRecordDetailsByScannedRecordID",
+        data: '{ScannedRecordID: ' + ScannedRecordID + '}',
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (data) {
+
+            LoadImagesInEditMode(data);
+
+        },
+        failure: function (response) {
+            alert(response.d);
+        }
+    });
+    }
+
+</script>
+
+<style>
+    .row {
+        margin-bottom: 10px;
+    }
+
+    .col-sm-4 {
+        text-align: right;
+    }
+
+
+
+    .modal-dialog {
+        padding-top: 5%;
+    }
+</style>
+<script>
+    // Focus first element
+    $.fn.focus_first = function () {
+        var elem = $('input:visible', this).get(0);
+        var select = $('select:visible', this).get(0);
+        if (select && elem) {
+            if (select.offsetTop < elem.offsetTop) {
+                elem = select;
+            }
+        }
+        var textarea = $('textarea:visible', this).get(0);
+        if (textarea && elem) {
+            if (textarea.offsetTop < elem.offsetTop) {
+                elem = textarea;
+            }
+        }
+
+        if (elem) {
+            elem.focus();
+        }
+        return this;
+    }
+    //$(window).load(function () {
+    //    //alert("hi");
+
+    //});
+    function isNumberKey(evt)
+    {
+        var charCode = (evt.which) ? evt.which : event.keyCode
+        if(charCode==8)//back space
+            return true;
+        if (charCode < 45 || charCode > 57)//0-9
+        {
+            alert("Please Enter Only Numbers.");
+            return false;
+        }
+            
+        return true;
+
+    }
+</script>
+
+<div id="custom-toolbar">
+   
+        <div class="form-inline" role="form">
+            <div class="form-group">
+                <div class="search">
+                     @*dp1*@
+                    <input type="text" placeholder="Effective Date" name="EffectiveDate" id="EffectiveDate" onkeypress="return isNumberKey(event)" data-val-required=" you must select a date." data-val-date="The field EffectiveDate must be a date." data-val="true" class="form-control valid">
+                </div>
+            </div>
+
+
+
+
+            <div class="form-group">
+
+                <input class="btn btn-success" id="btnFilter" placeholder="" type="button" value="Filter" name="btnFilter">
+            </div>
+
+            <div class="form-group">
+
+
+
+                @*<input class="btn btnAdd btn-success" id="btnAdd" placeholder="" type="button" value="Add" name="btnAdd">*@
+
+
+
+            </div>
+
+
+        </div>
+    
+</div>
+
+
+<div id='loadingmessage' class="loader1 fade1" style="display: none; z-index: 5000; height: 95%; width: 90%; margin-left: 4%; ">
+    <img src='~/Areas/ScreenPermissions/Images/loading2.gif' style="height: 50px;width: 50px;" />
+</div>
+
+<div id="filter-bar"> </div>
+<table class="table table-hover" data-toolbar="#custom-toolbar" data-show-columns="true" data-show-filter="true"
+       id="grid">
+    <thead>
+        <tr>
+            <th data-field="RoleId">Role ID</th>
+            <th data-field="RoleName">Role Name</th>
+
+        </tr>
+    </thead>
+</table>
+
+
+
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+
+            </div>
+            <div id="ActionGrid">
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="AddModal" class="modal fade">
+    <div class="modal-dialog1">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <iframe id="addscanner" src="~/Scan/Home/Index" style="width:1200px;height:600px;"></iframe>
+                @*@Html.Partial("_AddScanner");*@
+
+            </div>
+        </div>
+    </div>
+</div>
+@*<input id="hiddenMassUpdatecheckAll" type="hidden" />
+<input id="hiddenMassUpdatecheckAllsts" type="hidden" />*@
+<input id="hiddenMassUpdatecheckAll" type="hidden" />
+<input id="hiddenMassUpdatecheckAllsts" type="hidden" />
+<input id="hiddenMassUncheckIds" type="hidden" />
+<input id="HiddenHostName" type="hidden" />
+<div id='loadingmessage' class="loader1 fade1" style="display:none;">
+    <img src='~/Areas/ScreenPermissions/Images/loading2.gif' style="height: 150px;width: 200px;" />
+</div>
+<style>
+    .loader1 {
+        position: absolute;
+        top: 8%;
+        left: 5%;
+        width: 400px;
+        height: 200px;
+        padding: 30px 15px 0px;
+        border: 3px solid #ababab;
+        box-shadow: 1px 1px 10px #ababab;
+        border-radius: 20px;
+        background-color: white;
+        z-index: 7002;
+        text-align: center;
+        overflow: auto;
+    }
+
+    .fade1 {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: #ababab;
+        z-index: 1001;
+        -moz-opacity: 0.8;
+        opacity: .70;
+        filter: alpha(opacity=80);
+    }
+
+    .hideRow {
+        display: none;
+    }
+
+    .modal-dialog1 {
+        right: auto;
+        left: 1%;
+        width: 1300px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+</style>
+@section CSSLinks
+{
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/datepicker.css" rel="stylesheet" />
+}
+
+@section JSRefernces
+{
+    @System.Web.Optimization.Scripts.Render("~/bundles/jqueryval")
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/bootstrap-datepicker.js"></script>
+}
+<script type="text/javascript" language="javascript">
+
+    function pageonloadForView() {
+        initMessageBox(true);
+    }
+
+
+    // Check if the control is fully loaded.
+    function Dynamsoft_OnReady() {
+        // If the ErrorCode is 0, it means everything is fine for the control. It is fully loaded.
+        DWObject = Dynamsoft.WebTwainEnv.GetWebTwain('dwtcontrolContainer');
+        if (DWObject) {
+            if (DWObject.ErrorCode == 0) {
+                DWObject.LogLevel = 1;
+                DWObject.IfAllowLocalCache = true;
+
+
+                if (Dynamsoft.Lib.env.bWin)
+                    DWObject.MouseShape = false;
+
+                var CurrentPathName,CurrentPath,strActionPage,strHTTPServer,downloadsource;
+                if(location.port==''){
+                    DWObject.HTTPPort = DynamLib.detect.ssl? 443 : 80;
+                } else {
+                    DWObject.HTTPPort = location.port;
+                }
+
+                DWObject.IfSSL = DynamLib.detect.ssl;
+
+                CurrentPathName = unescape(location.pathname);	// get current PathName in plain ASCII
+                CurrentPath = CurrentPathName.substring(0, CurrentPathName.lastIndexOf("/") + 1);
+                strActionPage = CurrentPath + "online_demo_download.aspx"; //the ActionPage's file path
+                strHTTPServer = location.hostname;
+                downloadsource = strActionPage + "?iImageIndex=<%=strImageID%>&ImageName=<%=strImageName%>&ImageExtName=<%=strImageExtName%>";
+
+                var sFun = function(){
+                    updatePageInfo();
+                };
+                var OnSuccess = function() {
+                    updatePageInfo();
+                };
+
+                var OnFailure = function(errorCode, errorString) {
+                    updatePageInfo();
+                };
+
+             //   DWObject.HTTPDownloadEx(strHTTPServer, downloadsource, <%=strImageFileType %>, OnSuccess, OnFailure);
+
+
+                DWObject.RegisterEvent("OnPostTransfer", Dynamsoft_OnPostTransfer);
+                DWObject.RegisterEvent("OnPostLoadfunction", Dynamsoft_OnPostLoadfunction);
+                DWObject.RegisterEvent("OnPostAllTransfers", Dynamsoft_OnPostAllTransfers);
+                DWObject.RegisterEvent("OnMouseClick", Dynamsoft_OnMouseClick);
+                DWObject.RegisterEvent("OnImageAreaSelected", Dynamsoft_OnImageAreaSelected);
+                DWObject.RegisterEvent("OnImageAreaDeSelected", Dynamsoft_OnImageAreaDeselected);
+                DWObject.RegisterEvent("OnTopImageInTheViewChanged", Dynamsoft_OnTopImageInTheViewChanged);
+            }
+        }
+    }
+
+
+    $(function() {
+        pageonloadForView();
+    });
+    
+</script>
+

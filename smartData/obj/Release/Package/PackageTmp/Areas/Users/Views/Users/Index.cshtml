@@ -1,0 +1,1084 @@
+﻿@*@model IEnumerable<Core.Domain.User>*@
+@model Core.Domain.UserInsert
+
+
+
+@section CSSLinks
+{
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Scripts/BootStrapGrid/src/bootstrap-table.css" rel="stylesheet" />
+    <link href="~/Scripts/BootStrapDailog/bootstrap-dialog.min.css" rel="stylesheet" />
+}
+@section JSRefernces
+{
+    <script src="~/Scripts/JqGrid/jquery-1.11.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/BootStrapGrid/src/bootstrap-table.js"></script>
+    <script src="~/Scripts/BootStrapDailog/bootstrap-dialog.min.js"></script>
+    <script src="~/Scripts/BootStrapGrid/src/extensions/filter/bootstrap-table-filter.js"></script>
+
+    <script>
+        var form;
+        var saveid = 0;
+        $(document).ready(function () {
+          //  alert(window.location.host);
+            $("#HiddenHostName").val(window.location.origin);
+            $("#hiddenMassUpdatecheckAll").val("");
+            $("#hiddenMassUpdatecheckAllsts").val("");
+            // $("#modal-dialog").css("padding-top","5%");
+           // alert($("#HiddenHostName").val());
+            setTimeout(function () {
+                //   $("#btnMassUpdate").addClass("hidden");
+                $("#btnMassUpdate").show();
+                $("#ddlactivate").show();
+            }, 2500);
+
+            @functions{
+            public string TokenHeaderValue()
+            {
+                string cookieToken, formToken;
+                AntiForgery.GetTokens(null, out cookieToken, out formToken);
+                return cookieToken + ":" + formToken;
+            }
+         }
+            // Antiforgery Token
+            var token = '@TokenHeaderValue()';
+            var headers = {};
+            headers["RequestVerificationToken"] = token;
+
+            // Set Custom filters for searching : Model Property name and search TxtBox Id names must be same
+            var Param = {};
+            //Param.FirstName = $("#FirstName").val();
+            //Param.LastName = $("#LastName").val();
+            //Param.Email = $("#Email").val();
+            //form = $('#EditForm');
+            $("#btnFilter").click(function () {
+                var firstname = $("#FirstName").val();
+                var lastname = $("#LastName").val();
+                var email = $("#Email").val();
+
+                Param.clickBtn = true;
+                form = $('#EditForm');
+                if (firstname != "") {
+                    Param.FirstName = firstname;
+                }
+                else {
+                    Param.FirstName = "";
+                }
+                if (lastname != "") {
+                    Param.LastName = lastname;
+                }
+                else {
+                    Param.LastName = "";
+                }
+                if (email != "") {
+                    Param.Email = email;
+                }
+                else {
+                    Param.Email = "";
+                }
+                $('#grid').bootstrapTable('filterBy');
+                Param.clickBtn = false;
+            });
+            $("#EditForm").on("submit", function (event) {
+                //  var shortContent = '<p>Something here.</p>';
+                var types = BootstrapDialog.TYPE_DANGER;
+                if ($("#txtFirstName").val() == "") {
+                    //BootstrapDialog.show("Enter First Name",);
+                    ShowMessage(BootstrapDialog.TYPE_DANGER, "Enter First Name");
+
+                    return false;
+                }
+                if ($("#txtLastName").val() == "") {
+                    // BootstrapDialog.alert("Enter Last Name");
+                    ShowMessage(BootstrapDialog.TYPE_DANGER, "Enter Last Name");
+                    return false;
+                }
+                if ($("#txtEmail").val() == "") {
+                    //  BootstrapDialog.alert("Enter Last Name");
+                    ShowMessage(BootstrapDialog.TYPE_DANGER,"Enter Last Name");
+                    return false;
+                }
+
+                if ($('.gridtable input[type="checkbox"]:checked').length == 0) {
+                    ShowMessage(BootstrapDialog.TYPE_DANGER, 'Please Select Any Role.');
+                    return false;
+                }
+
+                var sEmail = $('#txtEmail').val();
+                // Checking Empty Fields
+
+                if (!validateEmail(sEmail)) {
+                    //alert('Nice!! your Email is valid, now you can continue..');
+                    //BootstrapDialog.alert('Invalid Email Address');
+                    alert("Invalid Email Address");
+                    return false;
+                }
+
+                mycustomsubmit(event);
+                //if ($("#HiddenDeleteIds").val() != "") {
+                //    DeleteUserRoles($("#HiddenUserId").val(), $("#HiddenDeleteIds").val());
+                //}
+                //if ($("#RoleIDs").val() != "") {
+                //    debugger;
+
+                //    if ($("#Password").val() == "") {
+                //        return;
+                //    }
+                //    CreateUserRoles($("#HiddenUserId").val(), $("#RoleIDs").val());
+                //}
+
+
+            });
+            form = $('#EditForm');
+            function mycustomsubmit(e) {
+                $('#loadingmessage').show();
+                e.preventDefault();
+                $.ajax({       
+                    cache: false,
+                    async: true,
+                    type: "POST",
+                    url: $("#HiddenHostName").val() + "/api/UsersAPI/EditUser",
+                    data: form.serialize(),
+                    success: function (data) {
+                        RefreshGrid();
+                        $('#loadingmessage').hide();
+                        ShowMessage(BootstrapDialog.TYPE_SUCCESS, 'Record is updated successfully.');
+                        $("#HiddenUserId").val("");
+                        $("#HiddenDeleteIds").val("");
+                        $("#RoleIDs").val("");
+                        $("#myModal").modal('hide');
+                        window.location.href = "";
+                        //}
+                        //else {
+                        //    ShowMessage(BootstrapDialog.TYPE_DANGER, 'Error occured.');
+                        //}
+                    },
+                    error: function (request, error) {
+                        if (request.statusText == "CustomMessage") {
+                            $("#spanError").html(request.responseText)
+                        }
+                    },
+                    headers: {
+                        'RequestVerificationToken': '@TokenHeaderValue()'
+                    }
+                });
+
+                @*var user = {};
+            user.UserId = $("#userId").val();
+            user.FirstName = $("#txtFirstName").val();
+            user.LastName = $("#txtLastName").val();
+            user.Email = $("#txtEmail").val();
+            $.ajax({
+                cache: false,
+                async: false,
+                type: "POST",
+                url: "http://localhost:55038/api/UsersAPI/EditUser",
+                data: { 'user': user },
+                success: function (data) {
+                    if (data == true) {
+                        RefreshGrid();
+                        ShowMessage(BootstrapDialog.TYPE_SUCCESS, 'Your Record is successfully updated.');
+                    }
+                    else {
+                        ShowMessage(BootstrapDialog.TYPE_DANGER, 'Error occured.');
+                    }
+                },
+                error: function (request, error) {
+                    if (request.statusText == "CustomMessage") {
+                        $("#spanError").html(request.responseText)
+                    }
+                },
+                headers: {
+                    'RequestVerificationToken': '@TokenHeaderValue()'
+                }
+            });*@
+            }
+            if (saveid == 0) {
+            }
+            //  var reqUrl = 'http://localhost:55038/api/UsersAPI/GetUsers';$("#HiddenHostName").val()
+            var reqUrl = $("#HiddenHostName").val() + '/api/UsersAPI/GetUsers';
+           
+            $('#grid').bootstrapTable({
+                headers: headers,
+                method: 'post',
+                url: reqUrl,
+                cache: false,
+                height: 500,
+                classes: 'table table-hover',
+                customParams: Param,
+                striped: true,
+                pageNumber: 1,
+                pagination: true,
+                pageSize: 10,
+                pageList: [5, 10, 20, 30],
+                search: false,
+                showColumns: true,
+                showRefresh: true,
+                sidePagination: 'server',
+                minimumCountColumns: 2,
+                showHeader: true,
+                showFilter: false,
+                smartDisplay: true,
+                clickToSelect: true,
+                rowStyle: rowStyle,
+                toolbar: '#custom-toolbar',
+                columns: [
+
+                      {
+                          field: '',
+                          title: 'SelectAll',
+                          type: 'checkbox',
+                          checkbox: true,
+                          value: '',
+                          clickToSelect: true,
+                          align: 'left',
+                      },
+                    {
+                        field: 'UserId',
+                        title: 'User ID',
+                        type: 'search',
+                        visible: false,
+                        sortable: true
+
+                    },
+               {
+                   field: 'FirstName',
+                   title: 'First Name',
+                   type: 'search',
+                   sortable: true,
+                   formatter: function (value, row, index) {
+                       //  return '<input name="elementname"  value="' + value + '"/>';
+                       //return '<input name="elementname"  value="'+row.id+'"/>';     here id is your field name
+                       //   alert(row.UserId);href="javascript:ShowEditPopup(' + row + ')"
+                       if (row.FirstName != "" && row.FirstName != null) {
+                           return '<a id="edit"  class="edit ml10" href="javascript:ShowEditPopup(' + row.UserId + ')" title="Edit">' + row.FirstName + '</a>'
+                       }
+                       
+                   }
+               }, {
+                   field: 'LastName',
+                   title: 'Last Name',
+                   type: 'search',
+
+                   sortable: true,
+                  
+               }, {
+                   field: 'Email',
+                   title: 'Email',
+                   type: 'search',
+
+                   sortable: true,
+                   formatter: function (value, row, index) {
+                       //  return '<input name="elementname"  value="' + value + '"/>';
+                       //return '<input name="elementname"  value="'+row.id+'"/>';     here id is your field name
+                       //   alert(row.UserId);href="javascript:ShowEditPopup(' + row + ')"
+                       if (row.FirstName != "" && row.FirstName != null) {
+                           return '<a id="email" href="mailto:' + row.Email + '" title="Email">' + row.Email + '</a>'
+                       }
+
+                   }
+               },
+
+                  {
+                      field: 'ActiveDisplay',
+                      title: 'Active',
+                      //   type: 'checkbox',
+                      visible: true,
+                      // checkbox: true,
+                      sortable: false,
+                      align: 'left',
+                      clickToSelect: false,
+                      disabled: true
+                  },
+
+
+                {
+                    field: 'operate',
+                    title: 'Actions',
+
+
+                    clickToSelect: false,
+                    formatter: operateFormatter,
+                    events: operateEvents
+                }],
+                //filters: [
+                //    {
+                //        field: 'FirstName',    // field identifier
+                //        label: 'First Name',    // filter label
+                //        type: 'search',
+                //        enabled: true   // filter type
+                //    },
+                //    {
+                //        field: 'LastName',
+                //        label: 'Last Name',
+                //        type: 'search',
+                //        enabled: true   // filter is visible by default
+                //    },
+                //    {
+                //        field: 'Email',
+                //        label: 'Email',
+                //        type: 'search',
+                //        enabled: true
+                //    },
+
+                //],
+                onSubmit: function () {
+                    var data = $('#filter-bar').bootstrapTableFilter('getData');
+                    //$("#").hide();
+                    console.log(data);
+                },
+                onLoadSuccess: function () {
+                    Addtitle();
+                },
+                onPageChange: function () {
+                    Addtitle();
+                }
+            });
+
+            //$('#filter-bar').bootstrapTableFilter({
+            //    filters: [
+            //        {
+            //            field: 'FirstName',    // field identifier
+            //            label: 'First Name',    // filter label
+            //            type: 'search',
+            //            enabled: true   // filter type
+            //        },
+            //        {
+            //            field: 'LastName',
+            //            label: 'Last Name',
+            //            type: 'search',
+            //            enabled: true   // filter is visible by default
+            //        },
+            //        {
+            //            field: 'Email',
+            //            label: 'Email',
+            //            type: 'search',
+            //            enabled: true
+            //        },
+
+            //    ],
+            //    onSubmit: function () {
+            //        var data = $('#filter-bar').bootstrapTableFilter('getData');
+            //        console.log(data);
+            //    }
+            //});
+
+        });
+
+
+        function Addtitle() {            
+            $('.page-next').attr('Title', 'Next');
+            $('.page-first').attr('Title', 'First');
+            $('.page-last').attr('Title', 'Last');
+            $('.page-pre').attr('Title', 'Previous');
+        }
+        // Edit and Delete Formattte links
+        function operateFormatter(value, row, index) {
+            return [
+                '<a id="edit"  class="edit ml10" href="javascript:void(0)" title="Edit">',
+                    '<i class="glyphicon glyphicon-edit"></i>',
+                '</a>&nbsp;&nbsp;',
+                '<a id="delete" class="remove ml10" href="javascript:void(0)" title="Remove">',
+                    '<i class="glyphicon glyphicon-remove"></i>',
+                '</a>'
+            ].join('');
+        }
+
+        // Link Events Edit and Delete
+        window.operateEvents = {
+            'click .edit': function (e, value, row, index) {
+                $.ajax({
+                    cache: false,
+                    async: true,
+                    type: "POST",
+                    url: "/Users/Users/IsUserPermitedtoDelete",
+                    success: function (data) {                        
+                        if(data==true)
+                        {             
+                            //ShowMessage(BootstrapDialog.TYPE_SUCCESS, 'Record deleted successfully.');
+                            $("#myModal").modal('show');
+                            $("#userId").val(row.UserId);
+                            $("#txtFirstName").val(row.FirstName);
+                            $("#txtLastName").val(row.LastName);
+                            $("#txtEmail").val(row.Email);
+                            $("#HiddenUserId").val(row.UserId);
+                            $("#Password").val("abcdefg");
+                            $("#ConfirmPassword").val("abcdefg");
+                            FillCheckBox(row.UserId);  
+                        }                    
+                else {
+                            ShowMessage(BootstrapDialog.TYPE_DANGER, 'Sorry, only Super Admin can edit this user!');
+                RefreshGrid();
+            }
+        },
+            error: function (request) {
+            },
+            })
+            }
+                ,
+            'click .remove': function (e, value, row, index) {
+                $.ajax({
+                    cache: false,
+                    async: true,
+                    type: "POST",
+                    url: "/Users/Users/IsUserPermitedtoDelete",
+                    success: function (data) {
+                        if(data==true)
+                        {                      
+                BootstrapDialog.show({
+                    title: 'Confirmation',
+                    message: 'Are you sure you want to delete this record?',
+                    buttons: [{
+                        label: 'Yes',
+                        cssClass: 'btn-primary',
+                        action: function (dialogItself) {
+                            $.ajax({
+                                cache: false,
+                                async: false,
+                                type: "POST",
+                                url: $("#HiddenHostName").val() + "/api/UsersAPI/DeleteUser/" + row.UserId,
+                                success: function (data) {
+                                    if (data == true) {
+                                        ShowMessage(BootstrapDialog.TYPE_SUCCESS, 'Records have been deleted successfully.');
+                                        RefreshGrid();                                                                                
+                                        dialogItself.close();
+                                        window.location.href = "";
+                                    }
+                                    else {
+                                        ShowMessage(BootstrapDialog.TYPE_DANGER, 'Error occured.');
+                                    }
+                                },
+                                error: function (request, error) {
+                                    if (request.statusText == "CustomMessage") {
+                                        $("#spanError").html(request.responseText)
+                                    }
+                                },
+                                headers: {
+                                    'RequestVerificationToken': '@TokenHeaderValue()'
+                                }
+                            });
+                        }
+                    }, {
+                        label: 'No',
+                        cssClass: 'btn-danger',
+                        action: function (dialogItself) {
+                            dialogItself.close();
+                        }
+                    }]
+                });
+
+                        }
+                        else {
+                            ShowMessage(BootstrapDialog.TYPE_DANGER, 'Sorry, only Super Admin can delete this user!');
+                            RefreshGrid();
+                        }
+                    },
+                    error: function (request) {
+                    },
+                })
+
+
+            }
+        };
+
+        function rowStyle(row, index) {
+            var classes = ['active', 'success', 'info', 'warning', 'danger'];
+
+            if (index % 2 === 0) {
+                return {
+                    classes: classes[1]
+                };
+            }
+            return {};
+        }
+
+        function RefreshGrid() {
+            $('#grid').bootstrapTable('refresh', { silent: true });
+            Addtitle();
+        }
+
+        //BootstrapDialog.TYPE_DEFAULT,
+        //BootstrapDialog.TYPE_INFO,
+        //BootstrapDialog.TYPE_PRIMARY,
+        //BootstrapDialog.TYPE_SUCCESS,
+        //BootstrapDialog.TYPE_WARNING,
+        //BootstrapDialog.TYPE_DANGER
+        function ShowMessage(type, message) {
+            $messageData = $("<span>Information</span>");
+            BootstrapDialog.show({
+                title: $messageData,
+                type: type,
+                message: message,
+                closable: true,
+                closeByBackdrop: false,
+                closeByKeyboard: false,
+                buttons: [{
+                    label: 'Ok',
+                    action: function (dialogItself) {
+                        dialogItself.close();
+                    }
+                }]
+            });
+        }
+
+        function FillCheckBox(UserId) {
+            //alert(UserId);
+            //  $("#FK_screenId").val(FK_screenId);
+            var n = UserId; //$("#FK_screenId").val();
+            // alert(n);
+            // $("#cbSelectAll").removeAttr("checked");
+            $('[name=ids]').prop("checked", false);
+            $("#cbSelectAll").prop("checked", false);
+            var path = "/Users/Users/GetUserRolesById";
+            $.getJSON(path, { UserId: n }, function (data) {
+                var ids = "";
+                if (data != null) {
+                    $.each(data, function (i, item) {
+                        var id = item.RoleId;
+                        ids = ids + id +","
+                        $("#" + id).prop("checked", true);
+                    })
+            $("#RoleIDs").val(ids);
+                    var totalRows = $("#checkableGrid td :checkbox").length;
+                    var checked = $("#checkableGrid td :checkbox:checked").length;
+
+                    if (totalRows == checked) {
+                        $("#cbSelectAll").prop("checked", true);
+                    }
+                    else {
+                        $("#cbSelectAll").prop("checked", false);
+                    }
+                }
+                else {
+                    // document.write("Not Found");
+                    $("#cbSelectAll").prop("checked", false);
+                }
+            });
+        }
+
+        function DeleteUserRoles(UserId, str) {
+            // alert(str);
+            $('#loadingmessage').show();
+
+            $.ajax({
+                type: "POST",
+                url: "/Users/Users/DeleteUserRolesById",
+                data: '{Ids: "' + str + '",UserId: ' + UserId + ' }',
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data) {
+                    //  dialogItself.close();
+                    $("#HiddenDeletepermission").val("");
+
+                    $('#loadingmessage').hide();
+                },
+                failure: function (response) {
+                    alert(response.d);
+                }
+            });
+        }
+
+        function CreateUserRoles(UserId, str) {
+            // alert(str);
+            $('#loadingmessage').show();
+
+            $.ajax({
+                type: "POST",
+                url: "/Users/Users/CreateUserRoles",
+                data: '{Ids: "' + str + '",UserId: ' + UserId + ' }',
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data) {
+                    //  dialogItself.close();
+                    $("#HiddenDeletepermission").val("");
+
+                    $('#loadingmessage').hide();
+                },
+                failure: function (response) {
+                    alert(response.d);
+                }
+            });
+        }
+
+        function AddNew() {
+            //  window.location.href = "/Patients/Patients/Create";
+            //  $("hdtext").text("Add Role");
+            //   window.location.href = "/Users/Users/Create";
+            saveid = 1;
+            $("#AddModal").modal('show');
+            $('form').focus_first();
+        }
+
+        function MassUpdate() {
+            $.ajax({
+                cache: false,
+                async: true,
+                type: "POST",
+                url: "/Users/Users/IsUserPermitedtoDelete",
+                success: function (data) {                        
+                    if(data==true)
+                    {
+                        CheckUncheckAll();
+                    }
+                    else {
+                        ShowMessage(BootstrapDialog.TYPE_DANGER, 'Sorry, you are not authorized user!');
+                        RefreshGrid();
+                    }
+                },
+                error: function (request) {
+                },
+            })
+        }
+        function CheckUncheckAll() {
+
+            if ($("#hiddenMassUpdatecheckAllsts").val() == "" && $("#hiddenMassUpdatecheckAll").val() == "") {
+                BootstrapDialog.alert("Please select Users");
+                return false;
+            }
+
+           
+            var roleNames = $("#hiddenMassUpdatecheckAll").val();
+            var unCheckIds = '';
+            if ($("#hiddenMassUpdatecheckAllsts").val() == "allcheck" && $("#hiddenMassUpdatecheckAll").val() == "0" && $("#hiddenMassUpdatecheckAll").val() != "") {
+                unCheckIds = $("#hiddenMassUncheckIds").val();
+            } else { unCheckIds = '0';}
+
+            var activtype = $("#ddlactivate").val();
+            //   alert(roleNames);
+            // var ModuleID = $("#ModuleList :selected").val();
+            //  var str = $("#HiddenAllpermission").val();
+            //alert(str);
+            //$('#loadingmessage').show();
+            var flag = 0;
+            var msg = '';
+            if (activtype == "1") {
+                flag = 2;
+                msg = 'Are you sure you want to activate these records?';
+            }
+            else if (activtype == "2") {
+                flag = 7;
+                msg = 'Are you sure you want to delete these records?';
+            }
+            else {
+                flag = 3;
+                msg = 'Are you sure you want to deactivarte these records?';
+            }
+            
+            if ($("#hiddenMassUpdatecheckAllsts").val() == "allcheck") {
+                roleNames = "0";
+                if (unCheckIds == "0" || unCheckIds == "") {
+                    if (activtype == "1") { flag = 4; msg = 'Are you sure you want to activate these records?'; }
+                    else if (activtype == "2") { flag = 6; msg = 'Are you sure you want to delete these records?'; }
+                    else { flag = 5; msg = 'Are you sure you want to deactivarte these records?'; }
+                }
+            }
+
+            BootstrapDialog.show({
+                title: 'Confirmation',
+                message: msg,
+                buttons: [{
+                    label: 'Yes',
+                    cssClass: 'btn-primary',
+                    action: function (dialogItself) {
+                        $('#loadingmessage').show();
+                        $.ajax({
+                            type: "POST",
+                            url: "/Users/Users/MassUpdateUser",
+                            data: '{UserNames: "' + roleNames + '",UnCheckIds:"' + unCheckIds + '",ModifyBy: ' + flag + '}',
+                            contentType: "application/json; charset=utf-8",
+                            dataType: "json",
+                            success: function (data) {                                
+                                if (activtype == "1") {
+                                    ShowMessage(BootstrapDialog.TYPE_SUCCESS, 'Records have been marked activated');                                  
+                                    RefreshGrid();
+                                }
+                                else if (activtype == "2") {
+                                    ShowMessage(BootstrapDialog.TYPE_SUCCESS, 'Records have been deleted successfully.');
+                                    RefreshGrid();
+                                }
+                                else {
+                                    ShowMessage(BootstrapDialog.TYPE_SUCCESS, 'Records have been marked deactivated');
+                                    //   location.reload();
+                                    RefreshGrid();
+                                }
+                                $("#hiddenMassUpdatecheckAllsts").val("");
+                                $("#hiddenMassUpdatecheckAll").val("");
+                                $("#hiddenMassUncheckIds").val("");
+                                $('#loadingmessage').hide();
+                                window.location.href = "";
+                            },
+                            failure: function (response) {
+                                alert(response.d);
+                            }
+                        });
+                        dialogItself.close();
+                    }
+                }, {
+                    label: 'No',
+                    cssClass: 'btn-danger',
+                    action: function (dialogItself) {
+                        dialogItself.close();
+                    }
+                }]
+            });
+
+
+
+
+            
+
+        }
+
+        function CheckUncheckAllFill(src) {
+            // alert(src);
+            if (src == "allcheck") {
+                $("#hiddenMassUpdatecheckAllsts").val("allcheck");
+                $("#hiddenMassUpdatecheckAll").val("0");
+            }
+            else {
+                $("#hiddenMassUpdatecheckAllsts").val("");
+                $("#hiddenMassUpdatecheckAll").val("");
+            }
+        }
+
+
+        function checkRow(src) {
+            
+            var str = src.UserId.toString();
+            if ($("#hiddenMassUncheckIds").val() != "") { $("#hiddenMassUncheckIds").val($("#hiddenMassUncheckIds").val().replace(str.toString() + ",", " ")); }
+
+            if ($("#hiddenMassUpdatecheckAll").val() == "") {
+                $("#hiddenMassUpdatecheckAll").val(str + ",");
+                // $("#hiddenMassUpdateUncheck").val($("#hiddenMassUpdateUncheck").val().replace(str.toString() + ",", " "));
+            }
+            else {
+                str = $("#hiddenMassUpdatecheckAll").val() + "" + str + ","
+                $("#hiddenMassUpdatecheckAll").val(str);
+                //  $("#hiddenMassUpdateUncheck").val($("#hiddenMassUpdateUncheck").val().replace(str.toString() + ",", " "));
+            }
+
+        }
+        function UncheckRow(src) {
+           
+            var str = src.UserId.toString();
+
+            if ($("#hiddenMassUncheckIds").val() == "") {$("#hiddenMassUncheckIds").val(str + ",");}
+            else {
+                str = $("#hiddenMassUncheckIds").val() + "" + str + ","
+                $("#hiddenMassUncheckIds").val(str);
+            }
+
+            if ($("#hiddenMassUpdatecheckAll").val() != "") {
+                // $("#hiddenMassUpdatecheckAll").val(str + ",");
+                $("#hiddenMassUpdatecheckAll").val($("#hiddenMassUpdatecheckAll").val().replace(str.toString() + ",", " "));
+            }
+        }
+        function LoadSuccess() {
+            $("#btnMassUpdate").show();
+            $("#ddlactivate").show();
+            $('#loadingmessage').hide();
+        }
+        function Selectcheckbox(Ctr) {
+
+
+            if ($(Ctr).is(":checked")) {
+                //  alert("check");
+                str = (Ctr.value.toString());
+                //  alert(str);
+                if ($("#RoleIDs").val() == "") {
+                    $("#RoleIDs").val(str + ",");
+                }
+                else {
+                    str = $("#RoleIDs").val() + str + ",";
+                    $("#RoleIDs").val(str);
+                }
+            }
+            else {
+                str = (Ctr.value.toString());
+                $("#RoleIDs").val($("#RoleIDs").val().replace(str + ",", ""));
+                //alert($("#RoleIDs").val());
+            }
+
+            // alert($("#RoleIDs").val());
+        }
+        function validateEmail(sEmail) {
+            var filter = /^[\w\-\.\+]+\@@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+            if (filter.test(sEmail)) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        function CloseAddUserPopup()
+        {
+            window.location.href = "";
+        }
+    </script>
+
+}
+
+@*<div id="grid"></div>*@
+<style>
+    .row {
+        margin-bottom: 10px;
+    }
+
+    .col-sm-4 {
+        text-align: right;
+    }
+
+    .divscroll {
+        overflow-y: scroll;
+        height: 200px;
+        width: 50%;
+    }
+</style>
+<script>
+    // Focus first element
+    $.fn.focus_first = function () {
+        var elem = $('input:visible', this).get(0);
+        var select = $('select:visible', this).get(0);
+        if (select && elem) {
+            if (select.offsetTop < elem.offsetTop) {
+                elem = select;
+            }
+        }
+        var textarea = $('textarea:visible', this).get(0);
+        if (textarea && elem) {
+            if (textarea.offsetTop < elem.offsetTop) {
+                elem = textarea;
+            }
+        }
+
+        if (elem) {
+            elem.focus();
+        }
+        return this;
+    }
+    function ShowEditPopup(UserId) {
+        debugger;
+
+        $.ajax({
+            type: "POST",
+            url: "/Users/Users/ShowEditPopup",
+            data: '{UserId: ' + UserId + ' }',
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (data) {
+
+                $.each(data, function (i, item) {
+                    $("#myModal").modal('show');
+
+                    $("#userId").val(item.UserId);
+                    $("#txtFirstName").val(item.FirstName);
+                    $("#txtLastName").val(item.LastName);
+                    $("#txtEmail").val(item.Email);
+                    $("#HiddenUserId").val(item.UserId);
+                    $("#RoleIDs").val(item.RoleId);
+
+                    $("#Password").val("abcdefg");
+                    $("#ConfirmPassword").val("abcdefg");
+                    FillCheckBox(item.UserId);
+                })
+            },
+            failure: function (response) {
+                alert(response.d);
+            }
+        });
+
+    }
+</script>
+
+
+
+<div style="height:40px;width:100%">
+    <h3>User</h3>
+</div>
+<div id="custom-toolbar">
+    <div class="form-inline" role="form">
+        <div class="form-group">
+            <div class="search">
+                <input class="form-control" id="FirstName" placeholder="First Name" type="text" name="FirstName">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="search">
+                <input class="form-control" id="LastName" placeholder="Last Name" type="text" name="LastName">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="search">
+                <input class="form-control" id="Email" placeholder="Email" type="email" name="Email">
+            </div>
+        </div>
+        <div class="form-group">
+
+            <input class="btn btn-success" id="btnFilter" placeholder="" type="button" value="Filter" name="btnFilter">
+        </div>
+    </div>
+</div>
+<div id="filter-bar"> </div>
+<table class="table table-hover" data-toolbar="#custom-toolbar" data-show-columns="true" data-show-filter="true"
+       id="grid">
+    <thead>
+        <tr>
+            <th data-field="UserId">User ID</th>
+            <th data-field="FirstName">First Name</th>
+            <th data-field="Email">Email</th>
+            <th data-checkbox="true" data-field="Active">Active</th>
+            <th data-field="Operate"></th>
+        </tr>
+    </thead>
+</table>
+<input id="hiddenMassUpdatecheckAll" type="hidden" />
+<input id="hiddenMassUpdatecheckAllsts" type="hidden" />
+<input id="hiddenMassUncheckIds" type="hidden" />
+<input id="HiddenHostName" type="hidden" />
+<div id="myModal" class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Edit User</h4>
+            </div>
+            <form id="EditForm">
+                <div class="modal-body">
+
+                    <div class="row" style="display:none;">
+                        <div class="col-sm-4">
+                            User Id
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" name="UserId" readonly id="userId" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            First Name
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" name="FirstName" id="txtFirstName" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            Last Name
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" name="LastName" id="txtLastName" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            Email
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" name="Email" id="txtEmail" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            Role
+                        </div>
+                        <div class="col-md-8 op">
+                            @*@Html.Partial("_RoleList", (IEnumerable<Core.Domain.Roles>)ViewData["AllRole"]);*@
+                            @*@Html.HiddenFor(m => m.RoleIDs);*@
+                            @Html.Partial("_RoleList", Model)
+                        </div>
+                    </div>
+
+                    <div class="hideRow">
+
+                        <div class="col-sm-4">
+                            <input type="password" name="Email" id="Password" value="000000" />
+                            <input type="password" name="Email" id="ConfirmPassword" value="000000" />
+                            <input id="ModifiedBy" type="text" name="ModifiedBy" value="@ViewBag.logUser" />
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" id="userUpdate" class="btn btn-primary">Update</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    @Html.HiddenFor(m => m.RoleIDs);
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id='loadingmessage' class="loader1 fade1" style="display: none; z-index: 5000; height: 95%; width: 90%; margin-left: 4%; ">
+    <img src='~/Areas/ScreenPermissions/Images/loading2.gif' style="height: 50px;width: 50px;" />
+</div>
+<style>
+    .loader1 {
+        position: absolute;
+        top: 8%;
+        left: 5%;
+        width: 400px;
+        height: 200px;
+        padding: 30px 15px 0px;
+        border: 3px solid #ababab;
+        box-shadow: 1px 1px 10px #ababab;
+        border-radius: 20px;
+        background-color: white;
+        z-index: 3002;
+        text-align: center;
+        overflow: auto;
+    }
+
+    .fade1 {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: #ababab;
+        z-index: 1001;
+        -moz-opacity: 0.8;
+        opacity: .70;
+        filter: alpha(opacity=80);
+    }
+
+    .hideRow {
+        display: none;
+    }
+
+    .modal-dialog {
+        padding-top: 5%;
+    }
+</style>
+
+<div id="AddModal" class="modal adduser">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" id="CloseAddUserDataPopup" onclick="CloseAddUserPopup()">&times;</button>
+                <h4 class="modal-title">Add User</h4>
+            </div>
+            @*<form id="FormID">
+                @Html.AntiForgeryToken();*@
+            <div id="addUser">
+
+                @Html.Partial("_AddUser", Model);
+                @*@Html.HiddenFor(m => m.RoleIDs)*@
+            </div>
+            @*</form>*@
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+

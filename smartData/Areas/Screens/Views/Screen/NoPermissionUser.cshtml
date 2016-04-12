@@ -1,0 +1,35 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @System.Web.Optimization.Styles.Render("~/bundles/bootstrapCss")
+    @System.Web.Optimization.Scripts.Render("~/bundles/jquery")
+    @System.Web.Optimization.Scripts.Render("~/bundles/bootstrapgrid")
+
+</head>
+<body>
+    <div>
+        @Html.Hidden("RedirectTo", Url.Action("index", "Home", new { area = "" }));
+    </div>
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+        BootstrapDialog.show({
+            message: 'You are not authorized to view this page.',
+            buttons: [{
+                label: 'Ok',
+                cssClass: 'btn-primary',
+                action: function (dialogItself) {
+                    var url = $("#RedirectTo").val();
+                    location.href = url;
+                }
+            }]
+        });
+    });
+</script>

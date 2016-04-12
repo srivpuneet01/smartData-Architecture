@@ -1,0 +1,16 @@
+﻿
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_ErrorView</title>
+</head>
+<body>
+    <div> 
+        @Html.Hidden("ExceptionTypeValue", Convert.ToInt32(ViewData["ExceptionTypeValue"]))
+        <div class='alert alert-error'>Exception has occurred. Please try again.</div>
+    </div>
+</body>
+</html>

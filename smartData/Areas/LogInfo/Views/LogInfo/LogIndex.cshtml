@@ -1,0 +1,142 @@
+﻿@inherits System.Web.Mvc.WebViewPage
+@{
+    //ViewBag.Title = "LogInfo";
+    @*Layout = "~/Areas/Users/Views/Shared/Layout.cshtml";*@
+    //Layout = "~/Views/Shared/_Layout.cshtml";    
+    Layout = "~/Views/Shared/_AdminLteLayout.cshtml";
+}
+@section CSSLinks
+{
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Scripts/BootStrapGrid/src/bootstrap-table.css" rel="stylesheet" />
+    <link href="~/Scripts/BootStrapDailog/bootstrap-dialog.min.css" rel="stylesheet" />
+}
+@section JSRefernces
+{
+    <script src="~/Scripts/JqGrid/jquery-1.11.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/BootStrapGrid/src/bootstrap-table.js"></script>
+    <script src="~/Scripts/BootStrapDailog/bootstrap-dialog.min.js"></script>
+    <script src="~/Scripts/BootStrapGrid/src/extensions/filter/bootstrap-table-filter.js"></script>
+<script src="~/Scripts/moment.js"></script>
+}
+    
+    <script>
+        var form;
+        $(document).ready(function () {
+            $("#HiddenHostName").val(window.location.origin);
+            
+
+        @functions{
+            public string TokenHeaderValue()
+            {
+                string cookieToken, formToken;
+                AntiForgery.GetTokens(null, out cookieToken, out formToken);
+                return cookieToken + ":" + formToken;
+            }
+        }    
+
+            // Antiforgery Token
+            var token = '@TokenHeaderValue()';
+            var headers = {};
+            headers["RequestVerificationToken"] = token;
+
+            var $table = $("#Loggrid");
+
+            var reqUrl = $("#HiddenHostName").val() + '/api/LogInfoAPI/GetLogList/';
+
+            $('#Loggrid').bootstrapTable({
+                headers: headers,
+                method: 'post',
+                url: reqUrl,
+                cache: true,
+                height: 500,
+                classes: 'table table-hover',
+                striped: true,
+                pageNumber: 1,
+                pagination: true,
+                pageSize: 10,
+                pageList: [5, 10, 20, 30],
+                search: false,
+                showColumns: true,
+                // showRefresh: true,
+                sidePagination: 'server',
+                minimumCountColumns: 2,
+                showHeader: true,
+                showFilter: false,
+                smartDisplay: true,
+                clickToSelect: true,
+                rowStyle: rowStyle,
+                toolbar: '#custom-toolbar',
+                columns: [{
+                    field: 'ModuleName',
+                    title: 'Module Name',
+                    type: 'search',
+
+                    sortable: true
+                }, {
+                    field: 'FieldName',
+                    title: 'Field Name',
+                    type: 'search',
+                    sortable: true,
+                },
+                {
+                    field: 'PreviousValue',
+                    title: 'Old Value',
+                    type: 'search',
+                    sortable: true,
+                },
+                {
+                    field: 'NewValue',
+                    title: 'New Value',
+                    type: 'search',
+                    sortable: true,
+                },
+                {
+                    field: 'ModifiedBy',
+                    title: 'Modified By',
+                    type: 'search',
+                    sortable: true,
+                },
+                {
+                    field: 'ModifiedDate',
+                    title: 'Modified Date',
+                    type: 'search',
+                    formatter: DateFormatter,
+                    sortable: true,
+                }],
+                onSubmit: function () {
+                    var data = $('#filter-bar').bootstrapTableFilter('GetLogList');
+                    console.log(data);
+                },
+                onLoadSuccess: function () {
+                    Addtitle();
+                },
+                onPageChange: function () {
+                    Addtitle();
+                }
+            });        
+        });
+    </script>
+<form id="dd">
+    @Html.AntiForgeryToken()        
+    <div class="modulestitle"><h3>Log Info</h3></div>
+    <div id="filter-bar"> </div>
+    <table class="table table-hover" data-url='@ViewBag.TempUrl' data-toolbar="#post" data-show-columns="true" data-show-filter="true"
+           id="Loggrid">
+        <thead>
+            <tr>
+                <th data-field="ModuleName">ModuleName</th>
+                <th data-field="FieldName">FieldName</th>
+                <th data-field="PreviousValue">PreviousValue</th>
+                <th data-field="NewValue">NewValue</th>
+                <th data-field="ModifiedBy">ModifiedBy</th>
+                <th data-field="ModifiedDate" data-dateformat="YYYY-MM-DD">ModifiedDate</th>
+            </tr>
+        </thead>
+    </table>
+</form>
+
+<script src="~/Scripts/js/loginfo.js"></script>
+
+

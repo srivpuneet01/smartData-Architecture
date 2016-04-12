@@ -1,0 +1,110 @@
+﻿
+@{
+    ViewBag.Title = "newScreen112";
+}
+
+@section JSRefernces
+{
+    <script src="~/Scripts/JqGrid/jquery-1.11.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/BootStrapGrid/src/bootstrap-table.js"></script>
+    <script src="~/Scripts/BootStrapDailog/bootstrap-dialog.min.js"></script>
+    <script src="~/Scripts/BootStrapGrid/src/extensions/filter/bootstrap-table-filter.js"></script>
+}
+<h2>Demo</h2>
+
+<input id="ButtonAdd" type="button" class="hideButton isAllow" value="Add" />
+<input id="ButtonEdit" type="button" class="hideButton isAllow" value="Edit" />
+<input id="ButtonDelete" type="button" class="hideButton isAllow" value="Delete" />
+<input id="ButtonPrint" type="button" class="hideButton isAllow" value="Print" />
+<style>
+    .hideButton {
+        display: none;
+    }
+
+    .showButton {
+        display: inline-block;
+    }
+</style>
+
+<script type="">
+    $(document).ready(function () {
+
+        $.ajax({
+            type: "Post",
+            url: "/PagePermission/PagePermission/GetAccessPermissionList",
+            data: '{Screen: "new Screen112" }',
+           // data: null,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (data) {
+                if (data.length > 0) {
+
+                    $.each(data, function (i, item) {
+                        //if(item.ActionType=="1")
+                        //{
+
+                        //}
+                        if (item.IsAllowPermission == "1") {
+                            $(".isAllow").addClass("showButton");
+                        }
+                        if (item.IsAllowPermission == "0") {
+                            $(".isAllow").addClass("hideButton");
+                        }
+
+                        if (item.ActionType == "2") {
+                            $("#ButtonAdd").addClass("showButton");
+                        }
+                        if (item.ActionType == "3") {
+                            $("#ButtonEdit").addClass("showButton");
+                        }
+                        if (item.ActionType == "4") {
+                            $("#ButtonDelete").addClass("showButton");
+                        }
+                        if (item.ActionType == "5") {
+                            if (item.ActionName == "Export") {
+                                $("#ButtonExport").addClass("showButton");
+                            }
+                            if (item.ActionName == "Print") {
+
+                                $("#ButtonPrint").addClass("showButton");
+                            }
+                        }
+
+                    });
+                }
+                else {
+
+                }
+            },
+            failure: function (response) {
+                alert(response.d);
+            }
+        });
+
+        $("#ButtonAdd").click(function () {
+            $.ajax({
+                type: "Post",
+                url: "/PagePermission/PagePermission/AddDemo",
+               // data: '{RoleId: ' + parseInt(RoleId) + '}',
+                data: '{Screen: "new Screen112" }',
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data) {
+                    if (data.length > 0) {
+
+                        alert(data);
+
+                    }
+                    else {
+
+                    }
+                },
+                failure: function (response) {
+                    alert(response.d);
+                }
+            });
+        });
+    });
+
+</script>

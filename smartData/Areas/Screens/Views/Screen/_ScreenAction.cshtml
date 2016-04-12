@@ -1,0 +1,92 @@
+﻿
+    
+            <div class="modal-header">
+                @*<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>*@
+                <h4 class="modal-title">
+                    <span id="ActionHeading">
+
+                    </span>
+              
+                </h4>
+            </div>
+            <form id="AddActionForm">
+                <div class="modal-body">
+                    <div class="row">
+                       
+                        <div class="col-sm-8">
+                            @*<input type="text" name="FK_screenId" readonly id="FK_screenId" style="display:none;" />*@
+                          
+                            <input id="FK_screenId" name="FK_screenId" type="hidden" />
+                            <input id="ActionId" name="ActionId" type="hidden" />
+                            <input id="hdfSelectedScreen" name="hdfSelectedScreen" type="hidden" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            Action Type
+                        </div>
+                        <div class="col-sm-8">
+                            @Html.DropDownList("ActionType", (IEnumerable<SelectListItem>)ViewBag.ActionType, new { @class = "col-sm-8 customDropDown" })
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            Action Name
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" class="col-sm-8" name="ActionName" id="txtActionName" />
+                        </div>
+                    </div>
+                    
+                    
+                  
+
+                </div>
+
+                <div class="modal-footer">
+                    @*<button type="submit" id="btnAcction" class="btn btn-primary">Add</button>*@
+                    <input type="button" value="Insert" onclick="AddActionsubmit(event);" class="btn btn-default CreateSAction" />
+                 
+                    <input type="button" value="Modify" onclick="EditAction(event);" class="btn btn-default EditSAction visible" />
+                    <button type="button" class="btn btn-default" onclick="ClearVal();"  data-dismiss="modal">Cancel</button>
+                    <input id="ModifiedBy" type="text" name="ModifiedBy" value="@ViewBag.logUser" style="display:none;" />
+                </div>
+            </form>
+
+<div id="ActionGrid">
+
+</div>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        
+        $("#ActionType").attr('selectedIndex', 0);
+        $("#ActionType").click(function () {
+            if ($('#ActionType option:selected').text() == "Select")
+            {
+                $("#txtActionName").val("");
+            }
+            else
+                {
+                $("#txtActionName").val($('#ActionType option:selected').text());
+            }
+           
+        });
+    });
+</script>
+
+
+@section CSSLinks
+{
+    @System.Web.Optimization.Styles.Render("~/bundles/bootstrapCss")
+}
+@section JSRefernces
+{
+   @System.Web.Optimization.Scripts.Render("~/bundles/bootstrapgrid")
+   @System.Web.Optimization.Scripts.Render("~/scritps/js/screens.js")
+}
+
+

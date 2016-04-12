@@ -1,0 +1,2368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\DayUsers\lalitka\Official\MSFramework_V3\Published</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="1431806156_list-add-user.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="App_Data/BabyLonBridgeWebContext-20140703104038.mdf">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="App_Data/BabyLonBridgeWebContext-20140703104038_log.ldf">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="App_Data/DefaultConnection.mdf">
+      <publishTime>07/17/2015 10:17:58</publishTime>
+    </File>
+    <File Include="App_Data/DefaultConnection_log.ldf">
+      <publishTime>07/17/2015 10:17:58</publishTime>
+    </File>
+    <File Include="App_Data/UserManagement.mdf">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="App_Data/UserManagement_log.ldf">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="App_Readme/Elmah.txt">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/LogInfo/Views/LogInfo/LogIndex.cshtml">
+      <publishTime>07/13/2015 12:21:37</publishTime>
+    </File>
+    <File Include="Areas/ModulePermissions/Views/ModulePermission/AddModulePermission.cshtml">
+      <publishTime>06/19/2015 17:52:25</publishTime>
+    </File>
+    <File Include="Areas/ModulePermissions/Views/Shared/_Layout.cshtml">
+      <publishTime>07/16/2015 15:03:13</publishTime>
+    </File>
+    <File Include="Areas/ModulePermissions/Views/Shared/_ViewStart.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/ModulePermissions/Views/web.config">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Modules/Views/Modules/CreateModule.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Modules/Views/Modules/Index.cshtml">
+      <publishTime>07/10/2015 18:00:31</publishTime>
+    </File>
+    <File Include="Areas/Modules/Views/Modules/_AddModule.cshtml">
+      <publishTime>07/17/2015 10:03:14</publishTime>
+    </File>
+    <File Include="Areas/Modules/Views/Shared/_Layout.cshtml">
+      <publishTime>07/16/2015 13:06:02</publishTime>
+    </File>
+    <File Include="Areas/Modules/Views/Shared/_ViewStart.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Modules/Views/web.config">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/PagePermission/Views/PagePermission/Accessdenied.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/PagePermission/Views/PagePermission/Demo.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/PagePermission/Views/PagePermission/newScreen112.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/PagePermission/Views/Shared/Layout.cshtml">
+      <publishTime>07/16/2015 13:06:02</publishTime>
+    </File>
+    <File Include="Areas/PagePermission/Views/web.config">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/PagePermission/Views/_ViewStart.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Patients/Views/Patients/Accessdenied.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Patients/Views/Patients/Create.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Patients/Views/Patients/Edit.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Patients/Views/Patients/Index.cshtml">
+      <publishTime>06/01/2015 20:16:07</publishTime>
+    </File>
+    <File Include="Areas/Patients/Views/Patients/_AddPatient.cshtml">
+      <publishTime>05/28/2015 17:57:14</publishTime>
+    </File>
+    <File Include="Areas/Patients/Views/Shared/Layout.cshtml">
+      <publishTime>07/16/2015 15:03:13</publishTime>
+    </File>
+    <File Include="Areas/Patients/Views/web.config">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Patients/Views/_ViewStart.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/RolePermissions/Views/web.config">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Roles/Views/Roles/Create.cshtml">
+      <publishTime>07/17/2015 10:03:14</publishTime>
+    </File>
+    <File Include="Areas/Roles/Views/Roles/Index.cshtml">
+      <publishTime>07/10/2015 17:50:31</publishTime>
+    </File>
+    <File Include="Areas/Roles/Views/Roles/_AddRole.cshtml">
+      <publishTime>07/17/2015 10:03:14</publishTime>
+    </File>
+    <File Include="Areas/Roles/Views/Shared/_Layout.cshtml">
+      <publishTime>07/16/2015 15:03:13</publishTime>
+    </File>
+    <File Include="Areas/Roles/Views/web.config">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Roles/Views/_ViewStart.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/Site.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/images/ui-icons_222222_256x240.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/images/ui-icons_454545_256x240.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/images/ui-icons_888888_256x240.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/jquery-ui.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/jquery.ui.accordion.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/jquery.ui.all.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/jquery.ui.autocomplete.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/jquery.ui.base.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/jquery.ui.button.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/jquery.ui.core.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/jquery.ui.datepicker.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/jquery.ui.dialog.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/jquery.ui.progressbar.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/jquery.ui.resizable.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/jquery.ui.selectable.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/jquery.ui.slider.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/jquery.ui.tabs.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/jquery.ui.theme.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/minified/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/minified/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/minified/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/minified/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/minified/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/minified/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/minified/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/minified/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/minified/images/ui-icons_222222_256x240.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/minified/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/minified/images/ui-icons_454545_256x240.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/minified/images/ui-icons_888888_256x240.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/minified/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/minified/jquery-ui.min.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/minified/jquery.ui.accordion.min.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/minified/jquery.ui.autocomplete.min.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/minified/jquery.ui.button.min.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/minified/jquery.ui.core.min.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/minified/jquery.ui.datepicker.min.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/minified/jquery.ui.dialog.min.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/minified/jquery.ui.progressbar.min.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/minified/jquery.ui.resizable.min.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/minified/jquery.ui.selectable.min.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/minified/jquery.ui.slider.min.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/minified/jquery.ui.tabs.min.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Content/themes/base/minified/jquery.ui.theme.min.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/accent.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/adtopbackground.gif">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/arrow-down.gif">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/arrow.gif">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/background.gif">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/bg_menubar_black.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/blank.gif">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/bottomleft.gif">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/bottommid.gif">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/bottomright.gif">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/btn-down-install-plugin.gif">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/btn-install-plugin.gif">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/bullet.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/ChangeSize.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/ckground.gif">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/Crop.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/Crop_gray.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/document engine logo.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/Download.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/DWC icon logo.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/DWT icon logo.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/DW_Logo.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/dynamsoft_banner.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/faq 16.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/Flip.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/heroAccent.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/icn-circle-shares.jpg">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/icon_associate1.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/icon_associate2.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/icon_associate3.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/icon_livehelp_mail.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/ICS icon logo.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/loading.gif">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/logo.gif">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/Mirror.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/orderedList0.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/orderedList1.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/orderedList2.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/orderedList3.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/orderedList4.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/orderedList5.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/orderedList6.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/orderedList7.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/orderedList8.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/orderedList9.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/Rotate180.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/RotateLeft.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/RotateRight.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/sc-desktop-only.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/ShowEditor.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/Thumbs.db">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/topbackground.gif">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/twain_associate.pdf">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/twain_associate1.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/twain_associate2.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/twain_associate3.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Images/wait.gif">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/js/jquery.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/js/online_demo_initpage.js">
+      <publishTime>06/04/2015 19:27:13</publishTime>
+    </File>
+    <File Include="Areas/Scan/js/online_demo_operation.js">
+      <publishTime>06/04/2015 19:27:13</publishTime>
+    </File>
+    <File Include="Areas/Scan/loading.gif">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/addon/Barcode.zip">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/addon/Barcodex64.zip">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/addon/dynamsoft.webtwain.addon.barcode.intellisense.nonvs.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/addon/dynamsoft.webtwain.addon.barcode.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/addon/dynamsoft.webtwain.addon.webcam.intellisense.nonvs.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/addon/dynamsoft.webtwain.addon.webcam.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/addon/Webcam.zip">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/addon/Webcamx64.zip">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/DynamicWebTWAIN.cab">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/DynamicWebTWAINHTML5Edition.exe">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/DynamicWebTWAINMacEdition.pkg">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/DynamicWebTWAINPlugIn.msi">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/DynamicWebTWAINx64.cab">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/dynamsoft.webtwain.config.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/dynamsoft.webtwain.initiate.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/dynamsoft.webtwain.install.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/dynamsoft.webtwain.intellisense.nonvs.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/btn-down-install-plugin.gif">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/hint.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/html5_editor.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/changeimagesize.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/close.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/crop.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/crop_grey.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/deskew.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/fit.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/fith.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/fitw.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/flip.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/hand.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/img.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/mirror.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/next.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/next_grey.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/originalsize.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/plug-in-blocked.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/previous.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/previous_grey.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/print.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/rectselect.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/restore.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/rotate.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/rotateleft.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/rotateright.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/save.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/stretch.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/zoomin.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/zoomin_grey.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/zoomout.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/imgs/zoomout_grey.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/LICENSE">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/loading.gif">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Resources/reference/logo.gif">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Scripts/DWTSample_ScanAndUpload.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Scripts/jquery-1.8.2.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Scripts/jquery-1.8.2.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Scripts/jquery-migrate-1.2.1.js">
+      <publishTime>05/29/2015 12:38:44</publishTime>
+    </File>
+    <File Include="Areas/Scan/Scripts/jquery-ui-1.8.24.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Scripts/jquery-ui-1.8.24.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Scripts/jquery.unobtrusive-ajax.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Scripts/jquery.unobtrusive-ajax.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Scripts/jquery.validate.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Scripts/jquery.validate.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Scripts/knockout-2.2.0.debug.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Scripts/knockout-2.2.0.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Scripts/modernizr-2.6.2.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Styles/style.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Styles1/style.css">
+      <publishTime>06/04/2015 19:27:13</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Index.cshtml">
+      <publishTime>06/06/2015 14:58:47</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Index2.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/addon/Barcode.zip">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/addon/Barcodex64.zip">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/addon/dynamsoft.webtwain.addon.barcode.intellisense.nonvs.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/addon/dynamsoft.webtwain.addon.barcode.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/addon/dynamsoft.webtwain.addon.webcam.intellisense.nonvs.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/addon/dynamsoft.webtwain.addon.webcam.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/addon/Webcam.zip">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/addon/Webcamx64.zip">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/DynamicWebTWAIN.cab">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/DynamicWebTWAINHTML5Edition.exe">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/DynamicWebTWAINMacEdition.pkg">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/DynamicWebTWAINPlugIn.msi">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/DynamicWebTWAINx64.cab">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/dynamsoft.webtwain.config.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/dynamsoft.webtwain.initiate.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/dynamsoft.webtwain.install.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/dynamsoft.webtwain.intellisense.nonvs.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/btn-down-install-plugin.gif">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/hint.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/html5_editor.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/changeimagesize.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/close.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/crop.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/crop_grey.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/deskew.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/fit.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/fith.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/fitw.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/flip.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/hand.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/img.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/mirror.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/next.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/next_grey.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/originalsize.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/plug-in-blocked.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/previous.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/previous_grey.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/print.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/rectselect.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/restore.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/rotate.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/rotateleft.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/rotateright.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/save.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/stretch.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/zoomin.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/zoomin_grey.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/zoomout.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/imgs/zoomout_grey.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/LICENSE">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/loading.gif">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Resources/reference/logo.gif">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/Sacnnedmedicalrecords.cshtml">
+      <publishTime>06/09/2015 18:42:49</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/ViewImagePage.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/_AddScanner.cshtml">
+      <publishTime>06/01/2015 15:10:41</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Home/_Sacnnedmedicalrecords1.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Shared/_Layout.cshtml">
+      <publishTime>07/16/2015 15:03:13</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/Shared/_ViewStart.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scan/Views/web.config">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Scheduler/Content/kendojs/jquery.min.js">
+      <publishTime>06/01/2015 17:05:56</publishTime>
+    </File>
+    <File Include="Areas/Scheduler/Content/kendojs/kendo.all.min.js">
+      <publishTime>06/01/2015 17:05:56</publishTime>
+    </File>
+    <File Include="Areas/Scheduler/Content/kendojs/kendo.timezones.min.js">
+      <publishTime>06/01/2015 17:05:56</publishTime>
+    </File>
+    <File Include="Areas/Scheduler/Content/kendoStyle/kendo.common.min.css">
+      <publishTime>06/01/2015 17:05:56</publishTime>
+    </File>
+    <File Include="Areas/Scheduler/Content/kendoStyle/kendo.dataviz.default.min.css">
+      <publishTime>06/01/2015 17:05:56</publishTime>
+    </File>
+    <File Include="Areas/Scheduler/Content/kendoStyle/kendo.dataviz.min.css">
+      <publishTime>06/01/2015 17:05:56</publishTime>
+    </File>
+    <File Include="Areas/Scheduler/Content/kendoStyle/kendo.default.min.css">
+      <publishTime>06/01/2015 17:05:56</publishTime>
+    </File>
+    <File Include="Areas/Scheduler/Content/kendoStyle/kendo.default.mobile.min.css">
+      <publishTime>06/01/2015 17:05:56</publishTime>
+    </File>
+    <File Include="Areas/Scheduler/Views/Scheduler/Index.cshtml">
+      <publishTime>07/16/2015 19:48:08</publishTime>
+    </File>
+    <File Include="Areas/Scheduler/Views/web.config">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/ScreenPermissions/Images/loading2.gif">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/ScreenPermissions/Images/loadingmessage.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/ScreenPermissions/Views/ScreenPermissions/Index.cshtml">
+      <publishTime>07/16/2015 14:30:57</publishTime>
+    </File>
+    <File Include="Areas/ScreenPermissions/Views/ScreenPermissions/TestPage.cshtml">
+      <publishTime>05/27/2015 18:59:19</publishTime>
+    </File>
+    <File Include="Areas/ScreenPermissions/Views/ScreenPermissions/View1.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/ScreenPermissions/Views/Shared/_Layout.cshtml">
+      <publishTime>07/16/2015 14:15:30</publishTime>
+    </File>
+    <File Include="Areas/ScreenPermissions/Views/Shared/_ViewStart.cshtml">
+      <publishTime>07/14/2015 16:26:36</publishTime>
+    </File>
+    <File Include="Areas/ScreenPermissions/Views/web.config">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/screens/Views/screen/1431806156_list-add-user.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/screens/Views/screen/Create.cshtml">
+      <publishTime>07/16/2015 11:54:25</publishTime>
+    </File>
+    <File Include="Areas/screens/Views/screen/Index.cshtml">
+      <publishTime>07/17/2015 10:03:14</publishTime>
+    </File>
+    <File Include="Areas/screens/Views/screen/Test.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/screens/Views/screen/_NewScreen.cshtml">
+      <publishTime>07/16/2015 12:08:06</publishTime>
+    </File>
+    <File Include="Areas/screens/Views/screen/_ScreenAction.cshtml">
+      <publishTime>07/14/2015 19:20:32</publishTime>
+    </File>
+    <File Include="Areas/screens/Views/Shared/_Layout.cshtml">
+      <publishTime>07/16/2015 15:03:13</publishTime>
+    </File>
+    <File Include="Areas/screens/Views/Shared/_ViewStart.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/screens/Views/web.config">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Users/Images/loading2.gif">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Users/Images/loadingmessage.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Users/Views/Home/Index.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Users/Views/Shared/Layout.cshtml">
+      <publishTime>07/16/2015 15:03:13</publishTime>
+    </File>
+    <File Include="Areas/Users/Views/Users/Accessdenied.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Users/Views/Users/Create.cshtml">
+      <publishTime>07/16/2015 11:07:43</publishTime>
+    </File>
+    <File Include="Areas/Users/Views/Users/Delete.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Users/Views/Users/Demo.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Users/Views/Users/Details.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Users/Views/Users/Edit.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Users/Views/Users/Index.cshtml">
+      <publishTime>07/16/2015 11:07:43</publishTime>
+    </File>
+    <File Include="Areas/Users/Views/Users/testajax.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Users/Views/Users/_AddUser.cshtml">
+      <publishTime>07/16/2015 11:07:43</publishTime>
+    </File>
+    <File Include="Areas/Users/Views/Users/_RoleList.cshtml">
+      <publishTime>07/16/2015 11:07:43</publishTime>
+    </File>
+    <File Include="Areas/Users/Views/web.config">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Areas/Users/Views/_ViewStart.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/CoreEntities.dll">
+      <publishTime>07/17/2015 10:09:01</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.Data.Edm.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.Data.OData.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/de/System.Spatial.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/Elmah.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/Elmah.Mvc.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Data.Edm.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Data.OData.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/es/System.Spatial.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Data.Edm.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Data.OData.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/fr/System.Spatial.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.Data.Edm.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.Data.OData.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/it/System.Spatial.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Data.Edm.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Data.OData.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/ja/System.Spatial.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Data.Edm.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Data.OData.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/ko/System.Spatial.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.Edm.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.OData.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.Services.Client.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Google.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Helpers.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.WindowsAzure.Configuration.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.WindowsAzure.Diagnostics.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.WindowsAzure.ServiceRuntime.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.WindowsAzure.Storage.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/MonAgentListener.dll">
+      <publishTime>10/23/2014 06:16:28</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/Ninject.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/Ninject.Web.Common.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/Ninject.Web.Mvc.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/RepositoryLayer.dll">
+      <publishTime>07/17/2015 10:09:02</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Data.Edm.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Data.OData.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/ru/System.Spatial.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/ServiceLayer.dll">
+      <publishTime>07/17/2015 10:09:03</publishTime>
+    </File>
+    <File Include="bin/smartData.dll">
+      <publishTime>07/17/2015 10:20:06</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/System.Spatial.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>07/17/2015 10:05:49</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>07/17/2015 10:05:50</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>07/17/2015 10:05:49</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>07/17/2015 10:05:49</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>07/17/2015 10:05:49</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>07/17/2015 10:05:49</publishTime>
+    </File>
+    <File Include="bin/WebActivatorEx.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/WebMatrix.Data.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/WebMatrix.WebData.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Data.Edm.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Data.OData.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Spatial.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Data.Edm.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Data.OData.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/System.Spatial.resources.dll">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>07/17/2015 10:03:16</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Content/datepicker.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Content/jquery.contextMenu.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Content/jquery.jqGrid/ellipsis-xbl.xml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Content/jquery.jqGrid/ui.jqgrid.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Content/moment.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Content/variables.less">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="GenericErrorPage.htm">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>07/17/2015 10:03:13</publishTime>
+    </File>
+    <File Include="Resources/addon/Barcode.zip">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/addon/Barcodex64.zip">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/addon/dynamsoft.webtwain.addon.barcode.intellisense.nonvs.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/addon/dynamsoft.webtwain.addon.barcode.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/addon/dynamsoft.webtwain.addon.webcam.intellisense.nonvs.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/addon/dynamsoft.webtwain.addon.webcam.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/addon/Webcam.zip">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/addon/Webcamx64.zip">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/DynamicWebTWAIN.cab">
+      <publishTime>06/03/2015 19:31:36</publishTime>
+    </File>
+    <File Include="Resources/DynamicWebTWAINHTML5Edition.exe">
+      <publishTime>06/03/2015 19:31:36</publishTime>
+    </File>
+    <File Include="Resources/DynamicWebTWAINMacEdition.pkg">
+      <publishTime>06/03/2015 19:31:36</publishTime>
+    </File>
+    <File Include="Resources/DynamicWebTWAINPlugIn.msi">
+      <publishTime>06/03/2015 19:31:36</publishTime>
+    </File>
+    <File Include="Resources/DynamicWebTWAINx64.cab">
+      <publishTime>06/03/2015 19:31:36</publishTime>
+    </File>
+    <File Include="Resources/dynamsoft.webtwain.config.js">
+      <publishTime>06/03/2015 19:31:36</publishTime>
+    </File>
+    <File Include="Resources/dynamsoft.webtwain.initiate.js">
+      <publishTime>06/03/2015 19:31:36</publishTime>
+    </File>
+    <File Include="Resources/dynamsoft.webtwain.install.js">
+      <publishTime>06/03/2015 19:31:36</publishTime>
+    </File>
+    <File Include="Resources/dynamsoft.webtwain.intellisense.nonvs.js">
+      <publishTime>06/03/2015 19:31:36</publishTime>
+    </File>
+    <File Include="Resources/reference/btn-down-install-plugin.gif">
+      <publishTime>06/03/2015 19:31:36</publishTime>
+    </File>
+    <File Include="Resources/reference/hint.css">
+      <publishTime>06/03/2015 19:31:36</publishTime>
+    </File>
+    <File Include="Resources/reference/html5_editor.css">
+      <publishTime>06/03/2015 19:31:36</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/changeimagesize.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/close.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/crop.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/crop_grey.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/deskew.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/fit.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/fith.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/fitw.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/flip.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/hand.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/img.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/mirror.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/next.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/next_grey.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/originalsize.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/plug-in-blocked.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/previous.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/previous_grey.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/print.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/rectselect.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/restore.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/rotate.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/rotateleft.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/rotateright.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/save.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/stretch.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/zoomin.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/zoomin_grey.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/zoomout.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/imgs/zoomout_grey.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Resources/reference/LICENSE">
+      <publishTime>06/03/2015 19:31:36</publishTime>
+    </File>
+    <File Include="Resources/reference/loading.gif">
+      <publishTime>06/03/2015 19:31:36</publishTime>
+    </File>
+    <File Include="Resources/reference/logo.gif">
+      <publishTime>06/03/2015 19:31:36</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-collapse.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-datepicker.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-transition.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapDailog/bootstrap-dialog.min.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapDailog/bootstrap-dialog.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/apple-touch-icon.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/assets/bootstrap/css/bootstrap-theme.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/assets/bootstrap/css/bootstrap-theme.css.map">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/assets/bootstrap/css/bootstrap-theme.min.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/assets/bootstrap/css/bootstrap.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/assets/bootstrap/css/bootstrap.css.map">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/assets/bootstrap/css/bootstrap.min.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/assets/bootstrap/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/assets/bootstrap/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/assets/bootstrap/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/assets/bootstrap/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/assets/bootstrap/js/bootstrap.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/assets/bootstrap/js/bootstrap.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/assets/bootstrap/js/npm.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/assets/css/docs.min.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/assets/css/sidenav.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/assets/css/style.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/assets/flash/ZeroClipboard.swf">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/assets/js/common.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/assets/js/customize.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/assets/js/docs.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/assets/js/ie-emulation-modes-warning.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/assets/js/ie10-viewport-bug-workaround.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/assets/js/ie8-responsive-file-warning.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/assets/js/jquery.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/assets/js/sidenav.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/data/data1/demo.response.json">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/data/data2/demo.response.json">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/data/data3/demo.response.json">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/data/data4/demo.response.json">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/data/data5/demo.response.json">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/data/README.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/bootstrap-table.min.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/bootstrap-table.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/extensions/editable/bootstrap-table-editable.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/extensions/export/bootstrap-table-export.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/extensions/filter/bootstrap-table-filter.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/extensions/flatJSON/bootstrap-table-flatJSON.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/locale/bootstrap-table-cs-CZ.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/locale/bootstrap-table-da-DK.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/locale/bootstrap-table-de-DE.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/locale/bootstrap-table-el-GR.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/locale/bootstrap-table-en-US.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/locale/bootstrap-table-es-AR.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/locale/bootstrap-table-es-CR.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/locale/bootstrap-table-es-NI.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/locale/bootstrap-table-fr-BE.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/locale/bootstrap-table-fr-FR.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/locale/bootstrap-table-hu-HU.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/locale/bootstrap-table-it-IT.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/locale/bootstrap-table-ko-KR.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/locale/bootstrap-table-nl-NL.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/locale/bootstrap-table-pl-PL.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/locale/bootstrap-table-pt-BR.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/locale/bootstrap-table-ru-RU.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/locale/bootstrap-table-sk-SK.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/locale/bootstrap-table-th-TH.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/locale/bootstrap-table-tr-TR.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/locale/bootstrap-table-ur-PK.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/locale/bootstrap-table-vi-VN.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/locale/bootstrap-table-zh-CN.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/dist/locale/bootstrap-table-zh-TW.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/documentation.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/examples.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/extensions.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/faq.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/favicon.ico">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/getting-started.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/index.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/README.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/robots.txt">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/sitemap.xml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/en.yml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/en/documentation/column-options.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/en/documentation/events.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/en/documentation/localizations.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/en/documentation/methods.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/en/documentation/table-options.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/en/examples/align.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/en/examples/basic.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/en/examples/card-view.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/en/examples/columns.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/en/examples/events.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/en/examples/format.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/en/examples/hide-header.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/en/examples/methods.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/en/examples/note.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/en/examples/pagination.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/en/examples/select.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/en/examples/sort.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/en/examples/style.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/en/examples/toolbar.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/en/extensions/editable.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/en/faq/faq.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/en/getting-started/download.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/en/getting-started/grunt.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/en/getting-started/usage.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/en/getting-started/whats-include.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/fr.yml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/fr/documentation/column-options.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/fr/documentation/events.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/fr/documentation/localizations.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/fr/documentation/methods.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/fr/documentation/table-options.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/fr/examples/align.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/fr/examples/basic.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/fr/examples/card-view.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/fr/examples/columns.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/fr/examples/events.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/fr/examples/format.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/fr/examples/hide-header.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/fr/examples/methods.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/fr/examples/note.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/fr/examples/pagination.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/fr/examples/select.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/fr/examples/sort.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/fr/examples/style.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/fr/examples/toolbar.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/fr/extensions/editable.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/fr/faq/faq.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/fr/getting-started/download.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/fr/getting-started/grunt.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/fr/getting-started/usage.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/fr/getting-started/whats-include.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/zh-cn.yml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/zh-cn/documentation/column-options.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/zh-cn/documentation/events.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/zh-cn/documentation/localizations.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/zh-cn/documentation/methods.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/zh-cn/documentation/table-options.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/zh-cn/examples/align.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/zh-cn/examples/basic.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/zh-cn/examples/card-view.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/zh-cn/examples/columns.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/zh-cn/examples/events.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/zh-cn/examples/format.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/zh-cn/examples/hide-header.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/zh-cn/examples/methods.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/zh-cn/examples/note.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/zh-cn/examples/pagination.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/zh-cn/examples/select.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/zh-cn/examples/sort.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/zh-cn/examples/style.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/zh-cn/examples/toolbar.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/zh-cn/extensions/editable.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/zh-cn/faq/faq.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/zh-cn/getting-started/download.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/zh-cn/getting-started/grunt.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/zh-cn/getting-started/usage.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_i18n/zh-cn/getting-started/whats-include.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_includes/feature.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_includes/footer.html">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_includes/header.html">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_includes/latest-release.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_includes/nav/main.html">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_includes/social-buttons.html">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_layouts/default.html">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_layouts/home.html">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_plugins/markdown-tag.rb">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/docs/_plugins/multiple-languages.rb">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/index.html">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/README.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/1431806156_list-add-user.png">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/Acivate.jpg">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/bootstrap-table.css">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/bootstrap-table.js">
+      <publishTime>06/06/2015 14:58:47</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/extensions/editable/bootstrap-table-editable.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/extensions/editable/README.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/extensions/export/bootstrap-table-export.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/extensions/export/README.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/extensions/filter/bootstrap-table-filter.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/extensions/filter/README.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/extensions/flatJSON/bootstrap-table-flatJSON.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/extensions/flatJSON/README.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/locale/bootstrap-table-cs-CZ.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/locale/bootstrap-table-da-DK.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/locale/bootstrap-table-de-DE.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/locale/bootstrap-table-el-GR.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/locale/bootstrap-table-en-US.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/locale/bootstrap-table-en-US.js.template">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/locale/bootstrap-table-es-AR.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/locale/bootstrap-table-es-CR.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/locale/bootstrap-table-es-NI.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/locale/bootstrap-table-fr-BE.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/locale/bootstrap-table-fr-FR.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/locale/bootstrap-table-hu-HU.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/locale/bootstrap-table-it-IT.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/locale/bootstrap-table-ko-KR.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/locale/bootstrap-table-nl-NL.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/locale/bootstrap-table-pl-PL.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/locale/bootstrap-table-pt-BR.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/locale/bootstrap-table-pt-PT.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/locale/bootstrap-table-ru-RU.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/locale/bootstrap-table-sk-SK.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/locale/bootstrap-table-sv-SE.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/locale/bootstrap-table-th-TH.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/locale/bootstrap-table-tr-TR.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/locale/bootstrap-table-uk-UA.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/locale/bootstrap-table-ur-PK.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/locale/bootstrap-table-vi-VN.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/locale/bootstrap-table-zh-CN.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/locale/bootstrap-table-zh-TW.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/locale/README.md">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/BootStrapGrid/src/massactive.jpg">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/Changes.txt">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-ar.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-bg.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-bg1251.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-cat.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-cn.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-cs.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-da.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-de.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-dk.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-el.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-en.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-es.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-fa.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-fi.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-fr.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-gl.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-he.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-hr.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-hr1250.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-hu.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-id.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-is.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-it.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-ja.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-kr.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-lt.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-mne.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-nl.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-no.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-pl.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-pt-br.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-pt.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-ro.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-ru.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-sk.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-sr-latin.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-sr.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-sv.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-th.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-tr.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-tw.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-ua.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/i18n/grid.locale-vi.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/install.txt">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/jquery-1.11.0.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/jquery.jqGrid.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/JqGrid/jquery.jqGrid.src.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery.contextMenu.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/moment.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/moment.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>07/10/2015 15:15:21</publishTime>
+    </File>
+    <File Include="table.html">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Views/Account/ExternalLoginConfirmation.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Views/Account/ExternalLoginFailure.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Views/Account/ForgotPassword.cshtml">
+      <publishTime>07/14/2015 15:13:03</publishTime>
+    </File>
+    <File Include="Views/Account/Login.cshtml">
+      <publishTime>07/15/2015 17:23:42</publishTime>
+    </File>
+    <File Include="Views/Account/Manage.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Views/Account/Register.cshtml">
+      <publishTime>07/15/2015 17:36:01</publishTime>
+    </File>
+    <File Include="Views/Account/_ChangePasswordPartial.cshtml">
+      <publishTime>05/29/2015 20:33:59</publishTime>
+    </File>
+    <File Include="Views/Account/_ExternalLoginsListPartial.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Views/Account/_RemoveAccountPartial.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Views/Account/_SetPasswordPartial.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Views/Error404/Index.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Views/Error404/_ErrorView.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Views/Home/Accessdenied.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>06/01/2015 17:27:59</publishTime>
+    </File>
+    <File Include="Views/Home/NoPermission.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Views/Home/Partial1.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Views/Home/SessionExpire.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>07/16/2015 15:03:13</publishTime>
+    </File>
+    <File Include="Views/Shared/_LoginPartial.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Views/Test/Accessdenied.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>05/27/2015 11:45:07</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/17/2015 10:20:10</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

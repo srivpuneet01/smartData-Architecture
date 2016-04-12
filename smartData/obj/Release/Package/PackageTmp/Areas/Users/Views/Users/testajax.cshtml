@@ -1,0 +1,72 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>testajax</title>
+    @section Scripts {
+    @*//    @Scripts.Render("~/bundles/knockout")*@
+        <script type="text/javascript">
+        @functions{
+           public string TokenHeaderValue()
+           {
+              string cookieToken, formToken;
+              AntiForgery.GetTokens(null, out cookieToken, out formToken);
+              return cookieToken + ":" + formToken;
+           }
+        }
+
+       function ContactsViewModel() {
+          var self = this;
+          self.contacts = ko.observableArray([]);
+          self.addContact = function () {
+
+             $.ajax({
+                type: "post",
+                url: "api/contacts",
+                data: $("#addContact").serialize(),
+                dataType: "json",
+                success: function (value) {
+                   self.contacts.push(value);
+                },
+                error: function(request,error) 
+                {
+                    var a = "";
+                },
+                headers: {
+                   'RequestVerificationToken': '@TokenHeaderValue()'
+                }
+             });
+
+          }
+          self.removeContact = function (contact) {
+             $.ajax({
+                type: "DELETE",
+                url: contact.Self,
+                success: function () {
+                   self.contacts.remove(contact);
+                },
+                headers: {
+                   'RequestVerificationToken': '@TokenHeaderValue()'
+                }
+
+             });
+          }
+
+          $.getJSON("api/contacts", function (data) {
+             self.contacts(data);
+          });
+       }
+       ko.applyBindings(new ContactsViewModel());
+        </script>
+</head>
+<body>
+    <div> 
+    </div>
+</body>
+</html>
