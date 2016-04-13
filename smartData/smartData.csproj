@@ -1094,7 +1094,7 @@
     <Content Include="app\components\nav\nav.ctrl.js" />
     <Content Include="app\sections\account\register\register.ctrl.js" />
     <Content Include="app\sections\account\register\register.tpl.html" />
-    <Content Include="app\services\storage.fact.js" />
+    <Content Include="app\helpers\storage.fact.js" />
     <Content Include="Areas\ScreenPermissions\Images\loading2.gif" />
     <Content Include="Areas\ScreenPermissions\Images\loadingmessage.png" />
     <Content Include="Areas\Screens\Views\Screen\1431806156_list-add-user.png" />
@@ -2423,7 +2423,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\directives\" />
-    <Folder Include="app\helpers\" />
     <Folder Include="Areas\ModulePermissions\Models\" />
     <Folder Include="Areas\Modules\Models\" />
     <Folder Include="Areas\PagePermission\Models\" />
