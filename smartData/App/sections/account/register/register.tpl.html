@@ -13,7 +13,7 @@
                 <span class="label-dark">Email</span>
             </div>
             <div class="col-md-3">
-                <input ng-model="user.Email" type="email" name="Email" class="form-control input-sm" required />
+                <input ng-model="Email" type="email" name="Email" class="form-control input-sm" required />
 
                 <span class="field-validation-error" style="color:red" ng-show="UserRegistration.Email.$dirty && UserRegistration.Email.$invalid">
                     <span ng-show="UserRegistration.Email.$error.required">Email is required.</span>
@@ -28,9 +28,15 @@
                 <span class="label-dark">Password</span>
             </div>
             <div class="col-md-3">
-                <input ng-model="user.Password" class="form-control input-sm" name="Password" type="password"  required/>
+                <input ng-model="Password" class="form-control input-sm" name="Password" type="password" id="Password" required />
+                <ul id="strength" check-strength="Password"></ul>
                 <span class="field-validation-error" style="color:red" ng-show="UserRegistration.Password.$dirty && UserRegistration.Password.$invalid">
+                    
                     <span ng-show="UserRegistration.Password.$error.required">Password is required.</span>
+                </span>
+                <span ng-show="PasswordValidationError" style="color:red;">
+                    <br />
+                    Your Password is incorrect.
                 </span>
             </div>
         </div>
@@ -41,7 +47,8 @@
                 <span class="label-dark">Confirm Password</span>
             </div>
             <div class="col-md-3">
-                <input ng-model="user.ConfirmPassword" class="form-control input-sm" name="ConfirmPassword" type="password" required  />.
+                <input ng-model="ConfirmPassword" class="form-control input-sm" name="ConfirmPassword" type="password" required />
+
                 <span class="field-validation-error" style="color:red" ng-show="UserRegistration.ConfirmPassword.$dirty && UserRegistration.ConfirmPassword.$invalid">
                     <span ng-show="UserRegistration.ConfirmPassword.$error.required">Confirm Password is required.</span>
                 </span>
