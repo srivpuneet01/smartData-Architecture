@@ -1,6 +1,6 @@
 ﻿'use strict';
 angular
-    .module("app.services")
+    .module("app.helpers")
     .constant('storageKey', 'ARCHITECTURE_LOCAL_STORAGE')
     .factory("storage", ['$exceptionHandler', '$window', 'storageKey', function provideStorage($exceptionHandler, $window, storageKey) {
         // Try to load the initial payload from localStorage.
