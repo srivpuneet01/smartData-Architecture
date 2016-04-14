@@ -42,7 +42,7 @@ namespace smartData.Controllers
 
         [AllowAnonymous]
         [HttpPost]
-        public string Login(LoginDTO model)
+        public Users Login(LoginDTO model)
         {
             // ServiceLayer.Services.ScreenPermissionService _ActionAccessPermissionService = new ServiceLayer.Services.ScreenPermissionService();
 
@@ -58,7 +58,8 @@ namespace smartData.Controllers
                     {
                         int cID = WebSecurity.GetUserId(model.UserName);
                         string TokenID = _screenPermissionService.GetAuthorizeToken(Convert.ToInt32(cID));
-                        return TokenID;
+
+                        return _userService.GetUserById(cID);
                     }
                     else
                     {
@@ -71,7 +72,7 @@ namespace smartData.Controllers
                 }
 
             }
-            return "";
+            return new Users();
         }
 
         public string Register(UserRegistrationDTO model)

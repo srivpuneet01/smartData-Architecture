@@ -9,10 +9,8 @@ angular
 
           return  $http.post(requestUrl, JSON.stringify(params))
                 .then(dataResponse, dataServiceError);
-
-
         }
-        function dataResponse(response) {  return response.data; }
+        function dataResponse(response) {  return response; }
         function dataServiceError(errorResponse) {
             //$log.error('XHR Failed for AccountService');
             if (errorResponse.status == 404) {
