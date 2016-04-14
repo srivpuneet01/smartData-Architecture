@@ -6,8 +6,7 @@ angular
         {
             AccountService.authenticate($scope.user.username, $scope.user.password)
             .then(function (data) {
-                $rootScope.User = data.data;
-                console.log(data.data);
+                $rootScope.hasLoggedIn = true;
             });
         }
         if ($rootScope.rememberMe)
