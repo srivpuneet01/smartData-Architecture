@@ -1,17 +1,3 @@
-D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\bin\Debug\AppInterfaces.dll.config
-D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\bin\Debug\AppInterfaces.dll
-D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\bin\Debug\AppInterfaces.pdb
-D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\bin\Debug\CoreEntities.dll
-D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\bin\Debug\System.Web.Mvc.dll
-D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\bin\Debug\System.Web.Razor.dll
-D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
-D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\bin\Debug\System.Web.WebPages.dll
-D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\bin\Debug\Microsoft.Web.Infrastructure.dll
-D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
-D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\bin\Debug\CoreEntities.pdb
-D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
-D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\obj\Debug\AppInterfaces.dll
-D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\obj\Debug\AppInterfaces.pdb
 D:\PuneetS\R&D\smartData-Architecture\AppInterfaces\bin\Debug\AppInterfaces.dll.config
 D:\PuneetS\R&D\smartData-Architecture\AppInterfaces\bin\Debug\AppInterfaces.dll
 D:\PuneetS\R&D\smartData-Architecture\AppInterfaces\bin\Debug\AppInterfaces.pdb
@@ -26,3 +12,17 @@ D:\PuneetS\R&D\smartData-Architecture\AppInterfaces\bin\Debug\CoreEntities.pdb
 D:\PuneetS\R&D\smartData-Architecture\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
 D:\PuneetS\R&D\smartData-Architecture\AppInterfaces\obj\Debug\AppInterfaces.dll
 D:\PuneetS\R&D\smartData-Architecture\AppInterfaces\obj\Debug\AppInterfaces.pdb
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\bin\Debug\AppInterfaces.dll
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\bin\Debug\AppInterfaces.pdb
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\bin\Debug\CoreEntities.dll
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\bin\Debug\System.Web.Razor.dll
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\bin\Debug\CoreEntities.pdb
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\obj\Debug\AppInterfaces.dll
+D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\AppInterfaces\obj\Debug\AppInterfaces.pdb

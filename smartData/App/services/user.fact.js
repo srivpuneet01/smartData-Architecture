@@ -10,6 +10,13 @@ angular
                   .then(dataResponse, dataServiceError);
 
         }
+
+        function makeGetRequest(url, params) {
+            var requestUrl = BASE_URL + '/' + url;
+            return $http.get(requestUrl, params)
+                  .then(dataResponse, dataServiceError);
+
+        }
         function dataResponse(response) { return response.data; }
         function dataServiceError(errorResponse) {
             //$log.error('XHR Failed for AccountService');
@@ -24,5 +31,10 @@ angular
             'getallUser': function (firstname, lastname, email) {
                 return makePostRequest('UserAPI/GetAllUser', { FirstName: firstname, LastName: lastname, Email: email }).then(function (data) { return data });
             }
+            ,
+            'getuserrole': function () {
+                return makeGetRequest('AccountAPI/GetUserRole').then(function (data) { return data });
+            }
         };
+
     }]);

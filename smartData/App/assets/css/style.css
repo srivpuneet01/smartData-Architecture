@@ -208,3 +208,8 @@ footer .container .glyphicon-heart {
 .label-dark {
     background-color: #333;
 }
+.scroll {
+    width: 150px;
+    height: 150px;
+    overflow: scroll;
+}

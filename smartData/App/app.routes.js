@@ -23,8 +23,12 @@ function config ($routeProvider) {
             controller: 'RegisterController as reg'
         })
         .when('/user', {
-            templateUrl: 'app/sections/user/user.tpl.html',
+            templateUrl: 'app/sections/home/manageuser/user.tpl.html',
             controller: 'UserController as user'
+        })
+        .when('/adduser', {
+            templateUrl: 'app/sections/home/manageuser/adduser/adduser.tpl.html',
+            controller: 'AddUserController as Adduser'
         })
         .otherwise({
             redirectTo: '/'

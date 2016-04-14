@@ -1,0 +1,52 @@
+﻿<ng-form name="user">
+
+    <div id="custom-toolbar">
+        <div class="form-inline" role="form">
+            <div class="form-group">
+                <div class="search">
+                    <input class="form-control" ng-model="FirstName" id="FirstName" placeholder="First Name" type="text" name="FirstName">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="search">
+                    <input class="form-control" ng-model="LastName" id="LastName" placeholder="Last Name" type="text" name="LastName">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="search">
+                    <input class="form-control" id="Email" ng-model="Email" placeholder="Email" type="email" name="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <input class="btn btn-success" id="btnFilter" placeholder="" type="button" value="Filter" name="btnFilter" ng-click="validateUser()">
+            </div>
+        </div>
+    </div>
+    <div id="filter-bar"></div>
+    <br />
+    <div class="row">
+        <div class="col-sm-10">
+            
+        </div>
+        <div class="col-sm-2" style="padding-left:100px"> 
+            <a href="#/AddUser"> Add User</a>
+        </div>
+    </div>
+    <table ng-table="customConfigParams" class="table table-condensed table-bordered table-striped">
+        <tr ng-repeat="row in $data">
+            <td data-title="'First Name'">{{row.FirstName}}</td>
+            <td data-title="'Last Name'">{{row.LastName}}</td>
+            <td data-title="'Email'">{{row.Email}}</td>
+            <td data-title="Action">
+                <a href="#">
+                    Edit
+                </a>
+                <a href="#">
+                    Remove
+                </a>
+            </td>
+        </tr>
+    </table>
+</ng-form>

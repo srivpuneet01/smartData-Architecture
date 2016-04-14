@@ -98,7 +98,7 @@ namespace smartData.Controllers
                     _secUserPasswordHistory.RowVersion = null;
                     _secUserPasswordHistory.SecUserID = WebSecurity.GetUserId(model.UserName);
                     _userService.AddPasswordHistory(_secUserPasswordHistory);
-                    
+
 
                     ModelState.AddModelError("", CustomMessages.UserRegSuccess);
 
@@ -140,6 +140,11 @@ namespace smartData.Controllers
 
             return sb.ToString();
 
+        }
+
+        public List<Core.Domain.Roles> GetUserRole()
+        {
+            return _userService.GetAllRoles();
         }
 
 

@@ -38,7 +38,7 @@ angular
         // I check ifUser is logged in
         function isLoggedIn()
         {
-            return getItem('user-token') || false;
+            return getItem('user') || false;
         }
         // I clear the current item cache.
         function clear() {

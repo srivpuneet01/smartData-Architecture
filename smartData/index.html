@@ -19,6 +19,7 @@
     <link href="app/assets/js/OldAppScripts/BootStrapGrid/src/bootstrap-table.css" rel="stylesheet" />
     <link href="app/assets/js/OldAppScripts/BootStrapDailog/bootstrap-dialog.min.css" rel="stylesheet" />
     <link href="Content/AdminLTE/skins/_all-skins.min.css" rel="stylesheet" />
+    <link href="app/assets/js/AngularTable/ng-table.min.css" rel="stylesheet" />
 
     <style>
         input.ng-pristine + ul#strength {
@@ -401,6 +402,9 @@
     <script src="app/assets/js/angular-moment.min.js"></script>
     <script src="app/assets/js/angular-truncate.js"></script>
     <script src="app/assets/js/angular-preload-image.min.js"></script>
+    <script src="app/assets/js/AngularTable/ng-table.min.js"></script>
+    <script src="app/assets/js/lodash.min.js"></script>
+    
     <!-- / -->
     <!-- endbuild -->
     <!-- build:js app.min.js -->
@@ -417,15 +421,20 @@
     <script src="app/components/nav/nav.ctrl.js"></script>
     <script src="app/sections/account/login/login.ctrl.js"></script>
     <script src="app/sections/account/register/register.ctrl.js"></script>
-    <script src="app/sections/home/home.ctrl.js"></script>
+    <script src="app/sections/home/home.ctrl.js"></script>    
+    <script src="app/sections/home/manageuser/user.ctrl.js"></script>
+    <script src="app/sections/home/manageuser/adduser/adduser.ctrl.js"></script>
     <!-- / -->
     <!-- SERVICES -->
     <script src="app/services/page.val.js"></script>
     <script src="app/services/account.fact.js"></script>
+    <script src="app/services/user.fact.js"></script>
     <!-- HELPERS-->
     <script src="app/helpers/storage.fact.js"></script>
     <!-- / -->
     <!-- DIRECTIVES -->
+    <script src="app/directives/angularjs-dropdown-multiselect.min.js"></script>
+    <script src="app/directives/checkbox-multiselect.js"></script>
     <!-- / -->
     <!-- inject:js -->
     <!-- endinject -->

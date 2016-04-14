@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -23,6 +24,7 @@
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
     <UseGlobalApplicationHostFile />
+    <TypeScriptToolsVersion>1.7</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -312,6 +314,11 @@
     <Content Include="app\assets\js\angular-touch.min.js" />
     <Content Include="app\assets\js\angular-truncate.js" />
     <Content Include="app\assets\js\angular.min.js" />
+    <Content Include="app\assets\js\AngularTable\ng-table.css" />
+    <Content Include="app\assets\js\AngularTable\ng-table.js" />
+    <Content Include="app\assets\js\AngularTable\ng-table.min.css" />
+    <Content Include="app\assets\js\AngularTable\ng-table.min.js" />
+    <Content Include="app\assets\js\lodash.min.js" />
     <Content Include="app\assets\js\moment.min.js" />
     <Content Include="app\assets\js\OldAppScripts\AdminLTE\app.js" />
     <Content Include="app\assets\js\OldAppScripts\AdminLTE\app.min.js" />
@@ -1029,6 +1036,8 @@
     <Content Include="app\assets\js\OldAppScripts\JqGrid\jquery.jqGrid.min.js" />
     <Content Include="app\assets\js\OldAppScripts\JqGrid\jquery.jqGrid.src.js" />
     <Content Include="app\app.helpers.js" />
+    <Content Include="app\assets\js\AngularTable\ng-table.less" />
+    <Content Include="app\assets\js\AngularTable\ng-table.min.js.map" />
     <None Include="app\assets\js\OldAppScripts\jquery-1.10.2.intellisense.js" />
     <Content Include="app\assets\js\OldAppScripts\jquery-1.10.2.js" />
     <Content Include="app\assets\js\OldAppScripts\jquery-1.10.2.min.js" />
@@ -1093,19 +1102,29 @@
     <None Include="app\assets\js\OldAppScripts\_references.js" />
     <Content Include="app\components\bar\bar.ctrl.js" />
     <Content Include="app\components\nav\nav.ctrl.js" />
+    <Content Include="app\directives\checkbox-multiselect.js" />
+    <Content Include="app\directives\angularjs-dropdown-multiselect.min.js" />
     <Content Include="app\helpers\app.ctrl.js" />
     <Content Include="app\helpers\app.tpl.html" />
     <Content Include="app\sections\account\register\register.ctrl.js" />
     <Content Include="app\sections\account\register\register.tpl.html" />
     <Content Include="app\helpers\storage.fact.js" />
     <Content Include="app\sections\home\home.ctrl.js" />
+    <Content Include="app\sections\home\manageuser\adduser\adduser.ctrl.js" />
+    <Content Include="app\sections\home\manageuser\adduser\adduser.tpl.html" />
     <Content Include="app\sections\home\user-chat.tpl.html" />
     <Content Include="app\sections\home\user-graph.tpl.html" />
+    <Content Include="app\sections\home\manageuser\user.ctrl.js" />
+    <Content Include="app\sections\home\manageuser\user.tpl.html" />
+    <Content Include="app\services\user.fact.js" />
     <Content Include="Areas\ScreenPermissions\Images\loading2.gif" />
     <Content Include="Areas\ScreenPermissions\Images\loadingmessage.png" />
     <Content Include="Areas\Screens\Views\Screen\1431806156_list-add-user.png" />
     <Content Include="Areas\Users\Images\loading2.gif" />
     <Content Include="Areas\Users\Images\loadingmessage.png" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="index.html" />
     <Content Include="app\sections\account\login\login.ctrl.js" />
     <Content Include="app\sections\account\login\login.tpl.html" />
@@ -1406,6 +1425,11 @@
     <Content Include="Areas\Users\Views\Users\_RoleList.cshtml" />
     <Content Include="Areas\Users\Views\web.config" />
     <Content Include="Areas\Users\Views\_ViewStart.cshtml" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
     <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
     <None Include="Properties\PublishProfiles\HealthCare.pubxml" />
     <None Include="Resources\addon\dynamsoft.webtwain.addon.barcode.intellisense.js" />
@@ -2362,6 +2386,7 @@
     <Compile Include="Areas\Users\UsersAreaRegistration.cs" />
     <Compile Include="Controllers\AccountAPIController.cs" />
     <Compile Include="Controllers\AdminLteController.cs" />
+    <Compile Include="Controllers\UserAPIController.cs" />
     <Compile Include="Models\CustomPrincipalSerializeModel.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
@@ -2428,7 +2453,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\directives\" />
     <Folder Include="Areas\ModulePermissions\Models\" />
     <Folder Include="Areas\Modules\Models\" />
     <Folder Include="Areas\PagePermission\Models\" />
@@ -2459,6 +2483,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
@@ -2473,6 +2498,7 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ProjectExtensions>

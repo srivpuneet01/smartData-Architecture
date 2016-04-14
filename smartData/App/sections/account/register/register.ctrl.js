@@ -63,10 +63,7 @@ angular
         };
     })
     .controller('RegisterController', ['$scope', '$rootScope', 'AccountService', function ($scope, $rootScope, AccountService) {
-        $scope.ErrorMessage = "";
-        //$scope.user.Email = "Dev@test.in";
-        //$scope.user.Password = "123456";
-        //$scope.user.ConfirmPassword = "123456";
+        $scope.ErrorMessage = "";        
         $scope.RegisterUser = function () {
             $scope.ErrorMessage = "";
             if ($scope.PasswordValidationError != '') {
