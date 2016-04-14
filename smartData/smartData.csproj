@@ -312,6 +312,10 @@
     <Content Include="app\assets\js\angular-touch.min.js" />
     <Content Include="app\assets\js\angular-truncate.js" />
     <Content Include="app\assets\js\angular.min.js" />
+    <Content Include="app\assets\js\AngularTable\ng-table.css" />
+    <Content Include="app\assets\js\AngularTable\ng-table.js" />
+    <Content Include="app\assets\js\AngularTable\ng-table.min.css" />
+    <Content Include="app\assets\js\AngularTable\ng-table.min.js" />
     <Content Include="app\assets\js\moment.min.js" />
     <Content Include="app\assets\js\OldAppScripts\AdminLTE\app.js" />
     <Content Include="app\assets\js\OldAppScripts\AdminLTE\app.min.js" />
@@ -1028,6 +1032,8 @@
     <Content Include="app\assets\js\OldAppScripts\JqGrid\jquery-1.11.0.min.js" />
     <Content Include="app\assets\js\OldAppScripts\JqGrid\jquery.jqGrid.min.js" />
     <Content Include="app\assets\js\OldAppScripts\JqGrid\jquery.jqGrid.src.js" />
+    <Content Include="app\assets\js\AngularTable\ng-table.less" />
+    <Content Include="app\assets\js\AngularTable\ng-table.min.js.map" />
     <None Include="app\assets\js\OldAppScripts\jquery-1.10.2.intellisense.js" />
     <Content Include="app\assets\js\OldAppScripts\jquery-1.10.2.js" />
     <Content Include="app\assets\js\OldAppScripts\jquery-1.10.2.min.js" />
@@ -1094,6 +1100,9 @@
     <Content Include="app\components\nav\nav.ctrl.js" />
     <Content Include="app\sections\account\register\register.ctrl.js" />
     <Content Include="app\sections\account\register\register.tpl.html" />
+    <Content Include="app\sections\user\user.ctrl.js" />
+    <Content Include="app\sections\user\user.tpl.html" />
+    <Content Include="app\services\user.fact.js" />
     <Content Include="Areas\ScreenPermissions\Images\loading2.gif" />
     <Content Include="Areas\ScreenPermissions\Images\loadingmessage.png" />
     <Content Include="Areas\Screens\Views\Screen\1431806156_list-add-user.png" />
@@ -2355,6 +2364,7 @@
     <Compile Include="Areas\Users\UsersAreaRegistration.cs" />
     <Compile Include="Controllers\AccountAPIController.cs" />
     <Compile Include="Controllers\AdminLteController.cs" />
+    <Compile Include="Controllers\UserAPIController.cs" />
     <Compile Include="Models\CustomPrincipalSerializeModel.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BaseController.cs" />

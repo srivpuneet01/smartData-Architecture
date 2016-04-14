@@ -18,6 +18,10 @@ function config ($routeProvider) {
             templateUrl: 'app/sections/account/register/register.tpl.html',
             controller: 'RegisterController as reg'
         })
+        .when('/user', {
+            templateUrl: 'app/sections/user/user.tpl.html',
+            controller: 'UserController as user'
+        })
         .otherwise({
             redirectTo: '/'
         });
