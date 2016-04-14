@@ -12,3 +12,8 @@ D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\DTOLayer\
 D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\DTOLayer\obj\Debug\DTOLayer.csprojResolveAssemblyReference.cache
 D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\DTOLayer\obj\Debug\DTOLayer.dll
 D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\DTOLayer\obj\Debug\DTOLayer.pdb
+D:\PuneetS\R&D\smartData-Architecture\DTOLayer\bin\Debug\DTOLayer.dll
+D:\PuneetS\R&D\smartData-Architecture\DTOLayer\bin\Debug\DTOLayer.pdb
+D:\PuneetS\R&D\smartData-Architecture\DTOLayer\obj\Debug\DTOLayer.csprojResolveAssemblyReference.cache
+D:\PuneetS\R&D\smartData-Architecture\DTOLayer\obj\Debug\DTOLayer.dll
+D:\PuneetS\R&D\smartData-Architecture\DTOLayer\obj\Debug\DTOLayer.pdb

@@ -28,11 +28,18 @@ angular
             getItem: getItem,
             onBeforePersist: onBeforePersist,
             removeItem: removeItem,
-            setItem: setItem
+            setItem: setItem,
+            getAllItems:getAllItems,
+            isloggedIn:isLoggedIn
         });
         // ---
         // PUBLIC METHODS.
         // ---
+        // I check ifUser is logged in
+        function isLoggedIn()
+        {
+            return getItem('user-token') || false;
+        }
         // I clear the current item cache.
         function clear() {
             items = {};
@@ -58,6 +65,10 @@ angular
             // NOTE: We are using .copy() so that the internal cache can't be
             // mutated through direct object references.
             return ((key in items) ? angular.copy(items[key]) : null);
+        }
+        //I retrieve all the Items in the localStorage
+        function getAllItems() {
+            return items || [];
         }
         // I add the given operator to persist hooks that will be invoked prior
         // to unload-based persistence.

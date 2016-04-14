@@ -1,10 +1,9 @@
 ﻿'use strict';
 angular
     .module('app.core')
-    .controller('NavController', ['$scope', '$rootScope', function ($scope, $rootScope) {
+    .controller('NavController', ['$scope', '$rootScope', 'storage', function ($scope, $rootScope, storage) {
 
         $scope.headerText = "Login";
-
-        $scope.hasLoggedIn = angular.isDefined($rootScope.loginId) && $rootScope.loginId != null;
+        $scope.hasLoggedIn = angular.isDefined(storage.getItem('user-token')) && storage.getItem('user-token') !== "" && storage.getItem('user-token') !== null;
 
     }]);

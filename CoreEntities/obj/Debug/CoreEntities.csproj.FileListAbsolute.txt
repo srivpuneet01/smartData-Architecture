@@ -245,3 +245,8 @@ D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\CoreEntit
 D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\CoreEntities\bin\Debug\CoreEntities.dll
 D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\CoreEntities\bin\Debug\CoreEntities.pdb
 D:\Day Users\Pawan Pankaj\Official\Projects\R&D\smartData-Architecture\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+D:\PuneetS\R&D\smartData-Architecture\CoreEntities\bin\Debug\CoreEntities.dll
+D:\PuneetS\R&D\smartData-Architecture\CoreEntities\bin\Debug\CoreEntities.pdb
+D:\PuneetS\R&D\smartData-Architecture\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+D:\PuneetS\R&D\smartData-Architecture\CoreEntities\obj\Debug\CoreEntities.dll
+D:\PuneetS\R&D\smartData-Architecture\CoreEntities\obj\Debug\CoreEntities.pdb

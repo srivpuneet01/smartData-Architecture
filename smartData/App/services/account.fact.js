@@ -16,8 +16,8 @@ angular
         function dataServiceError(errorResponse) {
             //$log.error('XHR Failed for AccountService');
             if (errorResponse.status == 404) {
-                //$log.error(errorResponse);
-                alert("User Not Found");
+                $log.error(errorResponse);
+                //alert("User Not Found");
             }
 
             return errorResponse;
@@ -25,7 +25,10 @@ angular
 
         return {
             'authenticate': function (user, pwd) {
-                return makePOSTRequest('AccountAPI/Login', { UserName: user, Password: pwd }).then(function (data) { return data });                
+                return makePOSTRequest('AccountAPI/Login', { UserName: user, Password: pwd }).then(function (data) {
+                    debugger;
+                    return data
+                });
             },
             'registeruser': function (email, pwd) {
                 return makePOSTRequest('AccountAPI/Register', { UserName: email, Password: pwd }).then(function (data) { return data });

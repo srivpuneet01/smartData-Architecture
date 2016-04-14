@@ -4,8 +4,8 @@ angular
     .config(configs)
     .run(runs);
 
-function configs($httpProvider) {
-    var interceptor = function($location, $log, $q) {
+function configs($httpProvider, $locationProvider) {
+    var interceptor = function ($location, $log, $q) {
         function error(response) {
             if (response.status === 401) {
                 $log.error('You are unauthorised to access the requested resource (401)');
@@ -20,18 +20,24 @@ function configs($httpProvider) {
             //Request completed successfully
             return response;
         }
-        return function(promise) {
+        return function (promise) {
             return promise.then(success, error);
         }
     };
     $httpProvider.interceptors.push(interceptor);
+    //$locationProvider.html5Mode({
+    //    enabled: true,
+    //    requireBase: false
+    //});
+    //console.log($locationProvider.html5Mode());
+    //console.log('done');
 }
 
 function runs($rootScope, PageValues) {
-    $rootScope.$on('$routeChangeStart', function() {
+    $rootScope.$on('$routeChangeStart', function () {
         PageValues.loading = true;
     });
-    $rootScope.$on('$routeChangeSuccess', function() {
+    $rootScope.$on('$routeChangeSuccess', function () {
         PageValues.loading = false;
     });
 }

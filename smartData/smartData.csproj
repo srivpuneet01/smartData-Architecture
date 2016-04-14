@@ -1028,6 +1028,7 @@
     <Content Include="app\assets\js\OldAppScripts\JqGrid\jquery-1.11.0.min.js" />
     <Content Include="app\assets\js\OldAppScripts\JqGrid\jquery.jqGrid.min.js" />
     <Content Include="app\assets\js\OldAppScripts\JqGrid\jquery.jqGrid.src.js" />
+    <Content Include="app\app.helpers.js" />
     <None Include="app\assets\js\OldAppScripts\jquery-1.10.2.intellisense.js" />
     <Content Include="app\assets\js\OldAppScripts\jquery-1.10.2.js" />
     <Content Include="app\assets\js\OldAppScripts\jquery-1.10.2.min.js" />
@@ -1092,9 +1093,14 @@
     <None Include="app\assets\js\OldAppScripts\_references.js" />
     <Content Include="app\components\bar\bar.ctrl.js" />
     <Content Include="app\components\nav\nav.ctrl.js" />
+    <Content Include="app\helpers\app.ctrl.js" />
+    <Content Include="app\helpers\app.tpl.html" />
     <Content Include="app\sections\account\register\register.ctrl.js" />
     <Content Include="app\sections\account\register\register.tpl.html" />
     <Content Include="app\helpers\storage.fact.js" />
+    <Content Include="app\sections\home\home.ctrl.js" />
+    <Content Include="app\sections\home\user-chat.tpl.html" />
+    <Content Include="app\sections\home\user-graph.tpl.html" />
     <Content Include="Areas\ScreenPermissions\Images\loading2.gif" />
     <Content Include="Areas\ScreenPermissions\Images\loadingmessage.png" />
     <Content Include="Areas\Screens\Views\Screen\1431806156_list-add-user.png" />
