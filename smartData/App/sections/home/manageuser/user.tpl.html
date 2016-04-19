@@ -1,5 +1,6 @@
 ﻿<ng-form name="user">
-
+    <h3>Manage User</h3>
+    <hr />
     <div id="custom-toolbar">
         <div class="form-inline" role="form">
             <div class="form-group">
@@ -28,10 +29,10 @@
     <br />
     <div class="row">
         <div class="col-sm-10">
-            
+
         </div>
-        <div class="col-sm-2" style="padding-left:100px"> 
-            <a href="#/AddUser"> Add User</a>
+        <div class="col-sm-2" style="padding-left:80px">
+            <a href="#adduser"><i class="glyphicon glyphicon-user" ></i> Add User</a>
         </div>
     </div>
     <table ng-table="customConfigParams" class="table table-condensed table-bordered table-striped">
@@ -40,11 +41,11 @@
             <td data-title="'Last Name'">{{row.LastName}}</td>
             <td data-title="'Email'">{{row.Email}}</td>
             <td data-title="Action">
-                <a href="#">
-                    Edit
+                <a href="#/edituser/{{row.UserId}}">
+                   <i class="glyphicon glyphicon-edit"></i>
                 </a>
-                <a href="#">
-                    Remove
+                <a ng-click="deleteuser(row.UserId)" href="javascript:void(0)" >
+                    <i class="glyphicon glyphicon-remove" ></i>
                 </a>
             </td>
         </tr>

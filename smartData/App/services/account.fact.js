@@ -7,10 +7,10 @@ angular
         function makePOSTRequest(url, params) {
             var requestUrl = BASE_URL + '/' + url;
 
-          return  $http.post(requestUrl, JSON.stringify(params))
-                .then(dataResponse, dataServiceError);
+            return $http.post(requestUrl, JSON.stringify(params))
+                  .then(dataResponse, dataServiceError);
         }
-        function dataResponse(response) {  return response; }
+        function dataResponse(response) { return response; }
         function dataServiceError(errorResponse) {
             //$log.error('XHR Failed for AccountService');
             if (errorResponse.status == 404) {
@@ -23,15 +23,24 @@ angular
 
         return {
             'authenticate': function (user, pwd) {
-                return makePOSTRequest('AccountAPI/Login', { UserName: user, Password: pwd }).then(function (data) {
-                    debugger;
+                return makePOSTRequest('AccountAPI/Login', { UserName: user, Password: pwd }).then(function (data) {                    
                     return data
                 });
             },
             'registeruser': function (email, pwd) {
                 return makePOSTRequest('AccountAPI/Register', { UserName: email, Password: pwd }).then(function (data) { return data });
-
+            },
+             'forgetpassword': function (pwd, newPwd, confNewPwd) {
+                return makePOSTRequest('AccountAPI/ForgotPassword', { OldPassword: pwd, NewPassword: newPwd, ConfirmPassword: confNewPwd }).then(function (data) {
+                    return data
+                });
+            },
+            'changepassword': function (pwd, newPwd, confNewPwd) {
+                return makePOSTRequest('AccountAPI/ForgotPassword', { OldPassword: pwd, NewPassword: newPwd, ConfirmPassword: confNewPwd }).then(function (data) {
+                    return data
+                });
             }
+            
         };
 
 

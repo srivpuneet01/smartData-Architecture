@@ -54,6 +54,7 @@ namespace RepositoryLayer.Repositories
         {
             UOW.StartTransaction();
             var result = UpdateUser(user);
+            AddUserRoles(user.UserId, user.RoleIDs.ToString());
             UOW.CommitTransaction();
 
             return result;

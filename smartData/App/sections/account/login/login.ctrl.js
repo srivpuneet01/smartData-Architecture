@@ -8,6 +8,7 @@ angular
             AccountService.authenticate($scope.user.username, $scope.user.password)
             .then(function (data) {
                 $rootScope.hasLoggedIn = true;
+                $rootScope.userName = data.Email;
                 console.log(angular.toJson(data));
                 storage.setItem('user', angular.toJson(data));
                 
@@ -16,5 +17,16 @@ angular
         }
         if ($rootScope.rememberMe) {
 
+        }
+
+        $scope.forgetPassword = function ()
+        {    
+            //$scope.forgetPasswordEmail
+            //validate the user with email 
+            //afte validationg user Send email to user 
+            //Then user will redirect to forget password from email
+            angular.element('.modal-backdrop').removeClass('in');
+            $location.path('/forgetpassword');
+            
         }
     }]);

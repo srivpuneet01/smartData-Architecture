@@ -147,6 +147,89 @@ namespace smartData.Controllers
             return _userService.GetAllRoles();
         }
 
+        //Forget Password
+        [AllowAnonymous]
+        [HttpPost]
+        public string ForgotPassword(ManageUserViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                if (model.OldPassword != model.NewPassword)
+                {
+                    //ServiceLayer.Services.ResetPasswordService _ResetPasswordService = new ServiceLayer.Services.ResetPasswordService();
+                    var token = "";
+                    string UserName = WebSecurity.CurrentUserName;
+                    //check user existance
+
+                    var user = Membership.GetUser(UserName);
+
+                    bool changePasswordSucceeded;
+                    changePasswordSucceeded = user.ChangePassword(model.OldPassword, model.NewPassword);
+
+                    if (!changePasswordSucceeded)
+                    {
+                        return CustomMessages.CurrentPassNotCorrect;
+                    }
+
+                    if (user == null)
+                    {
+                        //TempData["Message"] = CustomMessages.UserNotExist;
+                    }
+                    else
+                    {
+                        //generate password token
+                        token = WebSecurity.GeneratePasswordResetToken(UserName);
+                        //create url with above token
+                    }
+                    bool any = _userService.UpdatePassword(UserName, token);
+                    bool response = false;
+                    if (any == true)
+                    {
+                        response = WebSecurity.ResetPassword(token, model.NewPassword);
+                        if (response == true)
+                        {
+                            try
+                            {
+                                //  Here Maintain Password History
+                                //  MembershipUser u = Membership.GetUser(WebSecurity.CurrentUserName, false);
+
+                                string RetPassword = HashData(model.NewPassword);
+                                SecUserPasswordHistory _secUserPasswordHistory = new SecUserPasswordHistory();
+                                byte[] array = Encoding.ASCII.GetBytes(RetPassword);
+
+                                _secUserPasswordHistory.PasswordHash256 = array;
+                                _secUserPasswordHistory.DeleteFlag = false;
+                                _secUserPasswordHistory.RowVersion = null;
+                                _secUserPasswordHistory.SecUserID = (WebSecurity.CurrentUserId);
+                                _userService.AddPasswordHistory(_secUserPasswordHistory);
+                                //TempData["Message"] = CustomMessages.PasswordChanged;
+                                return CustomMessages.PasswordChanged;
+                            }
+                            catch (Exception ex)
+                            {
+                                return CustomMessages.ErrorWhileChangingPassword + ex.Message;
+                            }
+                        }
+                        else
+                        {
+                            return CustomMessages.HeyAvoidRandomRequest;
+                        }
+                    }
+                    else
+                    {
+                        return CustomMessages.UserAndTokenNotMatch;
+                    }
+
+                }
+                else
+                {
+                    return CustomMessages.PasswordsMustbeDiff;
+                }
+
+            }
+            return CustomMessages.YourPassHasBeenChanged;
+        }
+
 
     }
 }

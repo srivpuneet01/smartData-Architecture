@@ -1,8 +1,8 @@
 ﻿'use strict';
 angular
     .module('app.core')
-    .controller('UserController', ['$scope', '$rootScope', 'UserService', 'storage', '$location', 'NgTableParams', function ($scope, $rootScope, UserService, storage, $location, NgTableParams) {
-    
+    .controller('UserController', ['$scope', '$rootScope', 'UserService', 'storage', '$location', 'NgTableParams','$route', function ($scope, $rootScope, UserService, storage, $location, NgTableParams,$route) {
+
         $scope.validateUser = function () {
             UserService.getallUser($scope.FirstName, $scope.LastName, $scope.Email)
             .then(function (data) {
@@ -13,6 +13,12 @@ angular
         }
         $scope.validateUser();
 
+
+        $scope.deleteuser = function (userid) {
+            UserService.deleteuser(userid).then(function (data) {
+                $route.reload();
+            });
+        }
 
         function createUsingFullOptions() {
             var initialParams = {

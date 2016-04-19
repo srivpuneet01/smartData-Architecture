@@ -13,7 +13,7 @@ angular
 
         function makeGetRequest(url, params) {
             var requestUrl = BASE_URL + '/' + url;
-            return $http.get(requestUrl, params)
+            return $http.get(requestUrl)
                   .then(dataResponse, dataServiceError);
 
         }
@@ -34,7 +34,24 @@ angular
             ,
             'getuserrole': function () {
                 return makeGetRequest('AccountAPI/GetUserRole').then(function (data) { return data });
-            }
+            },
+
+            'adduser': function (firstname, lastname, email, pwd, roles) {
+                return makePostRequest('UserAPI/InsertUser', { FirstName: firstname, LastName: lastname, UserName: email, Email: email, Password: pwd, RolesList: roles }).then(function (data) { return data });
+            },
+            'getuserbyid': function (id) {
+                return makeGetRequest('UserAPI/Edit/' + id).then(function (data) { return data });
+            },
+            'getuserrolebyid': function (id) {
+                return makeGetRequest('UserAPI/GetUserRolesById/' + id).then(function (data) { return data });
+            },
+            'updateuser': function (userid, firstname, lastname, email, roles) {
+                return makePostRequest('UserAPI/EditUser', { UserId: userid, FirstName: firstname, LastName: lastname, UserName: email, Email: email, RolesList: roles }).then(function (data) { return data });
+            },
+            'deleteuser': function (id) {
+                return makeGetRequest('UserAPI/DeleteUser/' + id).then(function (data) { return data });
+            },
+
         };
 
     }]);

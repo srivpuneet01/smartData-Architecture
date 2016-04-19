@@ -293,9 +293,18 @@
     <Content Include="app\assets\css\AdminLTE\skins\_all-skins.css" />
     <Content Include="app\assets\css\AdminLTE\skins\_all-skins.min.css" />
     <Content Include="app\assets\css\animations.css" />
+    <Content Include="app\assets\css\bootstrap.css" />
     <Content Include="app\assets\css\bootstrap.min.css" />
+    <Content Include="app\assets\css\Common.css" />
+    <Content Include="app\assets\css\datepicker.css" />
+    <Content Include="app\assets\css\font-awesome.css" />
+    <Content Include="app\assets\css\font-awesome.min.css" />
     <Content Include="app\assets\css\font-icons.css" />
+    <Content Include="app\assets\css\jquery.contextMenu.css" />
+    <Content Include="app\assets\css\Site.css" />
     <Content Include="app\assets\css\style.css" />
+    <Content Include="app\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="app\assets\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="app\assets\fonts\icomoon.svg" />
     <Content Include="app\assets\images\angular.png" />
     <Content Include="app\assets\images\brickwall.png" />
@@ -1038,6 +1047,15 @@
     <Content Include="app\app.helpers.js" />
     <Content Include="app\assets\js\AngularTable\ng-table.less" />
     <Content Include="app\assets\js\AngularTable\ng-table.min.js.map" />
+    <Content Include="app\assets\css\variables.less" />
+    <Content Include="app\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="app\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="app\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="app\assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="app\assets\fonts\FontAwesome.otf" />
+    <Content Include="app\assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app\assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app\assets\fonts\glyphicons-halflings-regular.woff" />
     <None Include="app\assets\js\OldAppScripts\jquery-1.10.2.intellisense.js" />
     <Content Include="app\assets\js\OldAppScripts\jquery-1.10.2.js" />
     <Content Include="app\assets\js\OldAppScripts\jquery-1.10.2.min.js" />
@@ -1106,16 +1124,27 @@
     <Content Include="app\directives\angularjs-dropdown-multiselect.min.js" />
     <Content Include="app\helpers\app.ctrl.js" />
     <Content Include="app\helpers\app.tpl.html" />
+    <Content Include="app\sections\account\ChangePassword\changePassword.ctrl.js" />
+    <Content Include="app\sections\account\ChangePassword\changePassword.tpl.html" />
+    <Content Include="app\sections\account\ForgetPassword\forgetPassword.ctrl.js" />
+    <Content Include="app\sections\account\ForgetPassword\forgetPassword.tpl.html" />
     <Content Include="app\sections\account\register\register.ctrl.js" />
     <Content Include="app\sections\account\register\register.tpl.html" />
     <Content Include="app\helpers\storage.fact.js" />
     <Content Include="app\sections\home\home.ctrl.js" />
     <Content Include="app\sections\home\manageuser\adduser\adduser.ctrl.js" />
+    <Content Include="app\sections\home\manageuser\adduser\edituser.tpl.html" />
     <Content Include="app\sections\home\manageuser\adduser\adduser.tpl.html" />
+    <Content Include="app\sections\home\manageuser\adduser\edituser.ctrl.js" />
+    <Content Include="app\sections\home\role\addrole.ctrl.js" />
+    <Content Include="app\sections\home\role\addrole.tpl.html" />
+    <Content Include="app\sections\home\role\role.ctrl.js" />
+    <Content Include="app\sections\home\role\role.tpl.html" />
     <Content Include="app\sections\home\user-chat.tpl.html" />
     <Content Include="app\sections\home\user-graph.tpl.html" />
     <Content Include="app\sections\home\manageuser\user.ctrl.js" />
     <Content Include="app\sections\home\manageuser\user.tpl.html" />
+    <Content Include="app\services\role.fact.js" />
     <Content Include="app\services\user.fact.js" />
     <Content Include="Areas\ScreenPermissions\Images\loading2.gif" />
     <Content Include="Areas\ScreenPermissions\Images\loadingmessage.png" />
@@ -2386,6 +2415,7 @@
     <Compile Include="Areas\Users\UsersAreaRegistration.cs" />
     <Compile Include="Controllers\AccountAPIController.cs" />
     <Compile Include="Controllers\AdminLteController.cs" />
+    <Compile Include="Controllers\RoleAPIController.cs" />
     <Compile Include="Controllers\UserAPIController.cs" />
     <Compile Include="Models\CustomPrincipalSerializeModel.cs" />
     <Compile Include="Controllers\AccountController.cs" />
@@ -2453,6 +2483,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="app\assets\css\Images\" />
+    <Folder Include="app\assets\css\jquery.jqGrid\" />
     <Folder Include="Areas\ModulePermissions\Models\" />
     <Folder Include="Areas\Modules\Models\" />
     <Folder Include="Areas\PagePermission\Models\" />
