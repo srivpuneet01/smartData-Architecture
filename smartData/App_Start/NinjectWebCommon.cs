@@ -93,12 +93,11 @@ namespace smartData.App_Start
             kernel.Bind<IActionAccessPermissionService>().To<ServiceLayer.Services.ActionAccessPermissionService>();
             kernel.Bind<IProgramService>().To<ServiceLayer.Services.ProgramService>();            
             kernel.Bind<IModuleService>().To<ModuleService>();
-            kernel.Bind<IModuleAPIController>().To<ModuleAPIController>();
+            
             kernel.Bind<IModulePermissionService>().To<ModulePermissionService>();            
             kernel.Bind<IRolesService>().To<RolesService>();
-            kernel.Bind<IRolesAPIController>().To<RolesAPIController>();
+            
             kernel.Bind<IScreenService>().To<ScreenService>();
-            kernel.Bind<IScreenAPIController>().To<ScreenAPIController>();
             kernel.Bind<ILogInfoAPIController>().To<LogInfoAPIController>();
             kernel.Bind<ILogInfoService>().To<ServiceLayer.Services.LogInfoService>();
             kernel.Bind<IPagePermissionAPIController>().To<PagePermissionAPIController>();

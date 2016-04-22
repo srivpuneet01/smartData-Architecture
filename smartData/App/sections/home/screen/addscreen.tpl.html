@@ -1,0 +1,56 @@
+﻿<ng-form name="addScreen">
+
+    <div class="modal-header">
+        <h3 class="modal-title">{{title}}</h3>
+    </div>
+    <div class="modal-body">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-3">
+                    <span class="label-dark">Screen</span>
+                </div>
+                <div class="col-md-8">
+                    <input type="text" ng-model="screenname" class="form-control input-sm" name="screenname" id="screenname" required />
+                    <span class="field-validation-error" style="color:red" ng-show="addScreen.screenname.$dirty && addScreen.screenname.$invalid">
+                        <span ng-show="addScreen.screenname.$error.required">Module cannot be blank.</span>
+                    </span>
+                </div>
+            </div>            
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-3">
+                    <span class="label-dark">Module</span>
+                </div>
+                <div class="col-md-8">
+                    <select class="form-control input-sm" ng-model="moduleid" id="moduleid" name="moduleid" ng-options="module.ModuleID as module.ModuleName for module in moduledata" required >
+                        <option value="">--Select Module--</option> 
+                    </select>
+                    <span class="field-validation-error" style="color:red" ng-show="addScreen.moduleid.$dirty && addScreen.moduleid.$invalid">
+                        <span ng-show="addScreen.moduleid.$error.required">Select Module</span>
+                    </span>
+                     
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <!--<input type="submit" ng-disabled="addrole.$invalid"
+                       class="btn btn-primary" ng-click="insertrole()" /> </input>-->
+                <button ng-disabled="addScreen.$invalid"
+                        class="btn btn-primary" ng-click="insertscreen()">
+                    {{title =="Add Screen" ? 'Add Screen' : 'Update Screen'}}
+                </button>
+
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="modal-footer">
+        <button class="btn btn-warning" type="button"
+                ng-click="close()">
+            Cancel
+        </button>
+    </div>
+
+</ng-form>

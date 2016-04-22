@@ -2,7 +2,7 @@
 angular
  .module('app.core')
 .controller('AddUserController', ['$scope', '$rootScope', 'UserService', '$location', '$routeParams', function ($scope, $rootScope, UserService, $location, $routeParams) {
-
+    $rootScope.headerText = "Add User";
     $scope.ErrorMessage = "";
     $scope.array = [];
     $scope.RegisterUser = function () {

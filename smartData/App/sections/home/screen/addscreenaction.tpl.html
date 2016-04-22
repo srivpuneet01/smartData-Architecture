@@ -1,0 +1,56 @@
+﻿<ng-form name="addScreenaction">
+
+    <div class="modal-header">
+        <h3 class="modal-title">{{title}}</h3>
+    </div>
+    <div class="modal-body">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-3">
+                    <span class="label-dark">Action Type</span>
+                </div>
+                <div class="col-md-8">
+                    <select class="form-control input-sm" ng-model="actionid" id="actionid" name="actionid" ng-options="module.Value as module.Text for module in actiondata" required>
+                        <option value="">--Select Action Type--</option>
+                    </select>
+                    <span class="field-validation-error" style="color:red" ng-show="addScreenaction.actionid.$dirty && addScreenaction.actionid.$invalid">
+                        <span ng-show="addScreenaction.actionid.$error.required">Select Action Type</span>
+                    </span>
+
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-3">
+                    <span class="label-dark">Action Name</span>
+                </div>
+                <div class="col-md-8">
+                    <input type="text" ng-model="actionname" class="form-control input-sm" name="actionname" id="actionname" required />
+                    <span class="field-validation-error" style="color:red" ng-show="addScreenaction.actionname.$dirty && addScreenaction.actionname.$invalid">
+                        <span ng-show="addScreenaction.actionname.$error.required">Action Name cannot be blank.</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <!--<input type="submit" ng-disabled="addrole.$invalid"
+                       class="btn btn-primary" ng-click="insertrole()" /> </input>-->
+                <button ng-disabled="addScreenaction.$invalid"
+                        class="btn btn-primary" ng-click="insertscreenaction()">
+                    Add Action
+                </button>
+
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="modal-footer">
+        <button class="btn btn-warning" type="button"
+                ng-click="close()">
+            Cancel
+        </button>
+    </div>
+
+</ng-form>

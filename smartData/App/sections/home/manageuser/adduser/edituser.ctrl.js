@@ -4,7 +4,7 @@ angular
 .controller('EditUserController', ['$scope', '$rootScope', 'UserService', '$location', '$routeParams', function ($scope, $rootScope, UserService, $location, $routeParams) {
     $scope.ErrorMessage = "";
     $scope.array = [];
-
+$rootScope.headerText = "Edit User";
     Edit();
     function Edit() {
         UserService.getuserbyid($routeParams.id).then(function (data) {

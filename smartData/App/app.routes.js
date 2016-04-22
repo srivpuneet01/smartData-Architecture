@@ -50,6 +50,14 @@ function config($routeProvider) {
             templateUrl: 'app/sections/home/role/role.tpl.html',
             controller: 'RoleController as role'
         })
+        .when('/module', {
+            templateUrl: 'app/sections/home/module/module.tpl.html',
+            controller: 'ModuleController as module'
+        })
+        .when('/screen', {
+            templateUrl: 'app/sections/home/screen/screen.tpl.html',
+            controller: 'screenController as screen'
+        })
 
         .otherwise({
             redirectTo: '/'

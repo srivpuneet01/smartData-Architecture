@@ -2,7 +2,7 @@
 angular
     .module('app.core')
     .controller('UserController', ['$scope', '$rootScope', 'UserService', 'storage', '$location', 'NgTableParams','$route', function ($scope, $rootScope, UserService, storage, $location, NgTableParams,$route) {
-
+$rootScope.headerText = "Manage User";
         $scope.validateUser = function () {
             UserService.getallUser($scope.FirstName, $scope.LastName, $scope.Email)
             .then(function (data) {

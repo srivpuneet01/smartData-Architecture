@@ -32,6 +32,19 @@ angular
                 return makePOSTRequest('RoleAPI/GetRole/', { RoleName: role }).then(function (data) {
                     return data
                 });
+            }, 'insertrole': function (role, active) {
+                return makePOSTRequest('RoleAPI/CreateRole/', { RoleName: role, Active: active }).then(function (data) {
+                    return data
+                });
+            }, 'deleterole': function (id) {
+                return makeGetRequest('RoleAPI/DeleteRole/' + id).then(function (data) {
+                    return data
+                });
+            }
+            , 'editrole': function (role, active, id) {
+                return makePOSTRequest('RoleAPI/EditRole/', { RoleName: role, Active: active, RoleId: id }).then(function (data) {
+                    return data
+                });
             }
         };
 

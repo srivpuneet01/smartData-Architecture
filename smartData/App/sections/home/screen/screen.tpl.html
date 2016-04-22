@@ -1,0 +1,37 @@
+﻿
+<div id="custom-toolbar">
+    <div class="form-inline" role="form">
+        <div class="form-group">
+            <div class="search">
+                <input class="form-control" ng-model="screenname" id="screenname" placeholder="Screen" type="text" name="screenname">
+            </div>
+        </div>
+        <div class="form-group">
+            <input class="btn btn-success" id="btnFilter" placeholder="" type="button" value="Filter" name="btnFilter" ng-click="getscreens()">
+        </div>
+    </div>
+</div>
+<div id="filter-bar"></div>
+<br />
+<div class="row">
+    <div class="col-sm-10">
+
+    </div>
+    <div class="col-sm-2" style="padding-left:80px">
+        <a href="javascript:void(0)" ng-click="openmodel('Add Screen',0)"><i class="glyphicon glyphicon-plus"></i> Add Screen</a>
+
+    </div>
+</div>
+<table ng-table="customConfigParams" class="table table-condensed table-bordered table-striped">
+    <tr ng-repeat="row in $data">
+        <td data-title="'Screen Name'">{{row.ScreenName}}</td>
+        <td data-title="Action">
+            <a href="javascript:void(0)" ng-click="openmodel('Edit Screen',row.screenId,row.ScreenName,row.ModuleId)"><i class="glyphicon glyphicon-edit"></i> </a>
+            <a ng-click="deletescreen(row.screenId)" href="javascript:void(0)">
+                <i class="glyphicon glyphicon-remove"></i>
+            </a>
+            <a href="javascript:void(0)" ng-click="openActionModel(row.ScreenName,row.screenId)"><img src="/1431806156_list-add-user.png" style="width: 20px; height: 20px;"></a>
+        </td>
+    </tr>
+
+</table>
